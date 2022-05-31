@@ -4,13 +4,10 @@ import { Header } from '../components/Header';
 export default function index() {
 	return (
 		<Header>
-			<div>123</div>
-			<div>123</div>
-			<div>123</div>
-			<div>123</div>
-			<div>123</div>
-			<div>123</div>
-			<img src="../img/Icon/logo2.png"/>
+			<Head>
+				<title>Главная</title>
+			</Head>
+			<h1>index</h1>
 		</Header>
 	)
 }
