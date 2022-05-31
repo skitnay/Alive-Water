@@ -1,11 +1,11 @@
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 
 export default function contacts() {
-	return <Header>
+	return <Layout>
 		<Head>
 			<title>Контакты</title>
 		</Head>
 		<h1>contacts</h1>
-	</Header>
+	</Layout>
 }

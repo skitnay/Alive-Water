@@ -1,13 +1,13 @@
 import Head from 'next/head';
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 
 export default function index() {
 	return (
-		<Header>
+		<Layout>
 			<Head>
 				<title>Главная</title>
 			</Head>
 			<h1>index</h1>
-		</Header>
+		</Layout>
 	)
 }

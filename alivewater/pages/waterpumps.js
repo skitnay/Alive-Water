@@ -1,11 +1,11 @@
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 
 export default function waterpumps() {
-	return <Header>
+	return <Layout>
 		<Head>
 			<title>Водоматы</title>
 		</Head>
 		<h1>waterPump</h1>
-	</Header>
+	</Layout>
 }

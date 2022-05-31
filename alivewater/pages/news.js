@@ -1,8 +1,8 @@
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 
 export default function About() {
-	return <Header>
+	return <Layout>
 		<Head>
 			<title>Новости</title>
 		</Head>
@@ -18,5 +18,5 @@ export default function About() {
 		<h1>123</h1>
 		<h1>123</h1>
 		<h1>123</h1>
-	</Header>
+	</Layout>
 }
