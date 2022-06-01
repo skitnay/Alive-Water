@@ -16,7 +16,10 @@ $blue: #263C5C;
 	min-width: 154px;
 	max-height: 50px;
 	cursor: pointer;
-
+	padding-right: 80px;
+	@media (max-width: 560px) {
+		padding-right: 0px;
+	}
 	&__drop {
 		display: flex;
 		flex-direction: column;
@@ -26,6 +29,7 @@ $blue: #263C5C;
 	&__icon {
 		padding: 10px 0px 0px 0px;
 		max-width: 45px;
+		min-width: 45px;
 		pointer-events: none;
 	}
 
@@ -35,6 +39,7 @@ $blue: #263C5C;
 		font-weight: 600;
 		color: $blue;
 		line-height: 20px;
+		min-width: 119px;
 	}
 
 	&__titleMini {
@@ -43,16 +48,21 @@ $blue: #263C5C;
 		font-family: roboto;
 		color: $blue;
 		text-align: start;
+		min-width: 119px;
 	}
 
 }
 
 .menu {
-
 	&__body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 560px) {
+			min-height: 110px;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__list {
@@ -64,12 +74,19 @@ $blue: #263C5C;
 		justify-content: space-between;
 		max-width: 400px;
 		width: 100%;
-		// height: 44px;
 		padding: 12px 17px;
 		border-radius: 10px;
 		box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.25);
 		margin: 0;
 		overflow: hidden;
+		@media (max-width: 560px) {
+			width: 100%;
+			max-width: none;
+			padding: 12px 17px;
+		}
+		@media (max-width: 350px) {
+			padding: 12px 5px;
+		}
 		li {
 			a {
 				&:visited {
@@ -86,10 +103,13 @@ $blue: #263C5C;
 		text-decoration: none;
 		font-family: roboto;
 		padding: 14px 5px 14px;
-		transition: 0.4s;
+		transition: 0.3s;
 		cursor: pointer;
 		&:nth-child(1) {
 			margin: 0px 0px 0px 0px;
+		}
+		&:hover {
+			background-color: #223552;
 		}
 	}
 }
@@ -97,7 +117,7 @@ $blue: #263C5C;
 
 .footer {
 	&__menu {
-		padding: 22px 42px;
+		padding: 40px 30px;
 		max-width: 1180px;
 		margin: 4px auto 0;
 		min-height: 52px;
@@ -109,8 +129,18 @@ $blue: #263C5C;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media (max-width: 700px) {
+				padding: 0px 20px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+		@media (max-width: 700px) {
+			padding: 20px 20px;
 		}
 	}
+	
 }
 
 .fSection {
@@ -120,12 +150,19 @@ $blue: #263C5C;
 	min-height: 94px;
 	&__logo {
 		display: flex;
-		min-width: 154px;
+		min-width: 160px;
 		cursor: pointer;
 	}
 	&__icon {
 		max-width: 40px;
 		pointer-events: none;
+		img {
+			&:hover {
+				transform: rotate(50deg);
+				transition: 0.3s;
+			}
+			
+		}
 	}
 	&__drop {
 		display: flex;
@@ -148,19 +185,29 @@ $blue: #263C5C;
 	&__inn{
 		font-weight: 300;
 		font-size: 15px;
+		min-width: 166px;
 		line-height: 18px;
 		color: rgba(255, 255, 255, 0.53);
+		p {
+			display: inline;
+		}
 	}
 }
 
 .sSection {
-
+	display: flex;
+	width: 100%;
+	max-width: 288px;
+	padding: 0 15px;
+	@media (max-width: 566px) {
+		margin: 20px 0;
+		padding: 0 5px 0 5px;
+	}
 	&__row {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
+		width: 100%;
 		min-height: 94px;
-		min-width: 288px;
 	}
 	&__link{
 		&__row{
@@ -169,7 +216,11 @@ $blue: #263C5C;
 			justify-content: space-between;
 		}
 		a {
-			color: #fff;
+			color: #ffffff;
+			&:hover {
+				color: rgba(255, 255, 255, 0.637);
+				transition: color 0.3s ease;
+			}
 		}
 		&__hide{
 			height: 14px;
@@ -185,16 +236,72 @@ $blue: #263C5C;
 	justify-content: space-between;
 	min-height: 92px;
 	color:#fff;
+	min-width: 253px;
+	@media (max-width: 700px) {
+		padding: 20px 20px 0;
+		display: flex;
+		text-align: center;
+		min-height: 100px;
+	}
+	@media (max-width:566px) {
+		padding: 0;
+	}
 	&__contacts{
 		max-width: 200px;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 700px) {
+			max-width: 252px;
+		justify-content: space-around;
+		}
 	}
 	&__contact{
+		max-width: 30px;
 		cursor: pointer;
-	}
-	&__email{
+		transition: 0.3s ease;
+		box-shadow: 9px 10px 10px rgba(0, 0, 0, 0.25);
+		&:hover {
+			transition: 0.3s ease;
+			padding-top: 3px;
+			margin-bottom: -3px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+		}
+		&:active {
+			transition: 0.3s ease;
+			padding-top: 3px;
+			margin-bottom: -3px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+		}
+		@media (max-width:566px) {
+			max-width: 40px;
+		}
 		
 	}
-	&__phone{}
+	&__email{
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.637);
+		a {
+			max-width: 300px;
+			color: #fff;
+			font-weight: normal;
+			text-decoration: underline;
+			&:hover {
+				color: rgba(255, 255, 255, 0.637);
+				transition: color 0.3s ease;
+			}
+		}
+	}
+	&__phone{
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.637);
+		a {
+			color: #fff;
+			font-weight: normal;
+			text-decoration: underline;
+			&:hover {
+				color: rgba(255, 255, 255, 0.637);
+				transition: color 0.3s ease;
+			}
+		}
+	}
 }
