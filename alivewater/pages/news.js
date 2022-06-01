@@ -13,7 +13,6 @@ export default function About() {
 				<div className={classes.miniTitle}>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi corporis quaerat facilis eaque libero quis, placeat, reprehenderit pariatur ab maiores sed a repudiandae, reiciendis aperiam? Ducimus exercitationem architecto suscipit quisquam?
 				</div>
-				
 			</div>
 		</div>
 	</Layout>
