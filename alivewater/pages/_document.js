@@ -9,6 +9,7 @@ export default function Document() {
 				<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 				<link rel="shortcut icon" href="/static/favicon.ico" />
 				<link rel="shortcut icon" href="/static/favicon.png" />
+				<meta name="theme-color" content="#263c5c"/>
 			</Head>
 			<body>
 				<Main />

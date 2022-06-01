@@ -1,5 +1,6 @@
 import classes from '../styles/layout.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
@@ -14,8 +15,7 @@ export function Layout({ children }) {
 					<Link href="/">
 						<div className={classes.logo}>
 							<div className={classes.logo__icon}>
-								<Image src='/logo.png' width={480} height={506} alt="logo"/>
-								
+								<ExportedImage src='logo.png' width='480' height='506' alt="logo" />
 							</div>
 							<div className={classes.logo__drop}>
 								<div className={classes.logo__title}>ЖИВАЯ ВОДА</div>
@@ -43,14 +43,13 @@ export function Layout({ children }) {
 			>
 				{children}
 			</motion.main>
-			<motion.footer	className={classes.footer__menu}>
+			<motion.footer className={classes.footer__menu}>
 				<div className={classes.footer__menu__row}>
 					<div className={classes.fSection}>
 						<Link href="/">
 							<div className={classes.fSection__logo}>
 								<div className={classes.fSection__icon}>
-									<Image src='/logo2.png' width={40} height={42} alt="logo"
-									/>
+									<ExportedImage src='logo2.png' width='480' height='506' alt="logo" />
 								</div>
 								<div className={classes.fSection__drop}>
 									<div className={classes.fSection__title}>ЖИВАЯ ВОДА</div>
@@ -78,13 +77,13 @@ export function Layout({ children }) {
 					<div className={classes.tSection}>
 						<div className={classes.tSection__contacts}>
 							<div className={classes.tSection__contact}>
-								<Link href='#'><Image src="/vkontakte1.png" width={30} height={30} alt='vk' /></Link>
+								<Link href='#'><ExportedImage src="/vkontakte1.png" width={30} height={30} alt='vk' /></Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href='#'><Image src="/odnoklassniki1.png" width={30} height={30} alt='od' /></Link>
+								<Link href='#'><ExportedImage src="/odnoklassniki1.png" width={30} height={30} alt='od' /></Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href="#"><Image src="/whatsapp1.png" width={30} height={30} alt='wa' /></Link>
+								<Link href="#"><ExportedImage src="/whatsapp1.png" width={30} height={30} alt='wa' /></Link>
 							</div>
 						</div>
 						<div className={classes.tSection__email}>

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { Layout } from '../components/Layout';
-import image from 'next/image'
 import classes from '../styles/index.module.scss'
 
 export default function index() {
@@ -16,7 +15,6 @@ export default function index() {
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi corporis quaerat facilis eaque libero quis, placeat, reprehenderit pariatur ab maiores sed a repudiandae, reiciendis aperiam? Ducimus exercitationem architecto suscipit quisquam?
 					</div>
 				</div>
-
 			</div>
 		</Layout>
 	)
