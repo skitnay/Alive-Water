@@ -1,0 +1,29 @@
+$blue: #263C5C;
+
+.block {
+	position: relative;
+	min-height: 500px;
+	background-color: #EAEAEC;
+}
+.index {
+	position: absolute;
+	top: 25%;
+	left: 8%;
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	font-weight: bold;
+
+}
+
+.title {
+	color: $blue;
+	font-size: 56px;
+}
+
+.miniTitle {
+	padding-top: 50px;
+	color: $blue;
+	font-size: 16px;
+	max-width: 500px;
+}

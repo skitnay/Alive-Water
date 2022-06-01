@@ -22,6 +22,8 @@
 // 	border: 0px;
 // }
 
+$blue: #263C5C;
+
 *,
 *:before,
 *:after {
@@ -96,7 +98,17 @@ a:hover {
 	text-decoration: none;
 }
 
+.active {
+	background-color: #616B7A;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+
+ul {
+	margin: 0;
+}
+
 ul li {
+	margin: 0;
 	list-style: none;
 }
 
@@ -112,6 +124,10 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+}
+main {
+	max-width: 1180px;
+	margin: 50px auto;
 }
 
 //-webkit-overflow-scrolling: touch;

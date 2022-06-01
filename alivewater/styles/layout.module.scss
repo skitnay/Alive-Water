@@ -1,5 +1,5 @@
 
-//==============================================================================
+//======================================================================
 $blue: #263C5C;
 
 .header {
@@ -8,17 +8,6 @@ $blue: #263C5C;
 		margin: 4px auto 0;
 		min-height: 52px;
 	}
-
-	// @media (max-width:970px) {
-	// 	position: relative;
-	// 	max-width: 970px;
-
-	// 	&__menu {
-	// 		display: flex;
-	// 		align-items: center;
-	// 		width: 100%;
-	// 	}
-	// }
 }
 
 .logo {
@@ -26,6 +15,7 @@ $blue: #263C5C;
 	align-items: center;
 	min-width: 154px;
 	max-height: 50px;
+	cursor: pointer;
 
 	&__drop {
 		display: flex;
@@ -55,24 +45,14 @@ $blue: #263C5C;
 		text-align: start;
 	}
 
-	// @media (max-width:970px) {
-	// 	display: none;
-	// 	position: fixed;
-	// 	top: 0px;
-	// 	left: 50%;
-	// 	transform: translate3d(-50%, 0, 0);
-	// }
 }
 
 .menu {
-
-	&__row {}
 
 	&__body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0px 10px;
 	}
 
 	&__list {
@@ -87,7 +67,7 @@ $blue: #263C5C;
 		// height: 44px;
 		padding: 12px 17px;
 		border-radius: 10px;
-		box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+		box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.25);
 		margin: 0;
 		overflow: hidden;
 		li {
@@ -107,84 +87,114 @@ $blue: #263C5C;
 		font-family: roboto;
 		padding: 14px 5px 14px;
 		transition: 0.3s;
-		&:hover {
-			transition: 0.3s;
-			background-color: #616B7A;
-			margin: -10px;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-		}
-
+		cursor: pointer;
 		&:nth-child(1) {
 			margin: 0px 0px 0px 0px;
 		}
-
-		// @media (max-width:1180px) {
-		// 	&:hover {
-		// 		transition: border-bottom 0.6s linear;
-		// 		border-bottom: 0px solid transparent;
-		// 	}
-		// }
 	}
+}
 
-	// @media (max-width:970px) {
-	// 	&__body {
-	// 		position: fixed;
-	// 		overflow: auto;
-	// 		width: 100%;
-	// 		min-height: 100%;
-	// 		bottom: 0px;
-	// 		left: 0;
-	// 		background-color: #fff;
-	// 		transform: translate3d(200%, 0%, 0);
-	// 		transition: 1s;
 
-	// 		&._active {
-	// 			transform: translate3d(0, 0%, 0);
-	// 			transition: 1s;
-	// 			overflow: hidden;
-	// 		}
-	// 	}
+.footer {
+	&__menu {
+		padding: 22px 42px;
+		max-width: 1180px;
+		margin: 4px auto 0;
+		min-height: 52px;
+		background-color: $blue;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.25);
+		&__row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
 
-	// 	&__list {
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		justify-content: space-between;
-	// 		align-items: center;
-	// 		left: 0px;
-	// 		max-width: 970px;
+.fSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 94px;
+	&__logo {
+		display: flex;
+		min-width: 154px;
+		cursor: pointer;
+	}
+	&__icon {
+		max-width: 40px;
+		pointer-events: none;
+	}
+	&__drop {
+		display: flex;
+		flex-direction: column;
+		margin: 5px 0px 0px 10px;
+		color: #fff;
+	}
+	&__title{
+		font-size: 16px;
+		font-family: roboto;
+		font-weight: 600;
+		line-height: 20px;
+	}
+	&__miniTitle{
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: roboto;
+		text-align: start;
+	}
+	&__inn{
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		color: rgba(255, 255, 255, 0.53);
+	}
+}
 
-	// 		li {
-	// 			padding: 0px 0px 25px;
+.sSection {
 
-	// 			&:nth-last-child(1) {
-	// 				padding: 0px 0px 0px;
-	// 			}
-	// 		}
-	// 	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		min-height: 94px;
+		min-width: 288px;
+	}
+	&__link{
+		&__row{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		a {
+			color: #fff;
+		}
+		&__hide{
+			height: 14px;
+			color: $blue;
+			pointer-events: none;
+		}
+	}
+}
 
-	// 	&__link {
-	// 		padding: 0px;
-	// 		font-size: 20px;
-	// 	}
-
-	// 	@media (max-height:480px) {
-	// 		&__list {
-	// 			li {
-	// 				padding: 0px 0px 15px;
-
-	// 				&:nth-last-child(1) {
-	// 					padding: 0px 0px 0px;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-
-	// 	@media (max-height:320px) {
-	// 		&__list {
-	// 			li {
-	// 				padding: 0px 0px 10px;
-	// 			}
-	// 		}
-	// 	}
-	// }
+.tSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 92px;
+	color:#fff;
+	&__contacts{
+		max-width: 200px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__contact{
+		cursor: pointer;
+	}
+	&__email{
+		
+	}
+	&__phone{}
 }
