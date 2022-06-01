@@ -14,8 +14,8 @@ export function Layout({ children }) {
 					<Link href="/">
 						<div className={classes.logo}>
 							<div className={classes.logo__icon}>
-								<Image src='/logo.png' width={480} height={506} alt="logo"
-								/>
+								<Image src='/logo.png' width={480} height={506} alt="logo"/>
+								
 							</div>
 							<div className={classes.logo__drop}>
 								<div className={classes.logo__title}>ЖИВАЯ ВОДА</div>
