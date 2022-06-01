@@ -1,5 +1,4 @@
 import classes from '../styles/layout.module.scss';
-// import Image from 'next/image';
 import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
 import { motion } from 'framer-motion'
