@@ -53,6 +53,8 @@ export function Footer() {
 					<div className={classes.tSection__phone}>
 						Телефон: <Link href='tel:+79134531010"'><a>+7-913-453-10-10</a></Link>
 					</div>
+					<div className={classes.fSection__inn_hide}>ИНН: <p>123123131313211</p></div>
+					<div className={classes.fSection__inn_hide}>ИНН: <p>123123131313211</p></div>
 				</div>
 			</div>
 		</footer>

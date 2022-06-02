@@ -10,6 +10,31 @@ $blue: #263C5C;
 	}
 }
 
+@keyframes rotate {
+	from {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(0);
+	}
+	84% {
+		transform: translateY(55px) scale(0.7, 1);
+	}
+	85% {
+		transform: translateY(55px) scale(1.5, 0.7);
+	}
+	88% {
+		transform: translateY(56px) scale(2, 0.5);
+	}
+	90% {
+		transform: translateY(58px) scale(2.5, 0.3);
+	}
+	to {
+		transform: translateY(59px) scale(2.5, 0.2);
+	}
+}
+
+
 .logo {
 	display: flex;
 	align-items: center;
@@ -17,20 +42,32 @@ $blue: #263C5C;
 	max-height: 50px;
 	cursor: pointer;
 	padding-right: 80px;
+	&:hover {
+		.logo__icon_mini {
+			animation: 0.9s linear infinite rotate;
+		}
+	}
 	@media (max-width: 560px) {
 		padding-right: 0px;
 	}
 	&__drop {
 		display: flex;
 		flex-direction: column;
-		margin: 5px 0px 0px 10px;
+		margin: 0px 0px 0px 10px;
 	}
 
 	&__icon {
-		padding: 10px 0px 0px 0px;
+		position: relative;
+		// padding: 10px 0px 0px 0px;
 		max-width: 45px;
 		min-width: 45px;
 		pointer-events: none;
+		transition: 1s;
+		&_mini {
+			position: absolute;
+			left: 16.5px;
+			bottom: 0px;
+		}
 	}
 
 	&__title {
@@ -108,9 +145,6 @@ $blue: #263C5C;
 		&:nth-child(1) {
 			margin: 0px 0px 0px 0px;
 		}
-		&:hover {
-			background-color: #223552;
-		}
 	}
 }
 
@@ -148,21 +182,34 @@ $blue: #263C5C;
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 94px;
+	@media (max-width: 566px) {
+		min-height: 0;
+	}
 	&__logo {
 		display: flex;
 		min-width: 160px;
 		cursor: pointer;
+		transition: 1s;
+		&:hover {
+			.fSection__title {
+				color: rgb(204, 204, 204);
+				transition: color 1s;
+			}
+			.fSection__miniTitle {
+				color: rgb(204, 204, 204);
+				transition: color 1s;
+			}
+			.fSection__icon {
+				transform: rotate(60deg);
+				transition: ease 3s;
+			}
+		}
+		
 	}
 	&__icon {
 		max-width: 40px;
 		pointer-events: none;
-		img {
-			&:hover {
-				transform: rotate(50deg);
-				transition: 0.3s;
-			}
-			
-		}
+		transition: 3s;
 	}
 	&__drop {
 		display: flex;
@@ -175,12 +222,17 @@ $blue: #263C5C;
 		font-family: roboto;
 		font-weight: 600;
 		line-height: 20px;
+		&:hover {
+			color: rgb(228, 228, 228);
+			transition: color 1s;
+		}
 	}
 	&__miniTitle{
 		font-size: 12px;
 		text-transform: uppercase;
 		font-family: roboto;
 		text-align: start;
+
 	}
 	&__inn{
 		font-weight: 300;
@@ -190,6 +242,23 @@ $blue: #263C5C;
 		color: rgba(255, 255, 255, 0.53);
 		p {
 			display: inline;
+		}
+		@media (max-width: 566px) {
+			display: none;
+		}
+		&_hide {
+			display: none;
+			font-weight: 300;
+			font-size: 15px;
+			min-width: 180px;
+			line-height: 18px;
+			color: rgba(255, 255, 255, 0.53);
+			@media (max-width: 566px) {
+				display: inline;
+				p {
+					display: inline;
+				}
+			}
 		}
 	}
 }
@@ -241,7 +310,7 @@ $blue: #263C5C;
 		padding: 20px 20px 0;
 		display: flex;
 		text-align: center;
-		min-height: 100px;
+		min-height: 150px;
 	}
 	@media (max-width:566px) {
 		padding: 0;
