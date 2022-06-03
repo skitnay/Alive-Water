@@ -21,9 +21,8 @@ export default function index() {
 							exit="exit"
 							variants={variants2}
 							transition={{
-								duration: 0.7,
+								duration: 0.5,
 								type: 'linear',
-								rotate: '50'
 							}}
 						>Живая Вода</motion.div>
 						<motion.div
@@ -33,9 +32,8 @@ export default function index() {
 							exit="exit"
 							variants={variants}
 							transition={{
-								duration: 0.7,
+								duration: 0.5,
 								type: 'linear',
-								rotate: '50'
 							}}
 						>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi corporis quaerat facilis eaque libero quis, placeat, reprehenderit pariatur ab maiores sed a repudiandae, reiciendis aperiam? Ducimus exercitationem architecto suscipit quisquam?
@@ -50,9 +48,8 @@ export default function index() {
 				exit="exit"
 				variants={variants}
 				transition={{
-					duration: 0.7,
+					duration: 0.5,
 					type: 'linear',
-					rotate: '50'
 				}}
 			>
 				<div className={classes.title}>
@@ -112,10 +109,8 @@ export default function index() {
 							Есть ли у нас сертификаты на оборудование и воду?</div>
 						<div className={classes.qa__text}>
 							Да, система фильтров соответствует международным стандартам качества.
-							<br></br>
-							Кроме того, мы постоянно проводим анализ воды для каждого водомата отдельно.
-							<br></br>
-							Сертификаты вы можете изучить по <a href="#sertificate" className={classes._popupLink}>ссылке</a>.
+							<p>Кроме того, мы постоянно проводим анализ воды для каждого водомата отдельно.</p>
+							Сертификаты вы можете изучить по ссылке
 						</div>
 					</div>
 					<div className={classes.faq__qa}>
@@ -124,9 +119,10 @@ export default function index() {
 						</div>
 						<div className={classes.qa__text}>
 							Фильтрующие элементы в автомате заменяются согласно определенного регламента.
-							<br />
-							Частота замены напрямую зависит от объема производимой питьевой воды и качества водопроводной
-							воды в вашем районе.
+							<p>
+								Частота замены напрямую зависит от объема производимой питьевой воды и качества водопроводной
+								воды в вашем районе.
+							</p>
 						</div>
 					</div>
 					<div className={classes.faq__qa}>
@@ -145,9 +141,10 @@ export default function index() {
 						<div className={classes.qa__text}>
 							Постфильтры, которые стоят после обратноосмотической мембраны, обеспечивают идеальные
 							вкусовые свойства питьевой воды Живая Вода.
-							<br />
-							А биокерамический картридж восстанавливает структуру воды, улучшает ее
-							окислительно-восстановительный потенциал.
+							<p>
+								А биокерамический картридж восстанавливает структуру воды, улучшает ее
+								окислительно-восстановительный потенциал.
+							</p>
 						</div>
 					</div>
 					<div className={classes.faq__qa}>
@@ -170,6 +167,122 @@ export default function index() {
 					</div>
 				</div>
 			</section >
+			<section className={classes.advantage__content}>
+				<div className={classes.title}>
+					Наши преимущества
+				</div>
+				<div className={classes.advantage__miniTitle}>
+					Самая чистая и полезная вода, которую можно использовать для любых нужд.
+				</div>
+				<div className={classes.advantage__flex}>
+					<div className={classes.advantage__column}>
+						<div className={classes.advantage__card}>
+							<div className={classes.advantage__text}>
+								<div className={classes.advantage__card_title}>
+									Вода высшей питьевой категории
+								</div>
+								<div className={classes.advantage__card_text}>
+									Мы используем самые современные промышленные системы очистки воды, позволяющие получать
+									воду премиум класса, обогащенную необходимым количеством солей и минералов.
+								</div>
+							</div>
+							<div className={classes.advantage__card_pic}>
+								<ExportedImage src='/badge.png' width={103} height={100} />
+							</div>
+						</div>
+						<div className={classes.advantage__card}>
+							<div className={classes.advantage__text}>
+								<div className={classes.advantage__card_title}>
+									Вода в 5 раз дешевле
+								</div>
+								<div className={classes.advantage__card_text}>
+									Покупать воду в розлив значительно дешевле чем в пластиковых бутылках.
+									Зачем снова и снова платить за пластиковые бутылки? Ведь стоимость тары может составлять до 80% от общей стоимости.
+								</div>
+							</div>
+							<div className={classes.advantage__card_pic}>
+								<ExportedImage src='/ruble.png' width={103} height={100} />
+							</div>
+						</div>
+					</div>
+					<div className={classes.advantage__column}>
+						<div className={classes.advantage__card}>
+							<div className={classes.advantage__text}>
+								<div className={classes.advantage__card_title}>
+									Забота об окружающей среде
+								</div>
+								<div className={classes.advantage__card_text}>
+									Каждую минуту в мире производятся 1 миллион одноразовых пластиковых бутылок.
+									Отказавшись от покупки воды в пластиковой таре, вы поможете бороться с загрязнением окружающей среды.
+								</div>
+							</div>
+							<div className={classes.advantage__card_pic}>
+								<ExportedImage src='/forest.png' width={103} height={100} />
+							</div>
+						</div>
+						<div className={classes.advantage__card}>
+							<div className={classes.advantage__text}>
+								<div className={classes.advantage__card_title}>
+									Аппараты питьевой воды - это удобно
+								</div>
+								<div className={classes.advantage__card_text}>
+									Больше нет необходимости стоять в очереди в
+									супермаркете для того чтобы купить воды или
+									несколько дней ждать доставки в офис или домой.
+									Водоматы удобно расположены, а налить воду в них очень легко и быстро.
+								</div>
+							</div>
+							<div className={classes.advantage__card_pic}>
+								<ExportedImage src='/clock.png' width={100} height={100} />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className={classes.price}>
+				<div className={classes.title}>
+					Стоимость
+				</div>
+				<div className={classes.price__subtitle}>
+					Чистая питьевая вода - товар первой необходимости.
+					Пейте больше воды, готовьте вкусные блюда. Возьмите воду с собой!
+				</div>
+				<div className={classes.price__content}>
+					<div className={classes.price__flex}>
+						<div className={classes.price__flex_pic}>
+							<ExportedImage src='/bottle.png' width={208} height={208} />
+						</div>
+						<div className={classes.price__flex_title}>
+							1 ЛИТР - <p>3 РУБЛЯ</p>
+						</div>
+						<div className={classes.price__flex_subtitle}>
+							На тренеровку или прогулку
+						</div>
+					</div>
+					<div className={classes.price__flex}>
+						<div className={classes.price__flex_pic}>
+							<ExportedImage src='/bottle2.png' width={208} height={208} />
+						</div>
+						<div className={classes.price__flex_title}>
+							5 ЛИТРОВ - <p>15 РУБЛЕЙ</p>
+						</div>
+						<div className={classes.price__flex_subtitle}>
+							В дорогу или на пикник
+						</div>
+					</div>
+					<div className={classes.price__flex}>
+						<div className={classes.price__flex_pic}>
+							<ExportedImage src='/bottle3.png' width={208} height={208} />
+						</div>
+						<div className={classes.price__flex_title}>
+							19 ЛИТРОВ - <p>57 РУБЛЕЙ</p>
+						</div>
+						<div className={classes.price__flex_subtitle}>
+							Домой или в офис
+						</div>
+					</div>
+				</div>
+			</section>
 		</Layout >
 	)
 }
