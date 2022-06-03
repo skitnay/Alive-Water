@@ -57,6 +57,7 @@ section {
 html,
 body {
 	height: 100%;
+	color: #263C5C;
 }
 
 body {
@@ -106,6 +107,12 @@ a:hover {
 
 ul {
 	margin: 0;
+	padding: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
 }
 
 ul li {
@@ -127,6 +134,7 @@ h6 {
 	font-size: inherit;
 }
 main {
+	overflow: hidden;
 	max-width: 1180px;
 	margin: 50px auto;
 	padding: 0px 15px 0px 15px;

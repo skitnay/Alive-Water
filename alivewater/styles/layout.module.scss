@@ -10,11 +10,14 @@ $blue: #263C5C;
 	}
 }
 
-@keyframes rotate {
+@keyframes blob {
 	from {
 		transform: translateY(0);
 	}
 	20% {
+		transform: translateY(0);
+	}
+	50% {
 		transform: translateY(0);
 	}
 	84% {
@@ -34,7 +37,6 @@ $blue: #263C5C;
 	}
 }
 
-
 .logo {
 	display: flex;
 	align-items: center;
@@ -44,7 +46,10 @@ $blue: #263C5C;
 	padding-right: 80px;
 	&:hover {
 		.logo__icon_mini {
-			animation: 0.9s linear infinite rotate;
+			animation: 0.9s linear infinite blob;
+			@media (max-width: 560px) {
+				animation: none;
+			}
 		}
 	}
 	@media (max-width: 560px) {
@@ -62,11 +67,13 @@ $blue: #263C5C;
 		max-width: 45px;
 		min-width: 45px;
 		pointer-events: none;
-		transition: 1s;
+		transition: 1.5s;
+		
 		&_mini {
 			position: absolute;
 			left: 16.5px;
 			bottom: 0px;
+			
 		}
 	}
 
@@ -199,10 +206,6 @@ $blue: #263C5C;
 				color: rgb(204, 204, 204);
 				transition: color 1s;
 			}
-			.fSection__icon {
-				transform: rotate(60deg);
-				transition: ease 3s;
-			}
 		}
 		
 	}
@@ -268,6 +271,7 @@ $blue: #263C5C;
 	width: 100%;
 	max-width: 288px;
 	padding: 0 15px;
+	margin: 0 150px 0 0px;
 	@media (max-width: 566px) {
 		margin: 20px 0;
 		padding: 0 5px 0 5px;
