@@ -3,6 +3,7 @@ import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+
 export function Header() {
 	const router = useRouter();
 	return (

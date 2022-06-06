@@ -2,12 +2,12 @@ import '../styles/style.scss';
 import { AnimatePresence } from 'framer-motion'
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import Map from '../components/Map';
-
+import Head from 'next/head';
+import Script from 'next/script';
 
 export default function MyApp({ Component, pageProps, router }) {
 	const url = `${router.route}`
-	
+
 	return (
 		<>
 			<Header />

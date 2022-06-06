@@ -17,9 +17,8 @@ export default function waterpumps() {
 					exit="exit"
 					variants={variants2}
 					transition={{
-						duration: 0.5,
-						type: 'linear',
-						rotate: '50'
+						duration: 0.3,
+						type: 'linear'
 					}}>
 					Многоступенчатая очистка
 				</motion.div>
@@ -29,8 +28,7 @@ export default function waterpumps() {
 					variants={variants}
 					transition={{
 						duration: 0.8,
-						type: 'linear',
-						rotate: '50'
+						type: 'linear'
 					}}>
 					<div className={classes.cleaner__text}>
 						В наших автоматах используется самая современная многоступенчатая система очистки. Аналогичные используется при производстве бутилированной воды. С разницей лишь в объемах. Фактически, каждый водомат «Живая вода» является мини-заводом по производству питьевой воды первой категории.

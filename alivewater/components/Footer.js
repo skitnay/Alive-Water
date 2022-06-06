@@ -54,7 +54,7 @@ export function Footer() {
 						Телефон: <Link href='tel:+79134531010"'><a>+7-913-453-10-10</a></Link>
 					</div>
 					<div className={classes.fSection__inn_hide}>ИП <p>Полякова В. В.</p></div>
-					<div className={classes.fSection__inn_hide}>ИНН: <p> 543005844122</p></div>
+					<div className={classes.fSection__inn_hide}>ИНН: <p>543005844122</p></div>
 				</div>
 			</div>
 		</footer>

@@ -59,7 +59,16 @@ export default function contacts() {
 				</div>
 			</motion.div>
 		</section>
-		<section className={classes.about}>
+		<motion.section className={classes.about}
+			initial="hidden"
+			animate="enter"
+			exit="exit"
+			variants={variants}
+			transition={{
+				duration: 0.8,
+				type: 'linear'
+			}}
+		>
 			<div className={classes.title}>
 				О нас
 			</div>
@@ -83,7 +92,7 @@ export default function contacts() {
 						а не бутылки!</span>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 		<section className={classes.map}>
 			<div className={classes.title}>
 				Наши водоматы

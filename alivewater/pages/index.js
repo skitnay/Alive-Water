@@ -13,7 +13,7 @@ export default function index() {
 			</Head>
 			<section className={classes.firstSection}>
 				<div className={classes.firstSection__block}>
-					<ExportedImage src='/bg.jpg' width={1180} height={600}/>
+					<ExportedImage src='/bg.jpg' width={1180} height={600} />
 					<div className={classes.firstSection__index}>
 						<motion.div
 							className={classes.firstSection__title}
@@ -112,11 +112,9 @@ export default function index() {
 					</div>
 					<div className={classes.faq__qa}>
 						<div className={classes.qa__title}>
-							Есть ли у нас сертификаты на оборудование и воду?</div>
+							Правда ли, что очистка обратным осмосом «убивает» воду?</div>
 						<div className={classes.qa__text}>
-							Да, система фильтров соответствует международным стандартам качества.
-							<p>Кроме того, мы постоянно проводим анализ воды для каждого водомата отдельно.</p>
-							Сертификаты вы можете изучить по ссылке
+							Нет! Начнём с того, что чёткое определение «мёртвой» воды существует только в сказках, современной науке такие понятия неизвестны. Обычно речь идёт о том, что в воде, прошедшей очистку обратным осмосом, очень мало полезных минеральных веществ. И здесь есть два важных момента, о которых можно прочитать в <Link href="https://vk.com/wall-188967637_2389"><a target="_blank">статье</a></Link>.
 						</div>
 					</div>
 					<div className={classes.faq__qa}>
