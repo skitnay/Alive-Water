@@ -2,10 +2,12 @@ import '../styles/style.scss';
 import { AnimatePresence } from 'framer-motion'
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import Map from '../components/Map';
 
 
 export default function MyApp({ Component, pageProps, router }) {
 	const url = `${router.route}`
+	
 	return (
 		<>
 			<Header />
@@ -20,3 +22,4 @@ export default function MyApp({ Component, pageProps, router }) {
 
 	)
 }
+

@@ -51,12 +51,19 @@ nav,
 footer,
 header,
 section {
-	display: block;
+	margin: 60px 0;
+	@media (max-width: 765px) {
+		margin: 30px 0;
+	}
+}
+
+footer {
 }
 
 html,
 body {
 	height: 100%;
+	color: #263C5C;
 }
 
 body {
@@ -106,6 +113,12 @@ a:hover {
 
 ul {
 	margin: 0;
+	padding: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
 }
 
 ul li {
@@ -127,11 +140,16 @@ h6 {
 	font-size: inherit;
 }
 main {
+	overflow: hidden;
 	max-width: 1180px;
-	margin: 50px auto;
+	margin: 0px auto;
 	padding: 0px 15px 0px 15px;
+	@media (max-width:1000px) {
+		margin: 0px auto;
+		padding: 0;
+	}
 	@media (max-width:560px) {
-		margin: 30px auto;
+		margin: 0px auto;
 		padding: 0 5px 0 5px;
 	}
 }

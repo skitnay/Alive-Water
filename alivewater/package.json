@@ -10,12 +10,17 @@
     "export": "next build && next export && next-image-export-optimizer"
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.3",
+    "2gis-maps": "^3.7.1",
+    "2gis-maps-react": "^0.0.4",
+    "babel-runtime": "^6.26.0",
     "framer-motion": "^6.3.6",
     "next": "12.1.6",
     "next-image-export-optimizer": "^0.10.1",
     "next-optimized-images": "^2.6.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.52.1"
   },
   "devDependencies": {
