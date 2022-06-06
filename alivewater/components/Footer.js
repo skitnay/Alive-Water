@@ -18,8 +18,8 @@ export function Footer() {
 							</div>
 						</div>
 					</Link>
-					<div className={classes.fSection__inn}>ИНН: <p>123123131313211</p></div>
-					<div className={classes.fSection__inn}>ИНН: <p>123123131313211</p></div>
+					<div className={classes.fSection__inn}>ИП <p>Полякова В. В.</p></div>
+					<div className={classes.fSection__inn}>ИНН: <p>543005844122</p></div>
 				</div>
 				<div className={classes.sSection}>
 					<div className={classes.sSection__row}>
@@ -53,8 +53,8 @@ export function Footer() {
 					<div className={classes.tSection__phone}>
 						Телефон: <Link href='tel:+79134531010"'><a>+7-913-453-10-10</a></Link>
 					</div>
-					<div className={classes.fSection__inn_hide}>ИНН: <p>123123131313211</p></div>
-					<div className={classes.fSection__inn_hide}>ИНН: <p>123123131313211</p></div>
+					<div className={classes.fSection__inn_hide}>ИП <p>Полякова В. В.</p></div>
+					<div className={classes.fSection__inn_hide}>ИНН: <p> 543005844122</p></div>
 				</div>
 			</div>
 		</footer>
