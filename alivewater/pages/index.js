@@ -13,6 +13,7 @@ export default function index() {
 			</Head>
 			<section className={classes.firstSection}>
 				<div className={classes.firstSection__block}>
+					<ExportedImage src='/bg.jpg' width={1180} height={600}/>
 					<div className={classes.firstSection__index}>
 						<motion.div
 							className={classes.firstSection__title}
@@ -32,17 +33,16 @@ export default function index() {
 							exit="exit"
 							variants={variants}
 							transition={{
-								duration: 0.5,
+								duration: 0.8,
 								type: 'linear',
 							}}
 						>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi corporis quaerat facilis eaque libero quis, placeat, reprehenderit pariatur ab maiores sed a repudiandae, reiciendis aperiam? Ducimus exercitationem architecto suscipit quisquam?
+							Питьевая вода высокого качества, прошедшая многоступенчатую очистку, минерализацию полезными минералами и озонирование, в автоматах рядом с вашим домом!
 						</motion.div>
 					</div>
 				</div>
 			</section>
-			<motion.section
-				className={classes.newsSection}
+			<motion.section className={classes.newsSection}
 				initial="hidden"
 				animate="enter"
 				exit="exit"
@@ -60,8 +60,13 @@ export default function index() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										05/06/2022
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
@@ -73,7 +78,8 @@ export default function index() {
 						</div>
 					</div>
 					<div className={classes.newsBlock__separator}></div>
-				</div>				<div className={classes.newsSection__button_2}>
+				</div>
+				<div className={classes.newsSection__button_2}>
 					<Link href="/news">
 						<div className={classes.newsSection__button}>
 							Ещё

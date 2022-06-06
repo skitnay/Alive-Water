@@ -10,9 +10,8 @@ export function Layout({ children }) {
 					exit="exit"
 					variants={variants}
 					transition={{
-						duration: 0.3,
+						duration: 0.4,
 						type: 'linear',
-						rotate: '50'
 					}}
 				>
 					{children}
@@ -25,5 +24,5 @@ export function Layout({ children }) {
 const variants = {
 	hidden: { opacity: 0, x: 0, y: 100 },
 	enter: { opacity: 1, x: 0, y: 0 },
-	exit: { opacity: 0, x: 300, y: 0 },
+	exit: { opacity: 0, x: 200, y: 0 },
 }

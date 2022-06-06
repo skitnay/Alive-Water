@@ -9,11 +9,9 @@ export default function About() {
 		<Head>
 			<title>Новости</title>
 		</Head>
-		<section
-			className={classes.newsSection}
-		>
+		<section className={classes.newsSection}>
 			<motion.div
-				className={classes.newsSection__title}
+				className={classes.title}
 				initial="hidden"
 				animate="enter"
 				exit="exit"
@@ -40,8 +38,13 @@ export default function About() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										00/00/0000
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
@@ -59,8 +62,13 @@ export default function About() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										00/00/0000
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
@@ -78,8 +86,13 @@ export default function About() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										00/00/0000
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
@@ -97,8 +110,13 @@ export default function About() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										00/00/0000
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
@@ -116,46 +134,13 @@ export default function About() {
 					<div className={classes.newsBlock}>
 						<div className={classes.newsBlock__row}>
 							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
-								</div>
-								<div className={classes.newsBlock__text}>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
-								</div>
-							</div>
-							<div className={classes.newsBlock__pic}>
-								{/* <ExportedImage stc='' alt=''></ExportedImage> */}
-							</div>
-						</div>
-					</div>
-					<div className={classes.newsBlock__separator}></div>
-				</div>
-				<div className={classes.newsBlock__flex}>
-					<div className={classes.newsBlock__separator}></div>
-					<div className={classes.newsBlock}>
-						<div className={classes.newsBlock__row}>
-							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
-								</div>
-								<div className={classes.newsBlock__text}>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
-								</div>
-							</div>
-							<div className={classes.newsBlock__pic}>
-								{/* <ExportedImage stc='' alt=''></ExportedImage> */}
-							</div>
-						</div>
-					</div>
-					<div className={classes.newsBlock__separator}></div>
-				</div>
-				<div className={classes.newsBlock__flex}>
-					<div className={classes.newsBlock__separator}></div>
-					<div className={classes.newsBlock}>
-						<div className={classes.newsBlock__row}>
-							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title}>
-									Заголовок
+								<div className={classes.newsBlock__title_block}>
+									<div className={classes.newsBlock__title}>
+										Заголовок
+									</div>
+									<div className={classes.newsBlock__date}>
+										00/00/0000
+									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
