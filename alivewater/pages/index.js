@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { Layout } from '../components/Layout';
 import classes from '../styles/index.module.scss'
 import { motion } from 'framer-motion';
-// import ExportedImage from "next-image-export-optimizer";
 import Image from 'next/image';
 import Link from 'next/link';
 import News from '../components/New';
