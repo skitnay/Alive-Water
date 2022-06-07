@@ -1,28 +1,20 @@
 {
   "name": "alivewater",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3",
-    "2gis-maps": "^3.7.1",
-    "2gis-maps-react": "^0.0.4",
-    "babel-runtime": "^6.26.0",
     "framer-motion": "^6.3.6",
     "next": "12.1.6",
     "next-image-export-optimizer": "^0.10.1",
     "next-optimized-images": "^2.6.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-player": "^2.10.1",
-    "react-scripts": "^5.0.1",
-    "react-yandex-metrika": "^2.6.0",
     "sass": "^1.52.1"
   },
   "devDependencies": {
