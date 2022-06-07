@@ -15,18 +15,18 @@ $blue: #263C5C;
 .firstSection {
 	&__block {
 		position: relative;
+		min-height: 554.23px;
+		@media (max-width: 1200px) {
+			min-height: 400px;
+		}
 		img {
 			object-fit:cover;
 			pointer-events: none;
-			// transition: 2s;
 
 			@media (max-width: 716px) {
 				min-width: 750px;
-				filter: brightness(1);
-				// filter: saturate(80%);
 				object-fit: cover;
 				object-position: right;
-				// transition: 2s;
 			}
 		}
 	}
@@ -174,9 +174,14 @@ $blue: #263C5C;
 		margin-left: 10px;
 	}
 	&__text{
-		// text-align: center;
 		max-width: 700px;
 		font-size: 20px;
+		a {
+			color:#7BB72D;
+			&:visited {
+				color:#7BB72D;
+			}
+		}
 		@media (max-width: 765px) {
 			font-size: 16px;
 		}

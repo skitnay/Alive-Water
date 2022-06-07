@@ -3,6 +3,7 @@ import Head from 'next/dist/shared/lib/head';
 import classes from '../styles/index.module.scss';
 import { motion } from 'framer-motion';
 import ExportedImage from "next-image-export-optimizer";
+import News from '../components/New';
 
 
 export default function About() {
@@ -32,6 +33,7 @@ export default function About() {
 					duration: 0.8,
 					type: 'linear'
 				}}>
+				<News />
 				<div className={classes.newsBlock__flex}>
 					<div className={classes.newsBlock__separator}></div>
 					<div className={classes.newsBlock}>

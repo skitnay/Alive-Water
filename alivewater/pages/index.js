@@ -4,18 +4,19 @@ import classes from '../styles/index.module.scss'
 import { motion } from 'framer-motion';
 import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
+import News from '../components/New';
 
 export default function index() {
 	return (
 		<Layout>
 			<Head>
-				<title>Главная</title>
+				<title>Живая вода Новосибирск</title>
 			</Head>
 			<section className={classes.firstSection}>
 				<div className={classes.firstSection__block}>
-					<ExportedImage src='/bg.jpg' width={1180} height={600} />
+					<ExportedImage src='/bg.jpg' width={1180} height={600} priority/>
 					<div className={classes.firstSection__index}>
-						<motion.div
+						<motion.h1
 							className={classes.firstSection__title}
 							initial="hidden"
 							animate="enter"
@@ -25,7 +26,7 @@ export default function index() {
 								duration: 0.5,
 								type: 'linear',
 							}}
-						>Живая Вода</motion.div>
+						>Живая Вода</motion.h1>
 						<motion.div
 							className={classes.firstSection__miniTitle}
 							initial="hidden"
@@ -55,32 +56,7 @@ export default function index() {
 				<div className={classes.title}>
 					Новости
 				</div>
-				<div className={classes.newsBlock__flex}>
-					<div className={classes.newsBlock__separator}></div>
-					<div className={classes.newsBlock}>
-						<div className={classes.newsBlock__row}>
-							<div className={classes.newsBlock__news}>
-								<div className={classes.newsBlock__title_block}>
-									<div className={classes.newsBlock__title}>
-										Подорожание бутилированной воды в магазинах
-									</div>
-									<div className={classes.newsBlock__date}>
-										20/03/2022
-									</div>
-								</div>
-								<div className={classes.newsBlock__text}>
-									В магазинах на 7 марта 2022 года стоимость негазированной воды объемом 1,5 литра повысилась на 17 рублей. Кроме того, с декабря по март на 60 рублей подорожали бутыли объемом 18,9 л, которые обычно заказывают в офис. По словам руководителей предприятий, сама вода не подорожала, однако стоимость сырья – пластика, упаковки, крышек, полиэтилена – за месяц подскочила на 70%.
-
-									Мы предлагаем не платить за упаковку - покупать только чистую воду, а не бутылки!
-								</div>
-							</div>
-							<div className={classes.newsBlock__pic}>
-								<ExportedImage src='/photo_2022-06-06_18-29-40.jpg' alt='' width={343} height={190}></ExportedImage>
-							</div>
-						</div>
-					</div>
-					<div className={classes.newsBlock__separator}></div>
-				</div>
+				<News />
 				<div className={classes.newsSection__button_2}>
 					<Link href="/news">
 						<div className={classes.newsSection__button}>
@@ -259,7 +235,7 @@ export default function index() {
 							<ExportedImage src='/bottle.png' width={208} height={208} />
 						</div>
 						<div className={classes.price__flex_title}>
-							1 ЛИТР - <p>3 РУБЛЯ</p>
+							1 ЛИТР - <p>4 РУБЛЯ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							На тренеровку или прогулку
@@ -270,7 +246,7 @@ export default function index() {
 							<ExportedImage src='/bottle2.png' width={208} height={208} />
 						</div>
 						<div className={classes.price__flex_title}>
-							5 ЛИТРОВ - <p>15 РУБЛЕЙ</p>
+							5 ЛИТРОВ - <p>20 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							В дорогу или на пикник
@@ -281,7 +257,7 @@ export default function index() {
 							<ExportedImage src='/bottle3.png' width={208} height={208} />
 						</div>
 						<div className={classes.price__flex_title}>
-							19 ЛИТРОВ - <p>57 РУБЛЕЙ</p>
+							19 ЛИТРОВ - <p>76 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							Домой или в офис

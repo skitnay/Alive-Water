@@ -59,7 +59,7 @@ export default function contacts() {
 				</div>
 			</motion.div>
 		</section>
-		<motion.section className={classes.about}
+		{/* <motion.section className={classes.about}
 			initial="hidden"
 			animate="enter"
 			exit="exit"
@@ -92,7 +92,7 @@ export default function contacts() {
 						а не бутылки!</span>
 				</div>
 			</div>
-		</motion.section>
+		</motion.section> */}
 		<section className={classes.map}>
 			<div className={classes.title}>
 				Наши водоматы
