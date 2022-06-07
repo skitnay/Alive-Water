@@ -2,8 +2,7 @@ import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 import classes from '../styles/index.module.scss';
 import { motion } from 'framer-motion';
-// import ExportedImage from "next-image-export-optimizer";
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function waterpumps() {
 	return (
@@ -45,36 +44,36 @@ export default function waterpumps() {
 				<div className={classes.cleaner__degree}>
 					<div className={classes.cleaner__degree_flex}>
 						<div>
-							<Image src='/First.svg' width={95} height={88} alt=''/>
+							<ExportedImage src='/First.svg' width={95} height={88} alt=''/>
 						</div>
 						<div>
-							<Image src='/Second.svg' width={84} height={109} alt=''/>
+							<ExportedImage src='/Second.svg' width={84} height={109} alt=''/>
 						</div>
 						<div>
-							<Image src='/Third.svg' width={106} height={109} alt=''/>
+							<ExportedImage src='/Third.svg' width={106} height={109} alt=''/>
 						</div>
 						<div>
-							<Image src='/Four.svg' width={84} height={89} alt=''/>
+							<ExportedImage src='/Four.svg' width={84} height={89} alt=''/>
 						</div>
 						<div>
-							<Image src='/Five.svg' width={113} height={91} alt=''/>
+							<ExportedImage src='/Five.svg' width={113} height={91} alt=''/>
 						</div>
 					</div>
 					<div className={classes.cleaner__degree_flex}>
 						<div>
-							<Image src='/Six.svg' width={85} height={93} alt=''/>
+							<ExportedImage src='/Six.svg' width={85} height={93} alt=''/>
 						</div>
 						<div>
-							<Image src='/Seven.svg' width={84} height={91} alt=''/>
+							<ExportedImage src='/Seven.svg' width={84} height={91} alt=''/>
 						</div>
 						<div>
-							<Image src='/Eight.svg' width={100} height={112} alt=''/>
+							<ExportedImage src='/Eight.svg' width={100} height={112} alt=''/>
 						</div>
 						<div>
-							<Image src='/Nine.svg' width={120} height={103} alt=''/>
+							<ExportedImage src='/Nine.svg' width={120} height={103} alt=''/>
 						</div>
 						<div>
-							<Image src='/Ten.svg' width={88} height={98} alt=''/>
+							<ExportedImage src='/Ten.svg' width={88} height={98} alt=''/>
 						</div>
 					</div>
 				</div>
@@ -86,7 +85,7 @@ export default function waterpumps() {
 				<div className={classes.waterpumps__content}>
 					<div className={classes.waterpumps__flex}>
 						<div className={classes.waterpumps__pic}>
-							<Image src="/500.png" width={449} height={319} alt=''/>
+							<ExportedImage src="/500.png" width={449} height={319} alt=''/>
 						</div>
 						<div className={classes.waterpumps__text}>
 							«Живая вода» – это надёжные автоматы питьевой воды, которые могут устанавливаться как на улице, так и в помещении.
@@ -101,7 +100,7 @@ export default function waterpumps() {
 							Низкий уровень минералов в воде ежедневного потребления приносит пользу здоровью, поскольку не увеличивает угрозу сердечно-сосудистых заболеваний (кальцификация сосудов), заболеваний пищеварительной, выделительной системы (камни в почках, желчном пузыре) и т.п.
 						</div>
 						<div className={classes.waterpumps__pic}>
-							<Image src='/400.png' width={350} height={350} alt=''/>
+							<ExportedImage src='/400.png' width={350} height={350} alt=''/>
 						</div>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 import classes from '../styles/index.module.scss';
-import Image from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/dist/client/link';
 import { motion } from 'framer-motion';
 
@@ -35,16 +35,16 @@ export default function contacts() {
 					<div className={classes.contacts__title}>Мы в</div>
 					<div className={classes.contacts__social}>
 						<div className={classes.contacts__vk}>
-							<Link href="https://vk.com/alivewaternsk"><a target="_blank"><Image src='/vk.png' width={45} height={45} alt=''/></a></Link>
+							<Link href="https://vk.com/alivewaternsk"><a target="_blank"><ExportedImage src='/vk.png' width={45} height={45} alt='' /></a></Link>
 						</div>
 						<div className={classes.contacts__od}>
-							<Link href="https://ok.ru/profile/580408735701"><a target="_blank"><Image src='/od.png' width={45} height={45} alt=''/></a></Link>
+							<Link href="https://ok.ru/profile/580408735701"><a target="_blank"><ExportedImage src='/od.png' width={45} height={45} alt='' /></a></Link>
 						</div>
 						<div className={classes.contacts__wa}>
-							<Link href="https://wa.me/79134531010"><a target="_blank"><Image src='/wa.png' width={45} height={45} alt=''/></a></Link>
+							<Link href="https://wa.me/79134531010"><a target="_blank"><ExportedImage src='/wa.png' width={45} height={45} alt='' /></a></Link>
 						</div>
 						<div className={classes.contacts__2gis}>
-							<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><Image src='/2gis.png' width={100} height={45} alt=''/></a></Link>
+							<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><ExportedImage src='/2gis.png' width={100} height={45} alt='' /></a></Link>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@ export default function contacts() {
 			</div>
 			<div className={classes.about__content}>
 				<div className={classes.about__pic}>
-					<Image src="/recycle.png" width={448} height={422} alt="" />
+					<ExportedExportedImage src="/recycle.png" width={448} height={422} alt="" />
 				</div>
 				<div className={classes.about__text}>
 					<p>
@@ -99,7 +99,7 @@ export default function contacts() {
 			</div>
 			<div className={classes.map__content}>
 				<div className={classes.map__map}>
-					<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><Image src='/map.png' width={1400} height={1146} /></a></Link>
+					<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><ExportedImage src='/map.png' width={1400} height={1146} /></a></Link>
 				</div>
 				<div>
 					<div className={classes.title}>

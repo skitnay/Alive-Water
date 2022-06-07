@@ -2,8 +2,7 @@ import { Layout } from '../components/Layout';
 import Head from 'next/dist/shared/lib/head';
 import classes from '../styles/index.module.scss';
 import { motion } from 'framer-motion';
-// import Image from "next-image-export-optimizer";
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import News from '../components/New';
 
 
@@ -55,7 +54,7 @@ export default function About() {
 								</div>
 							</div>
 							<div className={classes.newsBlock__pic}>
-								<Image src='/photo_2022-06-06_18-29-40.jpg' alt='' width={343} height={190}></Image>
+								<ExportedImage src='/photo_2022-06-06_18-29-40.jpg' alt='' width={343} height={190}></ExportedImage>
 							</div>
 						</div>
 					</div>
@@ -81,7 +80,7 @@ export default function About() {
 								</div>
 							</div>
 							<div className={classes.newsBlock__pic}>
-								<Image src='/waterp.jpg' alt='' width={343} height={190}></Image>
+								<ExportedImage src='/waterp.jpg' alt='' width={343} height={190}></ExportedImage>
 							</div>
 						</div>
 					</div>
@@ -105,7 +104,7 @@ export default function About() {
 								</div>
 							</div>
 							<div className={classes.newsBlock__pic}>
-								<Image src='/e5541be6897f6aa20ec5420d93a7826b.jpg' alt='' width={343} height={190}></Image>
+								<ExportedImage src='/e5541be6897f6aa20ec5420d93a7826b.jpg' alt='' width={343} height={190}></ExportedImage>
 							</div>
 						</div>
 					</div>
