@@ -21,4 +21,5 @@ module.exports = {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
   },
+  
 };
