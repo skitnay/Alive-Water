@@ -1,7 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { YMInitializer } from 'react-yandex-metrika';
-import { Initializer as YM } from 'react-yandex-metrika';
-
 
 export default function Document() {
 	return (

@@ -62,18 +62,20 @@ export default function index() {
 							<div className={classes.newsBlock__news}>
 								<div className={classes.newsBlock__title_block}>
 									<div className={classes.newsBlock__title}>
-										Заголовок
+										Подорожание бутилированной воды в магазинах
 									</div>
 									<div className={classes.newsBlock__date}>
-										05/06/2022
+										20/03/2022
 									</div>
 								</div>
 								<div className={classes.newsBlock__text}>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos ipsum minima excepturi enim nam eveniet porro magni dolorem libero, officia, quaerat cumque suscipit praesentium architecto minus maiores fuga et?
+									В магазинах на 7 марта 2022 года стоимость негазированной воды объемом 1,5 литра повысилась на 17 рублей. Кроме того, с декабря по март на 60 рублей подорожали бутыли объемом 18,9 л, которые обычно заказывают в офис. По словам руководителей предприятий, сама вода не подорожала, однако стоимость сырья – пластика, упаковки, крышек, полиэтилена – за месяц подскочила на 70%.
+
+									Мы предлагаем не платить за упаковку - покупать только чистую воду, а не бутылки!
 								</div>
 							</div>
 							<div className={classes.newsBlock__pic}>
-								{/* <ExportedImage stc='' alt=''></ExportedImage> */}
+								<ExportedImage src='/photo_2022-06-06_18-29-40.jpg' alt='' width={343} height={190}></ExportedImage>
 							</div>
 						</div>
 					</div>
