@@ -10,7 +10,7 @@ export default function Document() {
 				<link rel="shortcut icon" href="/static/favicon.ico" />
 				<link rel="shortcut icon" href="/static/favicon.png" />
 				<meta name="theme-color" content="#263c5c" />
-				<meta charset="UTF-8" />
+				<meta charSet="UTF-8" />
 				<meta name="format-detection" content="telephone=no" />
 				<meta name="google-site-verification" content="gMuzE89aJAghIlUGo0fbZ0PECVkSjj0FvKx3lDteqmM" />
 				<meta name="robots" />

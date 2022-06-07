@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { Layout } from '../components/Layout';
 import classes from '../styles/index.module.scss'
 import { motion } from 'framer-motion';
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
+import Image from 'next/image';
 import Link from 'next/link';
 import News from '../components/New';
 
@@ -14,7 +15,7 @@ export default function index() {
 			</Head>
 			<section className={classes.firstSection}>
 				<div className={classes.firstSection__block}>
-					<ExportedImage src='/bg.jpg' width={1180} height={600} priority/>
+					<Image src="/bg.jpg" width={1180} height={600} priority alt='background'/>
 					<div className={classes.firstSection__index}>
 						<motion.h1
 							className={classes.firstSection__title}
@@ -169,7 +170,7 @@ export default function index() {
 								</div>
 							</div>
 							<div className={classes.advantage__card_pic}>
-								<ExportedImage src='/badge.png' width={103} height={100} />
+								<Image src='/badge.png' width={103} height={100} alt="badge" />
 							</div>
 						</div>
 						<div className={classes.advantage__card}>
@@ -183,7 +184,7 @@ export default function index() {
 								</div>
 							</div>
 							<div className={classes.advantage__card_pic}>
-								<ExportedImage src='/ruble.png' width={103} height={100} />
+								<Image src='/ruble.png' width={103} height={100} alt="badge"/>
 							</div>
 						</div>
 					</div>
@@ -199,7 +200,7 @@ export default function index() {
 								</div>
 							</div>
 							<div className={classes.advantage__card_pic}>
-								<ExportedImage src='/forest.png' width={103} height={100} />
+								<Image src='/forest.png' width={103} height={100} alt="badge"/>
 							</div>
 						</div>
 						<div className={classes.advantage__card}>
@@ -215,7 +216,7 @@ export default function index() {
 								</div>
 							</div>
 							<div className={classes.advantage__card_pic}>
-								<ExportedImage src='/clock.png' width={100} height={100} />
+								<Image src='/clock.png' width={100} height={100} alt="badge"/>
 							</div>
 						</div>
 					</div>
@@ -232,7 +233,7 @@ export default function index() {
 				<div className={classes.price__content}>
 					<div className={classes.price__flex}>
 						<div className={classes.price__flex_pic}>
-							<ExportedImage src='/bottle.png' width={208} height={208} />
+							<Image src='/bottle.png' width={208} height={208} alt="badge"/>
 						</div>
 						<div className={classes.price__flex_title}>
 							1 ЛИТР - <p>4 РУБЛЯ</p>
@@ -243,7 +244,7 @@ export default function index() {
 					</div>
 					<div className={classes.price__flex}>
 						<div className={classes.price__flex_pic}>
-							<ExportedImage src='/bottle2.png' width={208} height={208} />
+							<Image src='/bottle2.png' width={208} height={208} alt="badge"/>
 						</div>
 						<div className={classes.price__flex_title}>
 							5 ЛИТРОВ - <p>20 РУБЛЕЙ</p>
@@ -254,7 +255,7 @@ export default function index() {
 					</div>
 					<div className={classes.price__flex}>
 						<div className={classes.price__flex_pic}>
-							<ExportedImage src='/bottle3.png' width={208} height={208} />
+							<Image src='/bottle3.png' width={208} height={208} alt="badge"/>
 						</div>
 						<div className={classes.price__flex_title}>
 							19 ЛИТРОВ - <p>76 РУБЛЕЙ</p>
