@@ -1,6 +1,6 @@
-import classes from '../styles/index.module.scss'
-import ExportedImage from "next-image-export-optimizer";
+import classes from '../styles/index.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function News() {
 	return <>
@@ -19,11 +19,11 @@ export default function News() {
 						</div>
 						<div className={classes.newsBlock__text}>
 							Теперь все наши автоматы Живой Воды могут принимать оплату по qr-коду. Вам не обязательно иметь с собой физическую карту или мучиться со сдачей-мелочью.
-							А ещё, можно сразу указать всю сумму, на которую Вы планируете набрать воду! Подробнее о том, как платить по qr-коду можно посмотреть в разделе <Link  href="/waterpumps"><a>«Водоматы»</a></Link>.
+							А ещё, можно сразу указать всю сумму, на которую Вы планируете набрать воду! Подробнее о том, как платить по qr-коду можно посмотреть в разделе <Link href="/waterpumps"><a>«Водоматы»</a></Link>.
 						</div>
 					</div>
 					<div className={classes.newsBlock__pic}>
-						<ExportedImage src='/qr-code.jpg' alt='' width={343} height={190}></ExportedImage>
+						<Image src='/qr-code.jpg' alt='' placeholder='blur' blurDataURL priority='true' lazyBoundary='400px' width={343} height={190}></Image>
 					</div>
 				</div>
 			</div>
@@ -31,3 +31,5 @@ export default function News() {
 		</div>
 	</>
 }
+
+

@@ -14,7 +14,7 @@ export default function index() {
 			</Head>
 			<section className={classes.firstSection}>
 				<div className={classes.firstSection__block}>
-					<Image src="/bg.jpg" width={1180} height={600} priority alt='background'/>
+					<Image src="/bg.jpg" placeholder='blur' blurDataURL width={1180} height={600} priority={true} alt='background'/>
 					<div className={classes.firstSection__index}>
 						<motion.h1
 							className={classes.firstSection__title}

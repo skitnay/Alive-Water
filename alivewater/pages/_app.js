@@ -8,10 +8,15 @@ export default function MyApp({ Component, pageProps, router }) {
 
 	return (
 		<>
-			<Header />
 			<AnimatePresence
 				exitBeforeEnter
-				initial={false}
+				initial={true}
+				onExitComplete={() => window.scrollTo(0, 0)}
+			><Header />
+			</AnimatePresence>
+			<AnimatePresence
+				exitBeforeEnter
+				initial={true}
 				onExitComplete={() => window.scrollTo(0, 0)}>
 				<Component {...pageProps} canonical={url} key={url} />
 			</AnimatePresence>
