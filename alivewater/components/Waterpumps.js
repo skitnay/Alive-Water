@@ -29,7 +29,7 @@ export default function Map() {
 					<div>
 						<div className={classes.title}>Адреса</div>
 						<div className={classes.map__flex}>
-							<div href="https://go.2gis.com/bag0n" className={classes.map__adress}>
+							<div className={classes.map__adress}>
 								<div className={classes.map__title}>
 									Большая, (582/2)
 								</div>
