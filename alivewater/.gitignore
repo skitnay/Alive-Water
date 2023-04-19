@@ -15,6 +15,11 @@
 # production
 /build
 /public/nextImageExportOptimizer
+/public/images/staff/nextImageExportOptimizer
+/public/images/news/nextImageExportOptimizer
+/public/images/logo/nextImageExportOptimizer
+/public/images/icons/nextImageExportOptimizer
+/public/images/backgrounds/nextImageExportOptimizer
 
 # misc
 .DS_Store

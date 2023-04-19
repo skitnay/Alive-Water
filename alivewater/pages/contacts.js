@@ -1,65 +1,144 @@
-import { Layout } from '../components/Layout';
-import Head from 'next/dist/shared/lib/head';
-import classes from '../styles/index.module.scss';
-import Image from "next-image-export-optimizer";
-import Link from 'next/dist/client/link';
-import { motion } from 'framer-motion';
+import { Layout } from "../components/Layout";
+import Head from "next/dist/shared/lib/head";
+import classes from "../styles/index.module.scss";
+import Image from "next/image";
+import Link from "next/dist/client/link";
+import { motion } from "framer-motion";
+import Map from "../components/Waterpumps";
+
+const myLoader = ({ src, width, quality }) => {
+	return `/images/${src}?w=${width}&q=${quality || 75}`;
+};
 
 export default function contacts() {
-	return <Layout>
-		<Head>
-			<title>Контакты</title>
-		</Head>
-		<section className={classes.about}>
-			<motion.div className={classes.title}
-				initial="hidden"
-				animate="enter"
-				exit="exit"
-				variants={variants2}
-				transition={{
-					duration: 0.5,
-					type: 'linear'
-				}}>
-				Контакты
-			</motion.div>
-			<motion.div className={classes.contacts__content}
-				initial="hidden"
-				animate="enter"
-				exit="exit"
-				variants={variants}
-				transition={{
-					duration: 0.8,
-					type: 'linear'
-				}}>
-				<div className={classes.contacts__contact}>
-					<div className={classes.contacts__title}>Мы в</div>
-					<div className={classes.contacts__social}>
-						<div className={classes.contacts__vk}>
-							<Link href="https://vk.com/alivewaternsk"><a target="_blank"><Image src='/vk.png' width={45} height={45} alt=''/></a></Link>
-						</div>
-						<div className={classes.contacts__od}>
-							<Link href="https://ok.ru/profile/580408735701"><a target="_blank"><Image src='/od.png' width={45} height={45} alt=''/></a></Link>
-						</div>
-						<div className={classes.contacts__wa}>
-							<Link href="https://wa.me/79134531010"><a target="_blank"><Image src='/wa.png' width={45} height={45} alt=''/></a></Link>
-						</div>
-						<div className={classes.contacts__2gis}>
-							<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><Image src='/2gis.png' width={100} height={45} alt=''/></a></Link>
+	return (
+		<Layout>
+			<Head>
+				<title>Контакты</title>
+			</Head>
+			<section className={classes.about}>
+				<motion.div
+					className={classes.title}
+					initial="hidden"
+					animate="enter"
+					variants={variants2}
+					transition={{
+						duration: 1,
+						type: "spring",
+						bounce: 0.4,
+					}}
+				>
+					Контакты
+				</motion.div>
+				<motion.div
+					className={classes.contacts__content}
+					initial="hidden"
+					animate="enter"
+					variants={variants}
+					transition={{
+						duration: 1.3,
+						type: "spring",
+						bounce: 0.5,
+					}}
+				>
+					<div className={classes.contacts__contact}>
+						<div className={classes.contacts__title}>Мы в</div>
+						<div className={classes.contacts__social}>
+							<div className={classes.contacts__vk}>
+								<Link href="https://vk.com/alivewaternsk">
+									<a target="_blank">
+										<Image
+										loader={myLoader}
+											src="icons/vk.png"
+											width={45}
+											height={45}
+											alt="Vkontakte icon"
+											priority
+										/>
+									</a>
+								</Link>
+							</div>
+							<div className={classes.contacts__od}>
+								<Link href="https://ok.ru/profile/580408735701">
+									<a target="_blank">
+										<Image
+											loader={myLoader}
+											src="icons/od.png"
+											width={45}
+											height={45}
+											alt="Odnaklasniki icon"
+											priority
+										/>
+									</a>
+								</Link>
+							</div>
+							<div className={classes.contacts__wa}>
+								<Link href="https://wa.me/79134531010">
+									<a target="_blank">
+										<Image
+											loader={myLoader}
+											src="icons/wa.png"
+											width={45}
+											height={45}
+											alt="What's App icon"
+											priority
+										/>
+									</a>
+								</Link>
+							</div>
+							<div className={classes.contacts__2gis}>
+								<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68">
+									<a target="_blank">
+										<Image
+											loader={myLoader}
+											src="icons/2gis.png"
+											width={100}
+											height={45}
+											alt="2gis icon"
+											priority
+										/>
+									</a>
+								</Link>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className={classes.contacts__contact}>
-					<div className={classes.contacts__title}>
-						Телефон </div><p><Link href="tel:+7-913-453-10-10"><a>
-							+7-913-453-10-10</a></Link></p>
-				</div>
-				<div className={classes.contacts__contact}>
-					<div className={classes.contacts__title}>
-						Email </div><p><Link href="mailto:novosibirsk@alivewater54.ru"><a>novosibirsk@alivewater54.ru</a></Link></p>
-				</div>
-			</motion.div>
-		</section>
-		{/* <motion.section className={classes.about}
+					<div className={classes.contacts__contact}>
+						<div className={classes.contacts__title}>Телефон </div>
+						<p>
+							<Link href="tel:+79537641000">
+								<a>+7 (953) 764-10-00</a>
+							</Link>
+						</p>
+					</div>
+					<div className={classes.contacts__contact}>
+						<div className={classes.contacts__title}>Email </div>
+						<p>
+							<Link href="mailto:zhivaya@voda54.ru">
+								<a>zhivaya@voda54.ru</a>
+							</Link>
+						</p>
+					</div>
+					<Map />
+				</motion.div>
+			</section>
+		</Layout>
+	);
+}
+
+const variants = {
+	hidden: { opacity: 0, x: 0, y: 100 },
+	enter: { opacity: 1, x: 0, y: 0 },
+	exit: { opacity: 0, x: 200, y: 0 },
+};
+
+const variants2 = {
+	hidden: { opacity: 0, x: -50, y: 0 },
+	enter: { opacity: 1, x: 0, y: 0 },
+	exit: { opacity: 0, x: 100, y: 0 },
+};
+
+{
+	/* <motion.section className={classes.about}
 			initial="hidden"
 			animate="enter"
 			exit="exit"
@@ -92,107 +171,5 @@ export default function contacts() {
 						а не бутылки!</span>
 				</div>
 			</div>
-		</motion.section> */}
-		<section className={classes.map}>
-			<div className={classes.title}>
-				Наши водоматы
-			</div>
-			<div className={classes.map__content}>
-				<div className={classes.map__map}>
-					<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68"><a target="_blank"><Image src='/map.png' width={1400} height={1146} /></a></Link>
-				</div>
-				<div>
-					<div className={classes.title}>
-						Адреса
-					</div>
-					<div className={classes.map__flex}>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Большая, (582/2)
-							</div>
-							<div className={classes.map__subtitle}>
-								Ленинский район, Новосибирск
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Микрорайон Олимпийской Славы, 1
-							</div>
-							<div className={classes.map__subtitle}>
-								с. Каменка
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Микрорайон, 2
-							</div>
-							<div className={classes.map__subtitle}>
-								с. Криводановка
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Согласия, 4
-							</div>
-							<div className={classes.map__subtitle}>
-								пос. Октябрьский, Мошковский район
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Есенина, 28
-							</div>
-							<div className={classes.map__subtitle}>
-								с. Прокудское, Коченевский район
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Октябрьская, 7 к1
-							</div>
-							<div className={classes.map__subtitle}>
-								пос. Октябрьский, Мошковский район
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Локтинская, 14
-							</div>
-							<div className={classes.map__subtitle}>
-								пос. Октябрьский, Мошковский район
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Центральная, 21
-							</div>
-							<div className={classes.map__subtitle}>
-								пос. Барлакский, Мошковский район
-							</div>
-						</div>
-						<div className={classes.map__adress}>
-							<div className={classes.map__title}>
-								Проспект Ленина, 2
-							</div>
-							<div className={classes.map__subtitle}>
-								рп. Ордынское, Ордынский район
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</Layout>
-}
-
-const variants = {
-	hidden: { opacity: 0, x: 0, y: 100 },
-	enter: { opacity: 1, x: 0, y: 0 },
-	exit: { opacity: 0, x: 200, y: 0 },
-}
-
-const variants2 = {
-	hidden: { opacity: 0, x: -50, y: 0 },
-	enter: { opacity: 1, x: 0, y: 0 },
-	exit: { opacity: 0, x: 100, y: 0 },
+		</motion.section> */
 }
