@@ -21,6 +21,7 @@ export function Footer() {
 										width="480"
 										height="506"
 										alt="logo"
+										
 									/>
 								</div>
 								<div className={classes.fSection__drop}>
