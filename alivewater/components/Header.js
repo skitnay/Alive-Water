@@ -32,6 +32,7 @@ export function Header() {
 										height="14"
 										alt="logo2"
 										priority
+										
 									/>
 								</div>
 							</div>
