@@ -29,14 +29,14 @@ export default function Map() {
 					<div>
 						<div className={classes.title}>Адреса</div>
 						<div className={classes.map__flex}>
-							<a href="https://go.2gis.com/bag0n" className={classes.map__adress}>
+							<div className={classes.map__adress}>
 								<div className={classes.map__title}>
 									Большая, (582/2)
 								</div>
 								<div className={classes.map__subtitle}>
 									Ленинский район, Новосибирск
 								</div>
-							</a>
+							</div>
 							<div className={classes.map__adress}>
 								<div className={classes.map__title}>
 									Микрорайон Олимпийской Славы, 1
