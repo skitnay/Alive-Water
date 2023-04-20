@@ -8,6 +8,17 @@ const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;
 };
 
+const icon = () => <>
+	<Image
+		loader={myLoader}
+		src="icons/pdf.webp"
+		width={60}
+		height={60}
+		alt="pdf"
+		priority
+	/>
+</>
+
 export default function analyzes() {
 	return (
 		<Layout>
@@ -50,14 +61,7 @@ export default function analyzes() {
 						</div>
 						<div className={classes.analyzes__subtitle}>с. Каменка</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Olymp1.pdf"
@@ -81,14 +85,7 @@ export default function analyzes() {
 							с. Криводановка
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Microraion2.pdf"
@@ -112,14 +109,7 @@ export default function analyzes() {
 							пос. Октябрьский
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Soglasiya4.pdf"
@@ -143,14 +133,7 @@ export default function analyzes() {
 							с. Прокудское, Коченевский район
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/prokudskoe.pdf"
@@ -174,14 +157,7 @@ export default function analyzes() {
 							г. Новосибирск
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Bolshaya.pdf"
@@ -207,14 +183,7 @@ export default function analyzes() {
 							р. п. Ордынское
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Lenina28.pdf"
@@ -238,14 +207,7 @@ export default function analyzes() {
 							п. Октябрьский
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Loktinskaya.pdf"
@@ -269,14 +231,7 @@ export default function analyzes() {
 							с. Криводановка
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Revolucii.pdf"
@@ -300,14 +255,7 @@ export default function analyzes() {
 							р.п. Ордынское
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Sadovaya28.pdf"
@@ -331,14 +279,7 @@ export default function analyzes() {
 							п. Барланский
 						</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Centralnaya.pdf"
@@ -362,14 +303,7 @@ export default function analyzes() {
 						</div>
 						<div className={classes.analyzes__subtitle}>мкр. ОбьГэс</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/sofiyskaya.pdf"
@@ -393,14 +327,7 @@ export default function analyzes() {
 						</div>
 						<div className={classes.analyzes__subtitle}>мкр. ОбьГэс</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/gidromontagnaya.pdf"
@@ -422,14 +349,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__title}>ул. Новая, 17/1</div>
 						<div className={classes.analyzes__subtitle}>с. Верх-Тула</div>
 						<div className={classes.analyzes__icon_menu}>
-							<Image
-								loader={myLoader}
-								src="icons/pdf.webp"
-								width={60}
-								height={60}
-								alt="pdf"
-								priority
-							/>
+							{icon()}
 							<div>
 								<a
 									href="/files/Centralnaya.pdf"
