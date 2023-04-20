@@ -69,7 +69,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/og.jpg"
+										src="news/og.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -109,7 +109,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/qr-code.jpg"
+										src="news/qr-code.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -148,7 +148,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/photo_2022-06-06_18-29-40.jpg"
+										src="news/photo_2022-06-06_18-29-40.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -186,7 +186,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/waterp.jpg"
+										src="news/waterp.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -225,7 +225,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/e5541be6897f6aa20ec5420d93a7826b.jpg"
+										src="news/e5541be6897f6aa20ec5420d93a7826b.webp"
 										alt=""
 										width={343}
 										height={190}

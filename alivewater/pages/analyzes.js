@@ -52,7 +52,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -83,7 +83,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -114,7 +114,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -145,7 +145,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -176,7 +176,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -209,7 +209,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -240,7 +240,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -271,7 +271,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -302,7 +302,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -333,7 +333,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -364,7 +364,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -395,7 +395,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -424,7 +424,7 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							<Image
 								loader={myLoader}
-								src="icons/pdf.png"
+								src="icons/pdf.webp"
 								width={60}
 								height={60}
 								alt="pdf"
@@ -456,7 +456,7 @@ export default function analyzes() {
 					<div className={classes.analyzes__icon_menu}>
 						<Image
 							loader={myLoader}
-							src="icons/pdf.png"
+							src="icons/pdf.webp"
 							width={60}
 							height={60}
 							alt="pdf"

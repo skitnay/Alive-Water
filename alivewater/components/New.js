@@ -37,7 +37,7 @@ export default function News() {
 						<div className={classes.newsBlock__pic}>
 							<Image
 								loader={myLoader}
-								src="news/nl.jpg"
+								src="news/nl.webp"
 								alt=""
 								width={343}
 								height={190}

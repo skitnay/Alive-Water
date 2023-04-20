@@ -56,7 +56,7 @@ export default function waterpumps() {
 										style={{ width: "500px", height: "280px" }}
 										controls
 										muted
-										poster="/images/logo/logo3.png"
+										poster="/images/logo/logo3.webp"
 									>
 										<source src="/video/IMG_2093.MOV" />
 									</video>
@@ -76,7 +76,7 @@ export default function waterpumps() {
 											style={{ width: "300px", height: "400px" }}
 											controls
 											muted
-											poster="./images/logo/logo3.png"
+											poster="./images/logo/logo3.webp"
 										>
 											<source src="/video/IMG_4730.MP4" />
 										</video>
@@ -113,7 +113,7 @@ export default function waterpumps() {
 								<div className={classes.waterpumps__pic}>
 									<Image
 										loader={myLoader}
-										src="/staff/500.png"
+										src="/staff/500.webp"
 										width={449}
 										height={370}
 										alt=""
@@ -148,7 +148,7 @@ export default function waterpumps() {
 								<div className={classes.waterpumps__pic}>
 									<Image
 										loader={myLoader}
-										src="staff/400.jpg"
+										src="staff/400.webp"
 										width={200}
 										height={350}
 										alt=""
@@ -173,7 +173,7 @@ export default function waterpumps() {
 									<video
 										style={{ width: "500px", height: "281px" }}
 										controls
-										poster="/images/logo/logo3.png"
+										poster="/images/logo/logo3.webp"
 									>
 										<source src="/video/IMG_4961.mov" />
 									</video>

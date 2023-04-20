@@ -18,7 +18,7 @@ export function Header() {
 							<div className={classes.logo__icon}>
 								<Image
 									loader={myLoader}
-									src="logo/logo22.png"
+									src="logo/logo22.webp"
 									width="480"
 									height="506"
 									alt="logo"
@@ -27,7 +27,7 @@ export function Header() {
 								<div className={classes.logo__icon_mini}>
 									<Image
 										loader={myLoader}
-										src="logo/kapl.png"
+										src="logo/kapl.webp"
 										width="12"
 										height="14"
 										alt="logo2"

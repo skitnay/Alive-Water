@@ -49,7 +49,7 @@ export default function contacts() {
 									<a target="_blank">
 										<Image
 										loader={myLoader}
-											src="icons/vk.png"
+											src="icons/vk.webp"
 											width={45}
 											height={45}
 											alt="Vkontakte icon"
@@ -63,7 +63,7 @@ export default function contacts() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/od.png"
+											src="icons/od.webp"
 											width={45}
 											height={45}
 											alt="Odnaklasniki icon"
@@ -77,7 +77,7 @@ export default function contacts() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/wa.png"
+											src="icons/wa.webp"
 											width={45}
 											height={45}
 											alt="What's App icon"
@@ -91,7 +91,7 @@ export default function contacts() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/2gis.png"
+											src="icons/2gis.webp"
 											width={100}
 											height={45}
 											alt="2gis icon"
@@ -153,7 +153,7 @@ const variants2 = {
 			</div>
 			<div className={classes.about__content}>
 				<div className={classes.about__pic}>
-					<Image src="/recycle.png" width={448} height={422} alt="" />
+					<Image src="/recycle.webp" width={448} height={422} alt="" />
 				</div>
 				<div className={classes.about__text}>
 					<p>

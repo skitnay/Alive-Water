@@ -17,7 +17,7 @@ export function Footer() {
 								<div className={classes.fSection__icon}>
 									<Image
 										loader={myLoader}
-										src="logo/logoWhite.png"
+										src="logo/logoWhite.webp"
 										width="480"
 										height="506"
 										alt="logo"
@@ -82,7 +82,7 @@ export function Footer() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="/icons/vkWhite.png"
+											src="/icons/vkWhite.webp"
 											width={40}
 											height={40}
 											alt="vk"
@@ -95,7 +95,7 @@ export function Footer() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/odWhite.png"
+											src="icons/odWhite.webp"
 											width={40}
 											height={40}
 											alt="od"
@@ -108,7 +108,7 @@ export function Footer() {
 									<a target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/waWhite.png"
+											src="icons/waWhite.webp"
 											width={40}
 											height={40}
 											alt="wa"

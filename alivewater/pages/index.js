@@ -201,7 +201,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/badge.png"
+									src="staff/badge.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -223,7 +223,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/ruble.png"
+									src="staff/ruble.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -247,7 +247,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/forest.png"
+									src="staff/forest.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -270,7 +270,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/clock.png"
+									src="staff/clock.webp"
 									width={100}
 									height={100}
 									alt="badge"
@@ -291,7 +291,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle.png"
+								src="staff/bottle.webp"
 								width={208}
 								height={208}
 								alt="badge"
@@ -308,7 +308,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle2.png"
+								src="staff/bottle2.webp"
 								width={208}
 								height={208}
 								alt="badge"
@@ -325,7 +325,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle3.png"
+								src="staff/bottle3.webp"
 								width={208}
 								height={208}
 								alt="badge"
