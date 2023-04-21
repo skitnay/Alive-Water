@@ -15,7 +15,6 @@ export default function Document() {
 				<meta name="google-site-verification" content="gMuzE89aJAghIlUGo0fbZ0PECVkSjj0FvKx3lDteqmM" />
 				<meta name="robots" />
 				<meta name="description" content="Питьевая вода высокого качества в Новосибирске!" />
-				<meta name="yandex-verification" content="217e91636e71a3de" />
 				<meta name='wmail-verification' content='102d9e06e62e85f7a7f2bd41e6ce0ea0' />
 				<meta property="og:title" content="Живая Вода Новосибирск" />
 				<meta property="og:description" content="Питьевая вода высокого качества в Новосибирске!" />
