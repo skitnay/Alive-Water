@@ -4,56 +4,56 @@ import "keen-slider/keen-slider.min.css";
 import "../styles/index.module.scss";
 
 const myLoader = ({ src, width, quality }) => {
-	return `/images/${src}?w=${width}&q=${quality || 75}`;
+	return `/images/${src}?w=${width}&q=${quality || 'auto'}`;
 };
 
 const slides = [
 	{
-		number: "number-slide2",
+		number: "number-slide1",
 		src: "backgrounds4/crop-man-pouring-water-near-window.webp",
+		alt: "image1",
+		width: 1180,
+		height: 600,
+	},
+	{
+		number: "number-slide2",
+		src: "backgrounds4/happy-sportswoman.webp",
 		alt: "image2",
 		width: 1180,
 		height: 600,
 	},
 	{
+		number: "number-slide3",
+		src: "backgrounds4/girl-roller-skating-and-drinking-water.webp",
+		alt: "image3",
+		width: 1180,
+		height: 600,
+	},
+	{
 		number: "number-slide4",
-		src: "backgrounds4/happy-sportswoman.webp",
+		src: " backgrounds4/old-man.webp",
 		alt: "image4",
 		width: 1180,
 		height: 600,
 	},
 	{
 		number: "number-slide5",
-		src: "backgrounds4/girl-roller-skating-and-drinking-water.webp",
+		src: "backgrounds4/summer-day.webp",
 		alt: "image5",
 		width: 1180,
 		height: 600,
 	},
 	{
-		number: "number-slide7",
-		src: "backgrounds4/old-man.webp",
-		alt: "image7",
-		width: 1180,
-		height: 600,
-	},
-	{
-		number: "number-slide8",
-		src: "backgrounds4/summer-day.webp",
-		alt: "image8",
-		width: 1180,
-		height: 600,
-	},
-	{
-		number: "number-slide10",
+		number: "number-slide6",
 		src: "backgrounds4/woman-holding-a-glass.webp",
-		alt: "image10",
+		alt: "image6",
 		width: 1180,
 		height: 600,
 	},
 	{
-		number: "number-slide11",
+		number: "number-slide7",
 		src: "backgrounds4/happy-pregnant-woman.webp",
-		alt: "image11",
+		alt: "image7",
 		width: 1180,
 		height: 600,
 	},
@@ -65,6 +65,7 @@ export default function Carusel() {
 	const [ref] = useKeenSlider(
 		{
 			loop: true,
+			renderMode: performance
 		},
 		[
 			(slider) => {
@@ -104,7 +105,7 @@ export default function Carusel() {
 
 	return (
 		<div ref={ref} className="keen-slider">
-			{randomSlides.map((slide, index) => (
+			{randomSlides.map((slide) => (
 				<div key={slide.number} className={`keen-slider__slide ${slide.number}`}>
 					<Image
 						loader={myLoader}
@@ -112,7 +113,6 @@ export default function Carusel() {
 						width={slide.width}
 						height={slide.height}
 						alt={slide.alt}
-						// priority={index === 0 ? "high" : undefined }
 					/>
 				</div>
 			))}
