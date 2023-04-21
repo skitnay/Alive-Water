@@ -31,7 +31,7 @@ const slides = [
 	},
 	{
 		number: "number-slide4",
-		src: " backgrounds4/old-man.webp",
+		src: "backgrounds4/old-man.webp",
 		alt: "image4",
 		width: 1180,
 		height: 600,
