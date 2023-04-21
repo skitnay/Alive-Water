@@ -1,11 +1,11 @@
 import Head from "next/head";
+import Carusel from "../components/Carusel";
 import { Layout } from "../components/Layout";
 import classes from "../styles/index.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import News from "../components/New";
-import Carusel from "../components/Carusel";
 
 const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;

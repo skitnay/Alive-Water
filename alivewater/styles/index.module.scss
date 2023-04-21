@@ -15,8 +15,10 @@ $blue: #263c5c;
 .firstSection {
 	&__block {
 		position: relative;
+		height: auto;
 		min-height: 588px;
 		@media (max-width: 1200px) {
+			height: auto;
 			min-height: 400px;
 		}
 		img {
