@@ -1,9 +1,41 @@
 $blue: #263c5c;
 
+@font-face {
+	font-family: "roboto";
+	font-weight: 100;
+	src: url("/fonts/Roboto-Thin.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 300;
+	src: url("/fonts/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 400;
+	src: url("/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 500;
+	src: url("/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 600;
+	src: url("/fonts/Roboto-Flex.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 700;
+	src: url("/fonts/Roboto-Bold.ttf");
+}
+
 .title {
 	max-width: 1100px;
 	margin: 0px auto 30px;
 	font-size: 36px;
+	font-family: "roboto";
 	font-weight: bold;
 	@media (max-width: 765px) {
 		font-size: 28px;
@@ -55,7 +87,7 @@ $blue: #263c5c;
 		}
 	}
 	&__title {
-		font-weight: 600;
+		font-weight: bold;
 		font-size: 56px;
 		color: #172437;
 		@media (max-width: 765px) {
@@ -279,8 +311,8 @@ $blue: #263c5c;
 			position: absolute;
 			top: 8px;
 			left: -27px;
-			font-family: Roboto;
-			font-weight: 300;
+			font-family: roboto;
+			font-weight: 400;
 			font-size: 36px;
 			color: #273453;
 			border: 2px solid #273453;
@@ -383,6 +415,7 @@ $blue: #263c5c;
 		}
 	}
 	&__card_title {
+		font-family: "roboto";
 		font-weight: 700;
 		font-size: 22px;
 		@media (max-width: 565px) {

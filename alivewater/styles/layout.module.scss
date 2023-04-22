@@ -1,21 +1,36 @@
 //======================================================================
 $blue: #263c5c;
-// @font-face {
-// 	font-family: "roboto";
-// 	src: url("/fonts/Roboto-Regular.ttf");
-// }
-// @font-face {
-// 	font-family: "roboto-medium";
-// 	src: url("/fonts/Roboto-Medium.ttf");
-// }
-// @font-face {
-// 	font-family: "roboto-bold";
-// 	src: url("/fonts/Roboto-Bold.ttf");
-// }
-// @font-face {
-// 	font-family: "roboto-semi-bold";
-// 	src: url("/fonts/Roboto-Semi-Bold.ttf");
-// }
+
+@font-face {
+	font-family: "roboto";
+	font-weight: 100;
+	src: url("/fonts/Roboto-Thin.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 300;
+	src: url("/fonts/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 400;
+	src: url("/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 500;
+	src: url("/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 600;
+	src: url("/fonts/Roboto-Flex.ttf");
+}
+@font-face {
+	font-family: "roboto";
+	font-weight: 700;
+	src: url("/fonts/Roboto-Bold.ttf");
+}
 
 .header {
 	&__menu {
@@ -97,8 +112,7 @@ $blue: #263c5c;
 
 	&__title {
 		font-size: 18px;
-		font-family: roboto;
-		font-weight: 600;
+		font-weight: bold;
 		color: $blue;
 		line-height: 20px;
 		min-width: 119px;
@@ -107,7 +121,6 @@ $blue: #263c5c;
 	&__titleMini {
 		font-size: 14px;
 		text-transform: uppercase;
-		font-family: roboto;
 		color: $blue;
 		text-align: start;
 		min-width: 119px;
@@ -169,7 +182,6 @@ $blue: #263c5c;
 		line-height: 20px;
 		color: #fff;
 		text-decoration: none;
-		font-family: roboto;
 		padding: 14px 5px 14px;
 		transition: 0.3s;
 		cursor: pointer;
@@ -243,8 +255,7 @@ $blue: #263c5c;
 	}
 	&__title {
 		font-size: 16px;
-		font-family: roboto;
-		font-weight: 600;
+		font-weight: bold;
 		line-height: 20px;
 		&:hover {
 			color: rgb(228, 228, 228);
@@ -254,11 +265,10 @@ $blue: #263c5c;
 	&__miniTitle {
 		font-size: 12px;
 		text-transform: uppercase;
-		font-family: roboto;
 		text-align: start;
 	}
 	&__inn {
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 15px;
 		min-width: 166px;
 		line-height: 18px;
