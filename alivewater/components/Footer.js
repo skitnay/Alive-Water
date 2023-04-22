@@ -114,7 +114,7 @@ export function Footer() {
 											width={40}
 											height={40}
 											alt="wa"
-											priority
+											
 										/>
 									</a>
 								</Link>

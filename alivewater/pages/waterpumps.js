@@ -116,7 +116,7 @@ export default function waterpumps() {
 										src="/staff/500.webp"
 										width={449}
 										height={370}
-										alt=""
+										alt="500"
 									/>
 								</div>
 								<div className={classes.waterpumps__text}>
@@ -151,7 +151,7 @@ export default function waterpumps() {
 										src="staff/400.webp"
 										width={200}
 										height={350}
-										alt=""
+										alt="400"
 									/>
 								</div>
 							</div>
