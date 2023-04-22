@@ -205,6 +205,7 @@ export default function index() {
 									width={103}
 									height={100}
 									alt="badge"
+									loading="lazy"
 								/>
 							</div>
 						</div>
@@ -227,6 +228,7 @@ export default function index() {
 									width={103}
 									height={100}
 									alt="badge"
+									loading="lazy"
 								/>
 							</div>
 						</div>
@@ -251,6 +253,7 @@ export default function index() {
 									width={103}
 									height={100}
 									alt="badge"
+									loading="lazy"
 								/>
 							</div>
 						</div>
@@ -274,6 +277,7 @@ export default function index() {
 									width={100}
 									height={100}
 									alt="badge"
+									loading="lazy"
 								/>
 							</div>
 						</div>
@@ -295,6 +299,7 @@ export default function index() {
 								width={208}
 								height={208}
 								alt="badge"
+								loading="lazy"
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
@@ -312,6 +317,7 @@ export default function index() {
 								width={208}
 								height={208}
 								alt="badge"
+								loading="lazy"
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
@@ -329,6 +335,7 @@ export default function index() {
 								width={208}
 								height={208}
 								alt="badge"
+								loading="lazy"
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
