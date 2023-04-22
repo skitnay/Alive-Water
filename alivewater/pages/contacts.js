@@ -53,7 +53,7 @@ export default function contacts() {
 											width={45}
 											height={45}
 											alt="Vkontakte icon"
-											/* priority */
+											priority
 										/>
 									</a>
 								</Link>
@@ -67,7 +67,7 @@ export default function contacts() {
 											width={45}
 											height={45}
 											alt="Odnaklasniki icon"
-											/* priority */
+											priority
 										/>
 									</a>
 								</Link>
@@ -81,7 +81,7 @@ export default function contacts() {
 											width={45}
 											height={45}
 											alt="What's App icon"
-											/* priority */
+											priority
 										/>
 									</a>
 								</Link>
@@ -95,7 +95,7 @@ export default function contacts() {
 											width={100}
 											height={45}
 											alt="2gis icon"
-											/* priority */
+											priority
 										/>
 									</a>
 								</Link>

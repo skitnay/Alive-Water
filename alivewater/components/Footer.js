@@ -21,7 +21,7 @@ export function Footer() {
 										width="480"
 										height="506"
 										alt="logo"
-										
+										priority
 									/>
 								</div>
 								<div className={classes.fSection__drop}>
@@ -86,6 +86,7 @@ export function Footer() {
 											width={40}
 											height={40}
 											alt="vk"
+											priority
 										/>
 									</a>
 								</Link>
@@ -99,6 +100,7 @@ export function Footer() {
 											width={40}
 											height={40}
 											alt="od"
+											priority
 										/>
 									</a>
 								</Link>
@@ -112,6 +114,7 @@ export function Footer() {
 											width={40}
 											height={40}
 											alt="wa"
+											priority
 										/>
 									</a>
 								</Link>
