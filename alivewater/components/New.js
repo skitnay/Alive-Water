@@ -21,7 +21,7 @@ export default function News() {
 									25/01/2023
 								</div>
 							</div>
-							<div className={classes.newsBlock__text}>
+							<h3 className={classes.newsBlock__text}>
 								<p>
 									Добрый день, друзья! Мы поставили водамат{" "}
 									<b>Живая вода</b> в одном из наших любимых мест
@@ -32,7 +32,7 @@ export default function News() {
 									Набрать воду можно по графику работы магазина (с 8:00
 									дно 22:00).
 								</p>
-							</div>
+							</h3>
 						</div>
 						<div className={classes.newsBlock__pic}>
 							<Image

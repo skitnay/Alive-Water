@@ -75,7 +75,6 @@ export default function Carusel() {
 				function clearNextTimeout() {
 					clearTimeout(timeout);
 				}
-
 				function nextTimeout() {
 					clearTimeout(timeout);
 					if (mouseOver) return;
