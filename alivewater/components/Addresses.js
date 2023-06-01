@@ -66,6 +66,14 @@ const addresses = [
 		title: 'Микрорайон, 26',
 		subtitle: 'г. Новосибирск, с. Криводановка',
 	},
+	{
+		title: 'Микрорайон, 9',
+		subtitle: 'г. Новосибирск, с. Криводановка',
+	},
+	{
+		title: 'Французкий квартал, 29',
+		subtitle: 'г. Новосибирск, пос. Октябрьский',
+	}
 ];
 
 export default function Addresses() {
