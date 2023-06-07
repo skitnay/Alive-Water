@@ -138,7 +138,10 @@ $blue: #263c5c;
 				&:visited {
 					color: #fff;
 				}
-				@media (max-width: 450px) {
+				@media (max-width: 451px) {
+					font-size: 13px;
+				}
+				@media (max-width: 321px) {
 					font-size: 12px;
 				}
 			}

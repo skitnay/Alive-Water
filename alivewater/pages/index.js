@@ -65,7 +65,7 @@ export default function index() {
 			>
 				<div className={classes.title}>Новости</div>
 				<News />
-				<div className={classes.newsSection__button_2}>
+				<div className={classes.newsSection__button_row}>
 					<Link href="/news">
 						<div className={classes.newsSection__button}>Все новости</div>
 					</Link>
