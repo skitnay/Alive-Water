@@ -73,7 +73,11 @@ const addresses = [
 	{
 		title: 'Французкий квартал, 29',
 		subtitle: 'г. Новосибирск, пос. Октябрьский',
-	}
+	},
+	{
+		title: 'Солидарности, 15 ',
+		subtitle: 'г. Новосибирск, Пашино м-н',
+	},
 ];
 
 export default function Addresses() {
