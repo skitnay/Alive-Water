@@ -277,6 +277,11 @@ export default function waterpumps() {
 							</div>
 						</div>
 					</section>
+					{/* <section className={classes.cleaner}>
+						<div className={classes.title}>
+							Обогащение минералами (Mg, Ca, K + Йод)
+						</div>
+					</section> */}
 					<Map />
 				</motion.div>
 			</section>
