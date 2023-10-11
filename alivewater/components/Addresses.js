@@ -78,6 +78,14 @@ const addresses = [
 		title: 'Солидарности, 15 ',
 		subtitle: 'г. Новосибирск, Пашино м-н',
 	},
+	{
+		title: '​Есенина, 1г ',
+		subtitle: 'г. Новосибирск, с. Прокудское',
+	},
+	{
+		title: '',
+		subtitle: '',
+	},
 ];
 
 export default function Addresses() {
