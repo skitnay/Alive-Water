@@ -368,7 +368,6 @@ export default function analyzes() {
 						</div>
 					</div>
 				</motion.div>
-				{/* <div className={classes.analyzes__dis}>Страница в разработке🔧</div> */}
 			</section>
 			<section>
 				<div className={classes.title}>Сертификат</div>
