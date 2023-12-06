@@ -303,10 +303,10 @@ export default function index() {
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
-							1 ЛИТР - <p>5 РУБЛЯ</p>
+							1 ЛИТР - <p>5 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
-							На тренеровку или прогулку
+							На тренировку или прогулку
 						</div>
 					</div>
 					<div className={classes.price__flex}>
