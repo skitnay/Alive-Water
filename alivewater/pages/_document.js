@@ -7,12 +7,12 @@ export default function Document() {
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
-				<link rel="shortcut icon" href="/static/favicon.ico" />
-				<link rel="shortcut icon" href="/static/favicon.png" />
-				<link rel="apple-touch-icon" href="/static/Apple-touch.png" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/static/Apple-touch-retina.png" />
-				<link rel="apple-touch-icon" sizes="152x152" href="/static/Apple-touch-ipad.png" />
-				<link rel="apple-touch-icon" sizes="167x167" href="/static/Apple-touch-ipad-retina.png" />
+				<link rel="shortcut icon" href="/public/images/mobile/favicon.ico" />
+				<link rel="shortcut icon" href="/public/images/mobile/favicon.png" />
+				<link rel="apple-touch-icon" href="/public/images/mobile/Apple-touch.png" />
+				<link rel="apple-touch-icon" sizes="180x180" href="/public/images/mobile//Apple-touch-retina.png" />
+				<link rel="apple-touch-icon" sizes="152x152" href="/public/images/mobile//Apple-touch-ipad.png" />
+				<link rel="apple-touch-icon" sizes="167x167" href="/public/images/mobile//Apple-touch-ipad-retina.png" />
 				<meta name="theme-color" content="#263c5c" />
 				<meta charSet="UTF-8" />
 				<meta name="format-detection" content="telephone=no" />

@@ -6,7 +6,7 @@ const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;
 };
 
-export function Footer() {
+export function Footer({ setShowModal }) {
 	return (
 		<>
 			<footer className={classes.footer__menu}>
@@ -34,11 +34,13 @@ export function Footer() {
 								</div>
 							</div>
 						</Link>
-						<div className={classes.fSection__inn}>
-							ИП <p>Полякова В. В.</p>
-						</div>
-						<div className={classes.fSection__inn}>
-							ИНН: <p>543005844122</p>
+						<div className={classes.fSection__inn_flex} onClick={() => setShowModal()}>
+							<div className={classes.fSection__inn} >
+								ИП <p>Полякова В. В.</p>
+							</div>
+							<div className={classes.fSection__inn} >
+								ИНН: <p>543005844122</p>
+							</div>
 						</div>
 					</div>
 					<div className={classes.sSection}>
@@ -132,11 +134,13 @@ export function Footer() {
 								<a>+7 (953) 764-10-00</a>
 							</Link>
 						</div>
-						<div className={classes.fSection__inn_hide}>
-							ИП <p>Полякова В. В.</p>
-						</div>
-						<div className={classes.fSection__inn_hide}>
-							ИНН: <p>543005844122</p>
+						<div className={classes.fSection__inn_flex} onClick={() => setShowModal()}>
+							<div className={classes.fSection__inn_hide} >
+								ИП <p>Полякова В. В.</p>
+							</div>
+							<div className={classes.fSection__inn_hide}>
+								ИНН: <p>543005844122</p>
+							</div>
 						</div>
 					</div>
 				</div>

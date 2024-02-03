@@ -1,28 +1,28 @@
 {
-  "name": "alivewater",
-  "version": "0.2.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer"
-  },
-  "dependencies": {
-    "@2gis/mapgl": "^1.29.0",
-    "@vercel/analytics": "^1.0.0",
-    "framer-motion": "^6.3.6",
-    "keen-slider": "^6.7.0",
-    "next": "12.1.6",
-    "next-optimized-images": "^2.6.2",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-responsive-carousel": "^3.2.23",
-    "sass": "^1.52.1"
-  },
-  "devDependencies": {
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
-  }
+	"name": "alivewater",
+	"version": "0.2.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"export": "next build && next export && next-image-export-optimizer"
+	},
+	"dependencies": {
+		"@2gis/mapgl": "^1.29.0",
+		"@vercel/analytics": "^1.0.0",
+		"framer-motion": "^6.5.1",
+		"keen-slider": "^6.7.0",
+		"next": "12.1.6",
+		"next-optimized-images": "^2.6.2",
+		"react": "18.1.0",
+		"react-dom": "18.1.0",
+		"react-responsive-carousel": "^3.2.23",
+		"sass": "^1.52.1"
+	},
+	"devDependencies": {
+		"eslint": "8.16.0",
+		"eslint-config-next": "12.1.6"
+	}
 }

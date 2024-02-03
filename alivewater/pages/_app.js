@@ -4,9 +4,12 @@ import { AnimatePresence } from "framer-motion";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Analytics } from '@vercel/analytics/react';
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 export default function MyApp({ Component, pageProps, router }) {
 	const url = `${router.route}`;
+	const [showModal, setShowModal] = useState(false)
 
 	return (
 		<>
@@ -19,7 +22,8 @@ export default function MyApp({ Component, pageProps, router }) {
 				<Component {...pageProps} canonical={url} key={url} />
 				<Analytics />
 			</AnimatePresence>
-			<Footer />
+			<Modal isvisible={showModal} onClose={() => setShowModal(false)} />
+			<Footer setShowModal={() => setShowModal(true)}/>
 		</>
 	);
 }
