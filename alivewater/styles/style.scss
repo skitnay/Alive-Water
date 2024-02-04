@@ -89,6 +89,7 @@ section {
 }
 
 footer {
+	bottom: 10px;
 }
 
 html,
@@ -106,6 +107,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+i,
 input,
 button,
 textarea {
@@ -172,7 +174,7 @@ h6 {
 	font-size: inherit;
 }
 main {
-	overflow: hidden;
+	overflow: visible;
 	max-width: 1180px;
 	margin: 0px auto;
 	padding: 0px 15px 0px 15px;

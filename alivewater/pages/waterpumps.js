@@ -112,11 +112,14 @@ export default function waterpumps() {
 							<div className={classes.waterpumps__flex}>
 								<div className={classes.waterpumps__pic}>
 									<Image
+										className={classes.waterpumps__pic__img1}
 										loader={myLoader}
 										src="/staff/500.webp"
-										width={449}
-										height={370}
+										width="449"
+										height="370"
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div className={classes.waterpumps__text}>
@@ -147,11 +150,14 @@ export default function waterpumps() {
 								</div>
 								<div className={classes.waterpumps__pic}>
 									<Image
+										className={classes.waterpumps__pic__img2}
 										loader={myLoader}
 										src="staff/400.webp"
-										width={200}
-										height={350}
+										width={0}
+										height={0}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 							</div>
@@ -189,6 +195,8 @@ export default function waterpumps() {
 										width={95}
 										height={88}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -198,6 +206,8 @@ export default function waterpumps() {
 										width={84}
 										height={109}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -207,6 +217,8 @@ export default function waterpumps() {
 										width={106}
 										height={109}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -216,6 +228,8 @@ export default function waterpumps() {
 										width={84}
 										height={89}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -236,6 +250,8 @@ export default function waterpumps() {
 										width={85}
 										height={93}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -245,6 +261,8 @@ export default function waterpumps() {
 										width={84}
 										height={91}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -254,6 +272,8 @@ export default function waterpumps() {
 										width={100}
 										height={112}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -263,6 +283,8 @@ export default function waterpumps() {
 										width={120}
 										height={103}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div>
@@ -272,6 +294,8 @@ export default function waterpumps() {
 										width={88}
 										height={98}
 										alt=""
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 							</div>

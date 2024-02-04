@@ -106,7 +106,7 @@ export default function index() {
 							минеральных веществ. И здесь есть два важных момента, о
 							которых можно прочитать в{" "}
 							<Link href="https://vk.com/wall-188967637_2389">
-								<a target="_blank">статье</a>
+								<div target="_blank">статье</div>
 							</Link>
 							.
 						</div>

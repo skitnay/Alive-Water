@@ -40,6 +40,8 @@ export default function News() {
 								width={343}
 								height={190}
 								priority
+								sizes="100vw"
+								style={{ width: '100%', height: 'auto' }}
 							></Image>
 						</div>
 					</div>
@@ -78,6 +80,8 @@ export default function News() {
 								width={343}
 								height={190}
 								priority
+								sizes="100vw"
+								style={{ width: '100%', height: 'auto' }}
 							></Image>
 						</div>
 					</div>

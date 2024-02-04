@@ -46,7 +46,7 @@ $blue: #263c5c;
 	min-width: 154px;
 	max-height: 50px;
 	cursor: pointer;
-	padding-right: 80px;
+	padding-right: 17px;
 	&:hover {
 		.logo__icon_mini {
 			animation: 0.9s linear infinite blob;
@@ -75,6 +75,7 @@ $blue: #263c5c;
 		&_mini {
 			position: absolute;
 			left: 16.5px;
+			max-width: 12px;
 			bottom: 0px;
 		}
 	}
@@ -101,7 +102,7 @@ $blue: #263c5c;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		@media (max-width: 560px) {
+		@media (max-width: 570px) {
 			min-height: 110px;
 			display: flex;
 			flex-direction: column;
@@ -134,7 +135,8 @@ $blue: #263c5c;
 			padding: 0px 5px;
 		}
 		li {
-			a {
+			div {
+				cursor: pointer;
 				&:visited {
 					color: #fff;
 				}
@@ -165,13 +167,14 @@ $blue: #263c5c;
 
 .footer {
 	&__menu {
+		position: relative;
+		margin-bottom: 10px;
 		padding: 40px 30px;
 		max-width: 1180px;
 		margin: 4px auto 0;
 		min-height: 52px;
 		background-color: $blue;
 		border-radius: 10px;
-		margin-bottom: 20px;
 		box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.25);
 		&__row {
 			display: flex;
@@ -270,7 +273,7 @@ $blue: #263c5c;
 				}
 			}
 		}
-		&_flex{
+		&_flex {
 			display: flex;
 			flex-direction: column;
 		}
@@ -299,7 +302,7 @@ $blue: #263c5c;
 			flex-direction: column;
 			justify-content: space-between;
 		}
-		a {
+		div {
 			color: #fff;
 			&:hover {
 				color: rgba(255, 255, 255, 0.637);
@@ -366,7 +369,7 @@ $blue: #263c5c;
 	&__email {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
-		a {
+		z {
 			max-width: 300px;
 			color: #fff;
 			font-weight: normal;
@@ -380,8 +383,9 @@ $blue: #263c5c;
 	&__phone {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
-		a {
+		z {
 			color: #fff;
+			font-family: roboto;
 			font-weight: normal;
 			text-decoration: underline;
 			&:hover {

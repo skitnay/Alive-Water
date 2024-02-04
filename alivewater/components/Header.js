@@ -19,19 +19,23 @@ export function Header() {
 								<Image
 									loader={myLoader}
 									src="logo/logo22.webp"
-									width="480"
-									height="506"
 									alt="logo"
 									priority
+									width={0}
+									height={0}
+									sizes="100vw"
+									style={{ width: '100%', height: 'auto' }}
 								/>
 								<div className={classes.logo__icon_mini}>
 									<Image
 										loader={myLoader}
 										src="logo/kapl.webp"
-										width="12"
-										height="14"
 										alt="logo2"
 										priority
+										width={12}
+										height={14}
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 							</div>
@@ -46,46 +50,46 @@ export function Header() {
 					<ul className={classes.menu__list}>
 						<li>
 							<Link href="/">
-								<a
+								<div
 									className={`${
 										router.pathname == "/" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Главная
-								</a>
+								</div>
 							</Link>
 						</li>
 						<li>
 							<Link href="/analyzes">
-								<a
+								<div
 									className={`${
 										router.pathname == "/analyzes" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Анализы Воды
-								</a>
+								</div>
 							</Link>
 						</li>
 						<li>
 							<Link href="/waterpumps">
-								<a
+								<div
 									className={`${
 										router.pathname == "/waterpumps" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Водоматы
-								</a>
+								</div>
 							</Link>
 						</li>
 						<li>
 							<Link href="/contacts">
-								<a
+								<div
 									className={`${
 										router.pathname == "/contacts" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Контакты
-								</a>
+								</div>
 							</Link>
 						</li>
 					</ul>

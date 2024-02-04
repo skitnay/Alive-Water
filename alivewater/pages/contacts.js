@@ -46,7 +46,7 @@ export default function contacts() {
 						<div className={classes.contacts__social}>
 							<div className={classes.contacts__vk}>
 								<Link href="https://vk.com/alivewaternsk">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 										loader={myLoader}
 											src="icons/vk.webp"
@@ -55,12 +55,12 @@ export default function contacts() {
 											alt="Vkontakte icon"
 											priority
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 							<div className={classes.contacts__od}>
 								<Link href="https://ok.ru/profile/580408735701">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/od.webp"
@@ -69,12 +69,12 @@ export default function contacts() {
 											alt="Odnaklasniki icon"
 											priority
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 							<div className={classes.contacts__wa}>
 								<Link href="https://wa.me/79134531010">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/wa.webp"
@@ -83,12 +83,12 @@ export default function contacts() {
 											alt="What's App icon"
 											priority
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 							<div className={classes.contacts__2gis}>
 								<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/2gis.webp"
@@ -97,7 +97,7 @@ export default function contacts() {
 											alt="2gis icon"
 											priority
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 						</div>
@@ -106,7 +106,7 @@ export default function contacts() {
 						<div className={classes.contacts__title}>Телефон </div>
 						<p>
 							<Link href="tel:+79537641000">
-								<a>+7 (953) 764-10-00</a>
+								<div>+7 (953) 764-10-00</div>
 							</Link>
 						</p>
 					</div>
@@ -114,7 +114,7 @@ export default function contacts() {
 						<div className={classes.contacts__title}>Email </div>
 						<p>
 							<Link href="mailto:zhivaya@voda54.ru">
-								<a>zhivaya@voda54.ru</a>
+								<div>zhivaya@voda54.ru</div>
 							</Link>
 						</p>
 					</div>

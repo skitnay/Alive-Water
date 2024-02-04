@@ -24,6 +24,8 @@ export default function Modal({ isvisible, onClose }) {
 							height={605}
 							alt="Odnaklasniki icon"
 							priority
+							sizes="100vw"
+							style={{ width: '100%', height: 'auto' }}
 						/>
 					</div>
 					{/* <button className={classes.modal__close} onClick={() => onClose()}>X</button> */}

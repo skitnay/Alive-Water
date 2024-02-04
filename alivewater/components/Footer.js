@@ -18,10 +18,12 @@ export function Footer({ setShowModal }) {
 									<Image
 										loader={myLoader}
 										src="logo/logoWhite.webp"
-										width="480"
-										height="506"
+										width={0}
+										height={0}
 										alt="logo"
 										priority
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
 									/>
 								</div>
 								<div className={classes.fSection__drop}>
@@ -48,29 +50,29 @@ export function Footer({ setShowModal }) {
 							<div className={classes.sSection__link__row}>
 								<div className={classes.sSection__link}>
 									<Link href="/">
-										<a>Главная</a>
+										<div>Главная</div>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/news">
-										<a>Новости</a>
+										<div>Новости</div>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/waterpumps">
-										<a>Водоматы</a>
+										<div>Водоматы</div>
 									</Link>
 								</div>
 							</div>
 							<div className={classes.sSection__link__row}>
 								<div className={classes.sSection__link}>
 									<Link href="/analyzes">
-										<a>Анализы</a>
+										<div>Анализы</div>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/contacts">
-										<a>Контакты</a>
+										<div>Контакты</div>
 									</Link>
 								</div>
 								<div className={classes.sSection__link__hide}></div>
@@ -81,57 +83,63 @@ export function Footer({ setShowModal }) {
 						<div className={classes.tSection__contacts}>
 							<div className={classes.tSection__contact}>
 								<Link href="https://vk.com/alivewaternsk">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="/icons/vkWhite.webp"
-											width={40}
-											height={40}
+											width={0}
+											height={0}
 											alt="vk"
 											priority
+											sizes="100vw"
+											style={{ width: '100%', height: 'auto' }}
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
 								<Link href="https://ok.ru/profile/580408735701">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/odWhite.webp"
-											width={40}
-											height={40}
+											width={0}
+											height={0}
 											alt="od"
 											priority
+											sizes="100vw"
+											style={{ width: '100%', height: 'auto' }}
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
 								<Link href="https://wa.me/79134531010">
-									<a target="_blank">
+									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/waWhite.webp"
-											width={40}
-											height={40}
+											width={0}
+											height={0}
 											alt="wa"
 											priority
+											sizes="100vw"
+											style={{ width: '100%', height: 'auto' }}
 										/>
-									</a>
+									</div>
 								</Link>
 							</div>
 						</div>
 						<div className={classes.tSection__email}>
 							Email:{" "}
 							<Link href="mailto:zhivaya@voda54.ru.ru">
-								<a>zhivaya@voda54.ru</a>
+								<z>zhivaya@voda54.ru</z>
 							</Link>
 						</div>
 						<div className={classes.tSection__phone}>
 							Телефон:{" "}
 							<Link href="tel:+79537641000">
-								<a>+7 (953) 764-10-00</a>
+								<z>+7 (953) 764-10-00</z>
 							</Link>
 						</div>
 						<div className={classes.fSection__inn_flex} onClick={() => setShowModal()}>

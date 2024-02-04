@@ -179,7 +179,7 @@ export default function About() {
 										Подробнее о том, как платить по qr-коду можно
 										посмотреть в разделе{" "}
 										<Link href="/waterpumps">
-											<a>«Водоматы»</a>
+											<div>«Водоматы»</div>
 										</Link>
 										.
 									</div>

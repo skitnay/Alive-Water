@@ -15,16 +15,18 @@ export default function Map() {
 				<div className={classes.map__content}>
 					<div className={classes.map__map}>
 						<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68">
-							<a target="_blank">
+							<div target="_blank">
 								<Image
 									loader={myLoader}
 									src="staff/map.jpg"
-									width={1400}
-									height={1146}
 									alt="2gis"
 									priority
+									width={0}
+									height={0}
+									sizes="100vw"
+									style={{ width: '100%', height: 'auto' }}
 								/>
-							</a>
+							</div>
 						</Link>
 					</div>
 					<div>
