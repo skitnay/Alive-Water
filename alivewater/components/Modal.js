@@ -18,6 +18,7 @@ export default function Modal({ isvisible, onClose }) {
 				<div className={classes.modal__bg} id="wrapper">
 					<div className={classes.modal__img}>
 						<Image
+							className={classes.modal__img__pic}
 							loader={myLoader}
 							src="staff/image_t20210106182053_n1.jpg"
 							width={880}

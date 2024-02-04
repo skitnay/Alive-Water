@@ -405,6 +405,9 @@ $blue: #263c5c;
 	width: 100%;
 	height: 100%;
 	&__img {
+		&__pic{
+			max-width: 880px;
+		}
 		display: inline-block;
 		vertical-align: middle;
 		border-radius: 15px;
