@@ -385,7 +385,6 @@ $blue: #263c5c;
 		color: rgba(255, 255, 255, 0.637);
 		z {
 			color: #fff;
-			font-family: roboto;
 			font-weight: normal;
 			text-decoration: underline;
 			&:hover {
@@ -457,14 +456,19 @@ $blue: #263c5c;
 	text-align: center;
 	justify-content:center;
 	align-items: center;
-	font-family: roboto;
+	font-family: Roboto;
 	background-color: #ffffff;
+	&__title{
+		font-size: 40px;
+		font-weight: bold;
+	}
 	&__text{
 		font-size: 30px;
 	}
 	&__link {
 		font-size: 25px;
 		color: #8ed433;
+		text-decoration: underline;
 		&:visited {
 			color:#8ed433;
 		}
