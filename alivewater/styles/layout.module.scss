@@ -447,3 +447,27 @@ $blue: #263c5c;
 	// 	}
 	// }
 }
+.notFound{
+	display: flex;
+	flex-direction: column;
+	max-width: 1140px;
+	margin: 0 auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	justify-content:center;
+	align-items: center;
+	font-family: roboto;
+	background-color: #ffffff;
+	&__text{
+		font-size: 30px;
+	}
+	&__link {
+		font-size: 25px;
+		color: #8ed433;
+		&:visited {
+			color:#8ed433;
+		}
+	}
+
+}
