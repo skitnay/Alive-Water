@@ -24,6 +24,8 @@ export default function Document() {
 				<meta property="og:description" content="Питьевая вода высокого качества в Новосибирске!" />
 				<meta property="og:image" content="/public/images/staff/site-prev.jpg" />
 				<link rel="image_src" href="/public/images/staff/site-prev.jpg" />
+				<meta property="og:title" content="Живая вода Новосибирск" />
+				<meta property="og:image" content="/public/images/staff/site-prev.jpg" />
 			</Head>
 			<body>
 				<Main />
