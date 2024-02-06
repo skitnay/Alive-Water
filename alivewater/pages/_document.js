@@ -18,6 +18,7 @@ export default function Document() {
 				<meta name="format-detection" content="telephone=no" />
 				<meta name="google-site-verification" content="gMuzE89aJAghIlUGo0fbZ0PECVkSjj0FvKx3lDteqmM" />
 				<meta property="og:title" content="Живая Вода Новосибирск" />
+				<meta property="og:type" content="website" />
 				<meta property="og:description" content="Питьевая вода высокого качества в Новосибирске!" />
 				<meta property="og:image" content="/public/images/staff/site-prev.jpg" />
 				<meta name="robots" />
