@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps, router }) {
 				<Analytics />
 			</AnimatePresence>
 			<Modal isvisible={showModal} onClose={() => setShowModal(false)} />
-			<Footer setShowModal={() => setShowModal(true)}/>
+			<Footer setShowModal={() => setShowModal(true)} />
 		</>
 	);
 }

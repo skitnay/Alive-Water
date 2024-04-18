@@ -23,7 +23,7 @@ export function Footer({ setShowModal }) {
 										alt="logo"
 										priority
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div className={classes.fSection__drop}>
@@ -36,11 +36,14 @@ export function Footer({ setShowModal }) {
 								</div>
 							</div>
 						</Link>
-						<div className={classes.fSection__inn_flex} onClick={() => setShowModal()}>
-							<div className={classes.fSection__inn} >
+						<div
+							className={classes.fSection__inn_flex}
+							onClick={() => setShowModal()}
+						>
+							<div className={classes.fSection__inn}>
 								ИП <p>Полякова В. В.</p>
 							</div>
-							<div className={classes.fSection__inn} >
+							<div className={classes.fSection__inn}>
 								ИНН: <p>543005844122</p>
 							</div>
 						</div>
@@ -82,8 +85,11 @@ export function Footer({ setShowModal }) {
 					<div className={classes.tSection}>
 						<div className={classes.tSection__contacts}>
 							<div className={classes.tSection__contact}>
-								<Link href="https://vk.com/alivewaternsk">
-									<div target="_blank">
+								<Link
+									href="https://vk.com/alivewaternsk"
+									target="_blank"
+								>
+									<div>
 										<Image
 											loader={myLoader}
 											src="/icons/vkWhite.webp"
@@ -92,14 +98,17 @@ export function Footer({ setShowModal }) {
 											alt="vk"
 											priority
 											sizes="100vw"
-											style={{ width: '100%', height: 'auto' }}
+											style={{ width: "100%", height: "auto" }}
 										/>
 									</div>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href="https://ok.ru/profile/580408735701">
-									<div target="_blank">
+								<Link
+									href="https://ok.ru/profile/580408735701"
+									target="_blank"
+								>
+									<div>
 										<Image
 											loader={myLoader}
 											src="icons/odWhite.webp"
@@ -108,14 +117,14 @@ export function Footer({ setShowModal }) {
 											alt="od"
 											priority
 											sizes="100vw"
-											style={{ width: '100%', height: 'auto' }}
+											style={{ width: "100%", height: "auto" }}
 										/>
 									</div>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href="https://wa.me/79134531010">
-									<div target="_blank">
+								<Link href="https://wa.me/79134531010" target="_blank">
+									<div>
 										<Image
 											loader={myLoader}
 											src="icons/waWhite.webp"
@@ -124,7 +133,7 @@ export function Footer({ setShowModal }) {
 											alt="wa"
 											priority
 											sizes="100vw"
-											style={{ width: '100%', height: 'auto' }}
+											style={{ width: "100%", height: "auto" }}
 										/>
 									</div>
 								</Link>
@@ -133,17 +142,20 @@ export function Footer({ setShowModal }) {
 						<div className={classes.tSection__email}>
 							Email:{" "}
 							<Link href="mailto:zhivaya@voda54.ru.ru">
-								<z>zhivaya@voda54.ru</z>
+								<i>zhivaya@voda54.ru</i>
 							</Link>
 						</div>
 						<div className={classes.tSection__phone}>
 							Телефон:{" "}
 							<Link href="tel:+79537641000">
-								<z>+7 (953) 764-10-00</z>
+								<i>+7 (953) 764-10-00</i>
 							</Link>
 						</div>
-						<div className={classes.fSection__inn_flex} onClick={() => setShowModal()}>
-							<div className={classes.fSection__inn_hide} >
+						<div
+							className={classes.fSection__inn_flex}
+							onClick={() => setShowModal()}
+						>
+							<div className={classes.fSection__inn_hide}>
 								ИП <p>Полякова В. В.</p>
 							</div>
 							<div className={classes.fSection__inn_hide}>

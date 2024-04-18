@@ -4,7 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import "../styles/index.module.scss";
 
 const myLoader = ({ src, width, quality }) => {
-	return `/images/${src}?w=${width}&q=${quality || 'auto'}`;
+	return `/images/${src}?w=${width}&q=${quality || "auto"}`;
 };
 
 const slides = [
@@ -65,7 +65,7 @@ export default function Carusel() {
 	const [ref] = useKeenSlider(
 		{
 			loop: true,
-			renderMode: performance
+			renderMode: "performance",
 		},
 		[
 			(slider) => {
@@ -105,16 +105,19 @@ export default function Carusel() {
 	return (
 		<div ref={ref} className="keen-slider">
 			{randomSlides.map((slide) => (
-				<div key={slide.number} className={`keen-slider__slide ${slide.number}`}>
+				<div
+					key={slide.number}
+					className={`keen-slider__slide ${slide.number}`}
+				>
 					<Image
 						loader={myLoader}
 						src={slide.src}
 						width={slide.width}
 						height={slide.height}
 						alt={slide.alt}
-						priority
+						// priorityх
 						sizes="100vw"
-						style={{ width: '100%', height: 'auto' }}
+						style={{ width: "100%", height: "auto", objectFit: "cover" }}
 					/>
 				</div>
 			))}

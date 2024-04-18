@@ -1,14 +1,16 @@
+"use client";
 import classes from "../styles/layout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;
 };
 
 export function Header() {
-	const router = useRouter();
+	// const router = useRouter();
+	const router = 12;
 	return (
 		<>
 			<header className={classes.header__menu}>
@@ -24,7 +26,7 @@ export function Header() {
 									width={0}
 									height={0}
 									sizes="100vw"
-									style={{ width: '100%', height: 'auto' }}
+									style={{ width: "100%", height: "auto" }}
 								/>
 								<div className={classes.logo__icon_mini}>
 									<Image
@@ -35,7 +37,7 @@ export function Header() {
 										width={12}
 										height={14}
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>

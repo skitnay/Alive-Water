@@ -53,7 +53,7 @@ export default function waterpumps() {
 							<div className={classes.howtouse__video1}>
 								<div>
 									<video
-										style={{ width: "500px", height: "280px" }}
+										style={{ width: "400px", height: "280px" }}
 										controls
 										muted
 										poster="/images/logo/logo3.webp"
@@ -119,7 +119,7 @@ export default function waterpumps() {
 										height="370"
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div className={classes.waterpumps__text}>
@@ -157,7 +157,7 @@ export default function waterpumps() {
 										height={0}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
@@ -196,7 +196,7 @@ export default function waterpumps() {
 										height={88}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -207,7 +207,7 @@ export default function waterpumps() {
 										height={109}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -218,7 +218,7 @@ export default function waterpumps() {
 										height={109}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -229,7 +229,7 @@ export default function waterpumps() {
 										height={89}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -251,7 +251,7 @@ export default function waterpumps() {
 										height={93}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -262,7 +262,7 @@ export default function waterpumps() {
 										height={91}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -273,7 +273,7 @@ export default function waterpumps() {
 										height={112}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -284,7 +284,7 @@ export default function waterpumps() {
 										height={103}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -295,7 +295,7 @@ export default function waterpumps() {
 										height={98}
 										alt=""
 										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>

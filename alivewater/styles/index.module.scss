@@ -90,7 +90,7 @@ $blue: #263c5c;
 	&__button {
 		cursor: pointer;
 		display: inline;
-		color:#263c5c;
+		color: #263c5c;
 		font-size: 24px;
 		line-height: 120px;
 		font-weight: bold;
@@ -635,7 +635,7 @@ $blue: #263c5c;
 	}
 	&__flex {
 		// position: relative;
-		
+
 		display: flex;
 		flex-grow: 1;
 		flex-wrap: wrap;
@@ -725,8 +725,8 @@ $blue: #263c5c;
 	&__wa {
 	}
 	&__contact {
-		max-width: 450px;
-		min-width: 450px;
+		max-width: 350px;
+		min-width: 350px;
 		font-size: 32px;
 		margin: 40px 40px 0 0;
 		&:nth-child(1) {
@@ -873,11 +873,11 @@ $blue: #263c5c;
 	}
 	&__pic {
 		min-width: 320px;
-		&__img1{
+		&__img1 {
 			max-width: 449px;
 			max-height: 378px;
 		}
-		&__img2{
+		&__img2 {
 			max-width: 200px;
 			max-height: 350px;
 		}
@@ -1022,16 +1022,18 @@ $blue: #263c5c;
 		align-items: center;
 		max-width: 300px;
 		justify-content: space-between;
-		p {
-			font-size: 20px;
-			color: #7bb72d;
-			font-weight: 500;
-			padding: 0px 10px;
-			text-decoration: underline;
-			transition: 0.3s ease;
-			&:hover {
-				color: #8ed433;
+		div {
+			a {
+				font-size: 20px;
+				color: #7bb72d;
+				font-weight: 500;
+				padding: 0px 10px;
+				text-decoration: underline;
 				transition: 0.3s ease;
+				&:hover {
+					color: #8ed433;
+					transition: 0.3s ease;
+				}
 			}
 		}
 	}
@@ -1041,7 +1043,7 @@ $blue: #263c5c;
 		font-size: 25px;
 		font-weight: bold;
 	}
-	&__img{
+	&__img {
 		max-width: 60px;
 		max-height: 60px;
 	}

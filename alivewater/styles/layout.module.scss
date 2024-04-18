@@ -369,7 +369,7 @@ $blue: #263c5c;
 	&__email {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
-		z {
+		i {
 			max-width: 300px;
 			color: #fff;
 			font-weight: normal;
@@ -383,7 +383,8 @@ $blue: #263c5c;
 	&__phone {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
-		z {
+		i {
+			font-family: roboto;
 			color: #fff;
 			font-weight: normal;
 			text-decoration: underline;

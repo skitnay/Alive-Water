@@ -3,24 +3,27 @@ import Head from "next/dist/shared/lib/head";
 import classes from "../styles/index.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;
 };
 
-const icon = () => <>
-	<Image
-		className={classes.analyzes__img}
-		loader={myLoader}
-		src="icons/pdf.webp"
-		sizes="100vw"
-		style={{ width: '100%', height: 'auto' }}
-		width={60}
-		height={60}
-		alt="pdf"
-		priority
-	/>
-</>
+const icon = () => (
+	<>
+		<Image
+			className={classes.analyzes__img}
+			loader={myLoader}
+			src="icons/pdf.webp"
+			sizes="100vw"
+			style={{ width: "100%", height: "auto" }}
+			width={60}
+			height={60}
+			alt="pdf"
+			priority
+		/>
+	</>
+);
 
 export default function analyzes() {
 	return (
@@ -66,19 +69,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Olymp1.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Olymp1.pdf" download>
+								<Link href="/files/Olymp1.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -90,19 +92,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Microraion2.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Microraion2.pdf" download>
+								<Link href="/files/Microraion2.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -114,19 +115,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Soglasiya4.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Soglasiya4.pdf" download>
+								<Link href="/files/Soglasiya4.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -138,19 +138,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/prokudskoe.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/prokudskoe.pdf" download>
+								<Link href="/files/prokudskoe.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -162,19 +161,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Bolshaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Bolshaya.pdf" download>
+								<Link href="/files/Bolshaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -188,19 +186,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Lenina28.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Lenina28.pdf" download>
+								<Link href="/files/Lenina28.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -212,19 +209,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Loktinskaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Loktinskaya.pdf" download>
+								<Link href="/files/Loktinskaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -236,19 +232,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Revolucii.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Revolucii.pdf" download>
+								<Link href="/files/Revolucii.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -260,19 +255,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Sadovaya28.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Sadovaya28.pdf" download>
+								<Link href="/files/Sadovaya28.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -284,19 +278,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Centralnaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Centralnaya.pdf" download>
+								<Link href="/files/Centralnaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -308,19 +301,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/sofiyskaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/sofiyskaya.pdf" download>
+								<Link href="/files/sofiyskaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -332,19 +324,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/gidromontagnaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/gidromontagnaya.pdf" download>
+								<Link href="/files/gidromontagnaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -354,19 +345,18 @@ export default function analyzes() {
 						<div className={classes.analyzes__icon_menu}>
 							{icon()}
 							<div>
-								<p
+								<Link
 									href="/files/Centralnaya.pdf"
 									rel="noopener noreferrer"
-									alt="alt text"
 									target="_blank"
 								>
 									Смотреть
-								</p>
+								</Link>
 							</div>
 							<div>
-								<p href="/files/Centralnaya.pdf" download>
+								<Link href="/files/Centralnaya.pdf" download>
 									Скачать
-								</p>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -385,22 +375,21 @@ export default function analyzes() {
 							alt="pdf"
 							priority
 							sizes="100vw"
-							style={{ width: '100%', height: 'auto' }}
+							style={{ width: "100%", height: "auto" }}
 						/>
 						<div>
-							<p
+							<Link
 								href="/files/sertificate.pdf"
 								rel="noopener noreferrer"
-								alt="alt text"
 								target="_blank"
 							>
 								Смотреть
-							</p>
+							</Link>
 						</div>
 						<div>
-							<p href="/files/sertificate.pdf" download>
+							<Link href="/files/sertificate.pdf" download>
 								Скачать
-							</p>
+							</Link>
 						</div>
 					</div>
 				</div>
