@@ -394,6 +394,7 @@ export default function analyzes() {
 					</div>
 				</div>
 			</section>
+			<section className={classes.analyzes__develop}>🔨 Страница в разработке 🔨</section>
 		</Layout>
 	);
 }
