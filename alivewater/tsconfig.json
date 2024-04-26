@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Header.js", "components/Footer.js", "components/Carusel.js", "components/Addresses.js", "components/Layout.js", "components/Modal.js", "components/New.js", "components/Waterpumps.js", "pages/_app.js", "pages/_document.js", "pages/analyzes.js", "pages/contacts.js", "pages/index.js", "pages/news.js", "pages/waterpumps.js"  ],
   "exclude": [
     "node_modules"
   ]
