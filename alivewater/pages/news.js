@@ -48,6 +48,46 @@ export default function About() {
 								<div className={classes.newsBlock__news}>
 									<div className={classes.newsBlock__title_block}>
 										<div className={classes.newsBlock__title}>
+											Отличная новость для жителей Октябрьского района!
+										</div>
+										<div className={classes.newsBlock__date}>
+											01/05/2024
+										</div>
+									</div>
+									<h3 className={classes.newsBlock__text}>
+										<p>
+											Мы установили новый водомат{" "}
+											в Октябрьском районе по адресу:
+											<b> ​Федосеева, 8 </b>
+										</p>
+										<p>
+											Аппарат работает <b>круглосуточно</b>
+										</p>
+									</h3>
+								</div>
+								<div className={classes.newsBlock__pic}>
+									<Image
+										loader={myLoader}
+										src="news/Fedoseeva01.jpg"
+										alt=""
+										width={343}
+										height={190}
+										priority
+										sizes="100vw"
+										style={{ width: '100%', height: 'auto' }}
+									></Image>
+								</div>
+							</div>
+						</div>
+						<div className={classes.newsBlock__separator}></div>
+					</div>
+					<div className={classes.newsBlock__flex}>
+						<div className={classes.newsBlock__separator}></div>
+						<div className={classes.newBlock}>
+							<div className={classes.newsBlock__row}>
+								<div className={classes.newsBlock__news}>
+									<div className={classes.newsBlock__title_block}>
+										<div className={classes.newsBlock__title}>
 											Новый аппарат в Пашино!
 										</div>
 										<div className={classes.newsBlock__date}>

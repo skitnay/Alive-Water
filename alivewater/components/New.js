@@ -15,6 +15,44 @@ export default function News() {
 						<div className={classes.newsBlock__news}>
 							<div className={classes.newsBlock__title_block}>
 								<div className={classes.newsBlock__title}>
+									Отличная новость для жителей Октябрьского района!
+								</div>
+								<div className={classes.newsBlock__date}>
+									01/05/2024
+								</div>
+							</div>
+							<h3 className={classes.newsBlock__text}>
+								<p>
+									Мы установили новый водомат{" "}
+									в Октябрьском районе по адресу:
+									<b> ​Федосеева, 8 </b>
+								</p>
+								<p>
+									Аппарат работает <b>круглосуточно</b>
+								</p>
+							</h3>
+						</div>
+						<div className={classes.newsBlock__pic}>
+							<Image
+								loader={myLoader}
+								src="news/Fedoseeva01.jpg"
+								alt=""
+								width={343}
+								height={190}
+								priority
+								sizes="100vw"
+								style={{ width: '100%', height: 'auto' }}
+							></Image>
+						</div>
+					</div>
+				</div>
+				<div className={classes.newBlock__separator}></div>
+				{/* <div className={classes.newsBlock__separator}></div> */}
+				<div className={classes.newBlock}>
+					<div className={classes.newsBlock__row}>
+						<div className={classes.newsBlock__news}>
+							<div className={classes.newsBlock__title_block}>
+								<div className={classes.newsBlock__title}>
 									Новый аппарат в Пашино!
 								</div>
 								<div className={classes.newsBlock__date}>
@@ -36,46 +74,6 @@ export default function News() {
 							<Image
 								loader={myLoader}
 								src="news/Pashino.webp"
-								alt=""
-								width={343}
-								height={190}
-								priority
-								sizes="100vw"
-								style={{ width: '100%', height: 'auto' }}
-							></Image>
-						</div>
-					</div>
-				</div>
-				<div className={classes.newBlock__separator}></div>
-				{/* <div className={classes.newsBlock__separator}></div> */}
-				<div className={classes.newBlock}>
-					<div className={classes.newsBlock__row}>
-						<div className={classes.newsBlock__news}>
-							<div className={classes.newsBlock__title_block}>
-								<div className={classes.newsBlock__title}>
-									Обогащение минералами!
-								</div>
-								<div className={classes.newsBlock__date}>
-									07/09/2023
-								</div>
-							</div>
-							<h3 className={classes.newsBlock__text}>
-								<p>
-									Теперь в нескольких наших аппаратах есть функция обогащения воды полезными минералами, такими как: <b>кальций</b>, <b>магний</b>, <b>калий</b> и <b>йод</b>.
-								</p>
-								<div>
-									Аппараты с такой функцией есть по адресам:
-									<p>c. Криводановка, Микрорайон, 2</p>
-									<p>с. Каменка, мкр Олимпийской Славы, 1</p>
-									<p>Пашино, Солидарности, 15</p>
-									<p>с. Прокудское, ​Есенина, 1г</p>
-								</div>
-							</h3>
-						</div>
-						<div className={classes.newsBlock__pic}>
-							<Image
-								loader={myLoader}
-								src="news/Ka2.webp"
 								alt=""
 								width={343}
 								height={190}
