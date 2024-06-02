@@ -17,7 +17,7 @@ const slides = [
 	},
 	{
 		number: "number-slide2",
-		src: "backgrounds4/happy-sportswoman2.webp",
+		src: "backgrounds4/happy-sportswoman.webp",
 		alt: "image2",
 		width: 1180,
 		height: 600,
@@ -31,14 +31,14 @@ const slides = [
 	},
 	{
 		number: "number-slide4",
-		src: "backgrounds4/old-man2.webp",
+		src: "backgrounds4/old-man.webp",
 		alt: "image4",
 		width: 1180,
 		height: 600,
 	},
 	{
 		number: "number-slide5",
-		src: "backgrounds4/summer-day2.webp",
+		src: "backgrounds4/summer-day.webp",
 		alt: "image5",
 		width: 1180,
 		height: 600,
