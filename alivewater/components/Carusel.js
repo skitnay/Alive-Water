@@ -17,28 +17,28 @@ const slides = [
 	},
 	{
 		number: "number-slide2",
-		src: "backgrounds4/happy-sportswoman.webp",
+		src: "backgrounds4/happy-sportswoman2.webp",
 		alt: "image2",
 		width: 1180,
 		height: 600,
 	},
 	{
 		number: "number-slide3",
-		src: "backgrounds4/girl-roller-skating-and-drinking-water.webp",
+		src: "backgrounds4/girl-roller-skating-and-drinking-water2.jpg",
 		alt: "image3",
 		width: 1180,
 		height: 600,
 	},
 	{
 		number: "number-slide4",
-		src: "backgrounds4/old-man.webp",
+		src: "backgrounds4/old-man2.webp",
 		alt: "image4",
 		width: 1180,
 		height: 600,
 	},
 	{
 		number: "number-slide5",
-		src: "backgrounds4/summer-day.webp",
+		src: "backgrounds4/summer-day2.webp",
 		alt: "image5",
 		width: 1180,
 		height: 600,
@@ -115,9 +115,9 @@ export default function Carusel() {
 						width={slide.width}
 						height={slide.height}
 						alt={slide.alt}
-						// priorityх
-						sizes="100vw"
-						style={{ width: "100%", height: "auto", objectFit: "cover" }}
+					// priority
+					// sizes="100vw"
+					// style={{ width: "100%", height: "auto", objectFit: "cover" }}
 					/>
 				</div>
 			))}

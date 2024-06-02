@@ -27,9 +27,12 @@ $blue: #263c5c;
 			pointer-events: none;
 
 			@media (max-width: 716px) {
-				min-width: 750px;
+				// min-width: 750px;
+				max-width: 750px;
+				width: 100%;
+				// height: 100%;
 				object-fit: cover;
-				object-position: center;
+				// object-position: center;
 			}
 		}
 	}
@@ -1000,10 +1003,10 @@ $blue: #263c5c;
 	// 	}
 	// 	@media (max-width: 660px) {
 	// 		// display: flex;
-   //       text-align: center;
+	//       text-align: center;
 	// 		align-items: center;
 	// 		align-self: center;
-   //    }
+	//    }
 	// }
 	&__title {
 		font-weight: 700;
@@ -1068,7 +1071,7 @@ $blue: #263c5c;
 		font-size: 25px;
 		font-weight: bold;
 		@media (max-width: 752px) {
-         font-size: 25px;
-      }
+			font-size: 25px;
+		}
 	}
 }
