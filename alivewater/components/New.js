@@ -15,6 +15,42 @@ export default function News() {
 						<div className={classes.newsBlock__news}>
 							<div className={classes.newsBlock__title_block}>
 								<div className={classes.newsBlock__title}>
+									Внимание, жители Каменки!
+								</div>
+								<div className={classes.newsBlock__date}>
+									14/06/2024
+								</div>
+							</div>
+							<h3 className={classes.newsBlock__text}>
+								<p>
+									Мы установили новый водомат{" "}
+									в Каменке по адресу:
+									<b> Советская, 2а </b>
+								</p>
+								<p>
+									Аппарат работает <b>круглосуточно</b>
+								</p>
+							</h3>
+						</div>
+						<div className={classes.newsBlock__pic}>
+							<Image
+								loader={myLoader}
+								src="news/Sovetskaya2a.jpg"
+								alt=""
+								width={343}
+								height={190}
+								priority
+							></Image>
+						</div>
+					</div>
+				</div>
+				<div className={classes.newBlock__separator}></div>
+				{/* <div className={classes.newsBlock__separator}></div> */}
+				<div className={classes.newBlock}>
+					<div className={classes.newsBlock__row}>
+						<div className={classes.newsBlock__news}>
+							<div className={classes.newsBlock__title_block}>
+								<div className={classes.newsBlock__title}>
 									Отличная новость для жителей Октябрьского района!
 								</div>
 								<div className={classes.newsBlock__date}>
@@ -40,46 +76,6 @@ export default function News() {
 								width={343}
 								height={190}
 								priority
-								sizes="100vw"
-								style={{ width: '100%', height: 'auto' }}
-							></Image>
-						</div>
-					</div>
-				</div>
-				<div className={classes.newBlock__separator}></div>
-				{/* <div className={classes.newsBlock__separator}></div> */}
-				<div className={classes.newBlock}>
-					<div className={classes.newsBlock__row}>
-						<div className={classes.newsBlock__news}>
-							<div className={classes.newsBlock__title_block}>
-								<div className={classes.newsBlock__title}>
-									Новый аппарат в Пашино!
-								</div>
-								<div className={classes.newsBlock__date}>
-									08/09/2023
-								</div>
-							</div>
-							<h3 className={classes.newsBlock__text}>
-								<p>
-									Доброго времени суток, друзья! Мы поставили новый водомат{" "}
-									в Пашино по адресу:
-									<b> Пашино м-н, Солидарности, 15</b>
-								</p>
-								<p>
-									Аппарат работает <b>круглосуточно</b>
-								</p>
-							</h3>
-						</div>
-						<div className={classes.newsBlock__pic}>
-							<Image
-								loader={myLoader}
-								src="news/Pashino.webp"
-								alt=""
-								width={343}
-								height={190}
-								priority
-								sizes="100vw"
-								style={{ width: '100%', height: 'auto' }}
 							></Image>
 						</div>
 					</div>
