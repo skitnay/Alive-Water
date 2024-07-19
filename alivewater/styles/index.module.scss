@@ -156,6 +156,7 @@ $blue: #263c5c;
 	}
 	&__news {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
 		margin-right: 20px;
 		@media (max-width: 765px) {
