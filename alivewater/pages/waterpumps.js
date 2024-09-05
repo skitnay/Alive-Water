@@ -195,8 +195,8 @@ export default function waterpumps() {
 										width={95}
 										height={88}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -206,8 +206,8 @@ export default function waterpumps() {
 										width={84}
 										height={109}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -217,8 +217,8 @@ export default function waterpumps() {
 										width={106}
 										height={109}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -228,8 +228,8 @@ export default function waterpumps() {
 										width={84}
 										height={89}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -238,7 +238,8 @@ export default function waterpumps() {
 										src="staff/Five.svg"
 										width={113}
 										height={91}
-										alt=""
+										// alt="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
@@ -250,8 +251,8 @@ export default function waterpumps() {
 										width={85}
 										height={93}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -261,8 +262,8 @@ export default function waterpumps() {
 										width={84}
 										height={91}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -272,8 +273,8 @@ export default function waterpumps() {
 										width={100}
 										height={112}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -283,8 +284,8 @@ export default function waterpumps() {
 										width={120}
 										height={103}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -294,8 +295,8 @@ export default function waterpumps() {
 										width={88}
 										height={98}
 										alt=""
-										sizes="100vw"
-										style={{ width: "100%", height: "auto" }}
+										// sizes="100vw"
+										// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
