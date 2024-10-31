@@ -1,11 +1,11 @@
 {
-  "project" : {
-    "projectName" : "Alivewater"
-  },
   "tasks" : {
     "items" : [
 
     ],
     "enabled" : true
+  },
+  "project" : {
+    "projectName" : "Alivewater"
   }
 }
