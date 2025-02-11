@@ -14,7 +14,7 @@ export default function Map() {
 				<div className={classes.title}>Наши водоматы</div>
 				<div className={classes.map__content}>
 					<div className={classes.map__map}>
-						<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68">
+						<Link href="https://2gis.ru/novosibirsk/branches/70000001094429194?m=82.850647%2C54.817341%2F16">
 							<div target="_blank">
 								<Image
 									loader={myLoader}
