@@ -48,7 +48,7 @@ export default function contacts() {
 								<Link href="https://vk.com/alivewaternsk">
 									<div target="_blank">
 										<Image
-										loader={myLoader}
+											loader={myLoader}
 											src="icons/vk.webp"
 											width={45}
 											height={45}
@@ -73,11 +73,25 @@ export default function contacts() {
 								</Link>
 							</div>
 							<div className={classes.contacts__wa}>
-								<Link href="https://wa.me/79537641000">
+								<Link href="https://wa.me/79134531010">
 									<div target="_blank">
 										<Image
 											loader={myLoader}
 											src="icons/wa.webp"
+											width={45}
+											height={45}
+											alt="What's App icon"
+											priority
+										/>
+									</div>
+								</Link>
+							</div>
+							<div className={classes.contacts__od}>
+								<Link href="https://t.me/+79537641000">
+									<div target="_blank">
+										<Image
+											loader={myLoader}
+											src="icons/Telegram.png"
 											width={45}
 											height={45}
 											alt="What's App icon"

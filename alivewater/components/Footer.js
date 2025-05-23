@@ -106,8 +106,7 @@ export function Footer({ setShowModal }) {
 							<div className={classes.tSection__contact}>
 								<Link
 									href="https://ok.ru/profile/580408735701"
-									target="_blank"
-								>
+									target="_blank">
 									<div>
 										<Image
 											loader={myLoader}
@@ -115,6 +114,22 @@ export function Footer({ setShowModal }) {
 											width={0}
 											height={0}
 											alt="od"
+											priority
+											sizes="100vw"
+											style={{ width: "100%", height: "auto" }}
+										/>
+									</div>
+								</Link>
+							</div>
+							<div className={classes.tSection__contact}>
+								<Link href="https://t.me/+79537641000" target="_blank">
+									<div>
+										<Image
+											loader={myLoader}
+											src="icons/telega.webp"
+											width={0}
+											height={0}
+											alt="wa"
 											priority
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
