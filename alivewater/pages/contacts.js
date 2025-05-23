@@ -73,7 +73,7 @@ export default function contacts() {
 								</Link>
 							</div>
 							<div className={classes.contacts__wa}>
-								<Link href="https://wa.me/79134531010">
+								<Link href="https://wa.me/79537641000">
 									<div target="_blank">
 										<Image
 											loader={myLoader}

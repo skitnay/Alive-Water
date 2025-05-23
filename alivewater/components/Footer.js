@@ -123,7 +123,7 @@ export function Footer({ setShowModal }) {
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href="https://wa.me/79134531010" target="_blank">
+								<Link href="https://wa.me/79537641000" target="_blank">
 									<div>
 										<Image
 											loader={myLoader}
