@@ -29,5 +29,5 @@ jobs:
                 # Убедись, что .env.local уже существует на сервере
                 npm ci
                 npm run build
-                pm2 restart next-app
+                pm2 restart alivewater
               EOF
