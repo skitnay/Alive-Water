@@ -678,6 +678,8 @@ $blue: #263c5c;
 		position: relative;
 		width: 100%;
 		height: 100%;
+		border: 1px solid $blue;
+		border-radius: 10px;
 		@media (max-width: 700px) {
 			margin: 10px 0;
 		}
@@ -706,25 +708,33 @@ $blue: #263c5c;
 		}
 	}
 	&__social {
+		// display: flex;
+		// flex-wrap: wrap;
 		display: flex;
-		margin: 20px 0 0 30px;
+		// flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin: 20px 20px 20px 30px;
 		@media (max-width: 450px) {
 			margin: 20px 0 0 0px;
 		}
 	}
 	&__vk {
+		justify-content: space-between;
 	}
 	&__od {
-		margin: 0 30px;
-		@media (max-width: 450px) {
-			margin: 0 20px;
-		}
+		justify-content: space-between;
+		// margin: 0 30px;
+		// @media (max-width: 450px) {
+		// 	margin: 0 20px;
+		// }
 	}
 	&__2gis {
+		justify-content: space-between;
 		margin: 0 0px 0 0px;
-		@media (max-width: 450px) {
-			margin: 0 0px 0 20px;
-		}
+		// @media (max-width: 450px) {
+		// 	margin: 0 0px 0 20px;
+		// }
 	}
 	&__wa {
 	}
