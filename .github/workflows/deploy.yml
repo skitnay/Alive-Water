@@ -23,7 +23,7 @@ jobs:
          - name: Deploy to VPS
            run: |
               ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-                cd /root/Alive-Water/alivewater
+                cd /root/Alive-Water
                 git pull origin master
 
                 # Убедись, что .env.local уже существует на сервере
