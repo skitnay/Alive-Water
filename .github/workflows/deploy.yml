@@ -23,9 +23,9 @@ jobs:
          - name: Deploy to VPS
            run: |
               ssh -T ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
-              NODE_OPTIONS=--max_old_space_size=512 npm run build >> deploy.log 2>&1 &&
               cd /root/Alive-Water/alivewater &&
               git pull origin master &&
               npm ci >> deploy.log 2>&1 &&
+              NODE_OPTIONS=--max_old_space_size=512 npm run build >> deploy.log 2>&1 &&
               pm2 restart alivewater >> deploy.log 2>&1
               "
