@@ -275,7 +275,8 @@ $blue: #263c5c;
 			color: rgba(255, 255, 255, 0.735);
 			@media (max-width: 850px) {
 				display: block;
-				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 				p {
 					display: inline;
 				}
@@ -283,7 +284,16 @@ $blue: #263c5c;
 		}
 		&_flex {
 			display: flex;
+			flex-wrap: wrap;
+			padding: 10px 10px;
+			@media (max-width: 850px) {
+				padding: 0;
+				justify-content: center;
+				align-items: center;
+			}
 			// flex-direction: column;
+			// justify-content: center;
+			// align-items: center;
 		}
 	}
 }
@@ -330,27 +340,29 @@ $blue: #263c5c;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-end;
-	min-height: 92px;
+	min-height: 100px;
 	color: #fff;
 	min-width: 253px;
 	@media (max-width: 850px) {
-		padding: 20px 20px 0;
+		padding: 0px 20px 0;
 		display: flex;
 		text-align: center;
-		min-height: 150px;
 		align-items: center;
+		min-height: 150px;
 	}
 	@media (max-width: 850px) {
-		padding: 0;
+		// padding: 20px;
 	}
 	&__contacts {
 		max-width: 200px;
 		min-width: 200px;
 		display: flex;
 		justify-content: space-between;
+		margin: 10px;
 		@media (max-width: 700px) {
 			max-width: 252px;
 			justify-content: space-around;
+			// margin: 10px;
 		}
 	}
 	&__contact {
@@ -372,11 +384,13 @@ $blue: #263c5c;
 		}
 		@media (max-width: 850px) {
 			max-width: 40px;
+			// padding: 20px;
 		}
 	}
 	&__email {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
+		margin: 5px;
 		i {
 			max-width: 300px;
 			color: #fff;
@@ -391,6 +405,7 @@ $blue: #263c5c;
 	&__phone {
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.637);
+		margin: 5px;
 		i {
 			font-family: roboto;
 			color: #fff;
