@@ -115,9 +115,6 @@ export default function Carusel() {
 						width={slide.width}
 						height={slide.height}
 						alt={slide.alt}
-					// priority
-					// sizes="100vw"
-					// style={{ width: "100%", height: "auto", objectFit: "cover" }}
 					/>
 				</div>
 			))}

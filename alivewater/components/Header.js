@@ -16,8 +16,8 @@ export function Header() {
 			<header className={classes.header__menu}>
 				<div className={classes.menu__body}>
 					<Link href="/">
-						<div className={classes.logo}>
-							<div className={classes.logo__icon}>
+						<span className={classes.logo}>
+							<span className={classes.logo__icon}>
 								<Image
 									loader={myLoader}
 									src="logo/logo22.webp"
@@ -40,58 +40,58 @@ export function Header() {
 										style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
-							</div>
+							</span>
 							<div className={classes.logo__drop}>
 								<div className={classes.logo__title}>ЖИВАЯ ВОДА</div>
 								<div className={classes.logo__titleMini}>
 									Новосибирск
 								</div>
 							</div>
-						</div>
+						</span>
 					</Link>
 					<ul className={classes.menu__list}>
 						<li>
 							<Link href="/">
-								<div
+								<span
 									className={`${
 										router.pathname == "/" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Главная
-								</div>
+								</span>
 							</Link>
 						</li>
 						<li>
 							<Link href="/analyzes">
-								<div
+								<span
 									className={`${
 										router.pathname == "/analyzes" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Анализы Воды
-								</div>
+								</span>
 							</Link>
 						</li>
 						<li>
 							<Link href="/waterpumps">
-								<div
+								<span
 									className={`${
 										router.pathname == "/waterpumps" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Водоматы
-								</div>
+								</span>
 							</Link>
 						</li>
 						<li>
 							<Link href="/contacts">
-								<div
+								<span
 									className={`${
 										router.pathname == "/contacts" ? "active" : ""
 									} ${classes.menu__link}`}
 								>
 									Контакты
-								</div>
+								</span>
 							</Link>
 						</li>
 					</ul>

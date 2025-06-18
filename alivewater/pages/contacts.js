@@ -42,14 +42,14 @@ export default function contacts() {
 					}}
 				>
 					<div className={classes.contacts__contact}>
-						<div className={classes.contacts__title}>Мы в</div>
+						{/* <div className={classes.contacts__title}>Мы в</div> */}
 						<div className={classes.contacts__social}>
 							<div className={classes.contacts__vk}>
 								<Link href="https://vk.com/alivewaternsk">
 									<div target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/vk.webp"
+											src="/icons/vk.webp"
 											width={45}
 											height={45}
 											alt="Vkontakte icon"
@@ -60,78 +60,83 @@ export default function contacts() {
 							</div>
 							<div className={classes.contacts__od}>
 								<Link href="https://ok.ru/profile/580408735701">
-									<div target="_blank">
+									<span target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/od.webp"
+											src="/icons/od.webp"
 											width={45}
 											height={45}
 											alt="Odnaklasniki icon"
 											priority
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.contacts__wa}>
 								<Link href="https://wa.me/79134531010">
-									<div target="_blank">
+									<span target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/wa.webp"
+											src="/icons/wa.webp"
 											width={45}
 											height={45}
 											alt="What's App icon"
 											priority
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.contacts__od}>
 								<Link href="https://t.me/+79537641000">
-									<div target="_blank">
+									<span target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/Telegram.png"
+											src="/icons/Telegram.png"
 											width={45}
 											height={45}
 											alt="What's App icon"
 											priority
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.contacts__2gis}>
-								<Link href="https://2gis.ru/novosibirsk/branches/70000001038983235?m=83.064884%2C55.055966%2F9.68">
-									<div target="_blank">
+								<Link href="https://2gis.ru/novosibirsk/branches/70000001094429194?m=82.850647%2C54.817341%2F16">
+									<span target="_blank">
 										<Image
 											loader={myLoader}
-											src="icons/2gis.webp"
+											src="/icons/2gis.webp"
 											width={100}
 											height={45}
 											alt="2gis icon"
 											priority
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 						</div>
 					</div>
 					<div className={classes.contacts__contact}>
-						<div className={classes.contacts__title}>Телефон </div>
+						{/* <div className={classes.contacts__title}></div> */}
 						<p>
 							<Link href="tel:+79537641000">
-								<div>+7 (953) 764-10-00</div>
+								<span>+7 (953) 764-10-00</span>
+							</Link>
+						</p>
+						<p>
+							<Link href="mailto:zhivaya@voda54.ru">
+								<span>zhivaya@voda54.ru</span>
 							</Link>
 						</p>
 					</div>
-					<div className={classes.contacts__contact}>
+					{/* <div className={classes.contacts__contact}>
 						<div className={classes.contacts__title}>Email </div>
 						<p>
 							<Link href="mailto:zhivaya@voda54.ru">
 								<div>zhivaya@voda54.ru</div>
 							</Link>
 						</p>
-					</div>
+					</div> */}
 					<Map />
 				</motion.div>
 			</section>

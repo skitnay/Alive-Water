@@ -68,7 +68,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/verh-yrmen.jpg"
+										src="/news/verh-yrmen.jpg"
 										alt=""
 										width={343}
 										height={190}
@@ -106,7 +106,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/Sovetskaya2a.jpg"
+										src="/news/Sovetskaya2a.jpg"
 										alt=""
 										width={343}
 										height={190}
@@ -146,7 +146,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/Fedoseeva01.jpg"
+										src="/news/Fedoseeva01.jpg"
 										alt=""
 										width={343}
 										height={190}
@@ -186,7 +186,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/Pashino.webp"
+										src="/news/Pashino.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -226,7 +226,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/Ka2.webp"
+										src="/news/Ka2.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -265,7 +265,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/og.webp"
+										src="/news/og.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -305,7 +305,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/qr-code.webp"
+										src="/news/qr-code.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -344,7 +344,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/photo_2022-06-06_18-29-40.webp"
+										src="/news/photo_2022-06-06_18-29-40.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -382,7 +382,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/waterp.webp"
+										src="/news/waterp.webp"
 										alt=""
 										width={343}
 										height={190}
@@ -421,7 +421,7 @@ export default function About() {
 								<div className={classes.newsBlock__pic}>
 									<Image
 										loader={myLoader}
-										src="news/e5541be6897f6aa20ec5420d93a7826b.webp"
+										src="/news/e5541be6897f6aa20ec5420d93a7826b.webp"
 										alt=""
 										width={343}
 										height={190}

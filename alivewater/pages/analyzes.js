@@ -14,7 +14,7 @@ const icon = () => (
 		<Image
 			className={classes.analyzes__img}
 			loader={myLoader}
-			src="icons/pdf.webp"
+			src="/icons/pdf.webp"
 			sizes="100vw"
 			style={{ width: "100%", height: "auto" }}
 			width={60}
@@ -369,7 +369,7 @@ export default function analyzes() {
 						<Image
 							className={classes.analyzes__img}
 							loader={myLoader}
-							src="icons/pdf.webp"
+							src="/icons/pdf.webp"
 							width={60}
 							height={60}
 							alt="pdf"

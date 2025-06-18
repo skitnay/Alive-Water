@@ -34,7 +34,7 @@ export default function News() {
 						<div className={classes.newsBlock__pic}>
 							<Image
 								loader={myLoader}
-								src="news/verh-yrmen.jpg"
+								src="/news/verh-yrmen.jpg"
 								alt=""
 								width={343}
 								height={190}
@@ -70,7 +70,7 @@ export default function News() {
 						<div className={classes.newsBlock__pic}>
 							<Image
 								loader={myLoader}
-								src="news/Sovetskaya2a.jpg"
+								src="/news/Sovetskaya2a.jpg"
 								alt=""
 								width={343}
 								height={190}

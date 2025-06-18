@@ -1,5 +1,16 @@
 import { motion } from "framer-motion";
 
+
+const variants = {
+	hidden: { opacity: 0, x: 0, y: 150 },
+	enter: {
+		opacity: 1,
+		x: 0,
+		y: 0,
+	},
+	exit: { opacity: 0, x: 200, y: 0 },
+};
+
 export function Layout({ children }) {
 	return (
 		<>
@@ -21,12 +32,3 @@ export function Layout({ children }) {
 	);
 }
 
-const variants = {
-	hidden: { opacity: 0, x: 0, y: 150 },
-	enter: {
-		opacity: 1,
-		x: 0,
-		y: 0,
-	},
-	exit: { opacity: 0, x: 200, y: 0 },
-};

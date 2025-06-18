@@ -67,7 +67,7 @@ export default function index() {
 				<News />
 				<div className={classes.newsSection__button_row}>
 					<Link href="/news">
-						<div className={classes.newsSection__button}>Все новости</div>
+						<span className={classes.newsSection__button}>Все новости</span>
 					</Link>
 				</div>
 			</motion.section>
@@ -106,7 +106,7 @@ export default function index() {
 							минеральных веществ. И здесь есть два важных момента, о
 							которых можно прочитать в{" "}
 							<Link href="https://vk.com/wall-188967637_2389">
-								<div target="_blank">статье</div>
+								<span target="_blank">статье</span>
 							</Link>
 							.
 						</div>
@@ -201,7 +201,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/badge.webp"
+									src="/staff/badge.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -224,7 +224,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/ruble.webp"
+									src="/staff/ruble.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -249,7 +249,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/forest.webp"
+									src="/staff/forest.webp"
 									width={103}
 									height={100}
 									alt="badge"
@@ -273,7 +273,7 @@ export default function index() {
 							<div className={classes.advantage__card_pic}>
 								<Image
 									loader={myLoader}
-									src="staff/clock.webp"
+									src="/staff/clock.webp"
 									width={100}
 									height={100}
 									alt="badge"
@@ -295,7 +295,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle.webp"
+								src="/staff/bottle.webp"
 								width={208}
 								height={208}
 								alt="badge"
@@ -313,7 +313,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle2.webp"
+								src="/staff/bottle2.webp"
 								width={208}
 								height={208}
 								alt="badge"
@@ -331,7 +331,7 @@ export default function index() {
 						<div className={classes.price__flex_pic}>
 							<Image
 								loader={myLoader}
-								src="staff/bottle3.webp"
+								src="/staff/bottle3.webp"
 								width={208}
 								height={208}
 								alt="badge"

@@ -13,8 +13,8 @@ export function Footer({ setShowModal }) {
 				<div className={classes.footer__menu__row}>
 					<div className={classes.fSection}>
 						<Link href="/">
-							<div className={classes.fSection__logo}>
-								<div className={classes.fSection__icon}>
+							<span className={classes.fSection__logo}>
+								<span className={classes.fSection__icon}>
 									<Image
 										loader={myLoader}
 										src="logo/logoWhite.webp"
@@ -25,26 +25,36 @@ export function Footer({ setShowModal }) {
 										sizes="100vw"
 										style={{ width: "100%", height: "auto" }}
 									/>
-								</div>
-								<div className={classes.fSection__drop}>
-									<div className={classes.fSection__title}>
+								</span>
+								<span className={classes.fSection__drop}>
+									<span className={classes.fSection__title}>
 										ЖИВАЯ ВОДА
-									</div>
-									<div className={classes.fSection__miniTitle}>
+									</span>
+									<span className={classes.fSection__miniTitle}>
 										Новосибирск
-									</div>
-								</div>
-							</div>
+									</span>
+								</span>
+							</span>
 						</Link>
 						<div
 							className={classes.fSection__inn_flex}
 							onClick={() => setShowModal()}
 						>
-							<div className={classes.fSection__inn}>
-								ИП <p>Полякова В. В.</p>
+							<div>
+								<div className={classes.fSection__inn}>
+									ИП <p>Полякова В. В.</p>
+								</div>
+								<div className={classes.fSection__inn}>
+									ИНН: <p>543005844122</p>
+								</div>
 							</div>
-							<div className={classes.fSection__inn}>
-								ИНН: <p>543005844122</p>
+							<div>
+								<div className={classes.fSection__inn}>
+									ИП <p>Поляков Р. Г.</p>
+								</div>
+								<div className={classes.fSection__inn}>
+									ИНН: <p>540363965241</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -53,29 +63,29 @@ export function Footer({ setShowModal }) {
 							<div className={classes.sSection__link__row}>
 								<div className={classes.sSection__link}>
 									<Link href="/">
-										<div>Главная</div>
+										<span>Главная</span>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/news">
-										<div>Новости</div>
+										<span>Новости</span>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/waterpumps">
-										<div>Водоматы</div>
+										<span>Водоматы</span>
 									</Link>
 								</div>
 							</div>
 							<div className={classes.sSection__link__row}>
 								<div className={classes.sSection__link}>
 									<Link href="/analyzes">
-										<div>Анализы</div>
+										<span>Анализы</span>
 									</Link>
 								</div>
 								<div className={classes.sSection__link}>
 									<Link href="/contacts">
-										<div>Контакты</div>
+										<span>Контакты</span>
 									</Link>
 								</div>
 								<div className={classes.sSection__link__hide}></div>
@@ -89,7 +99,7 @@ export function Footer({ setShowModal }) {
 									href="https://vk.com/alivewaternsk"
 									target="_blank"
 								>
-									<div>
+									<span>
 										<Image
 											loader={myLoader}
 											src="/icons/vkWhite.webp"
@@ -100,14 +110,14 @@ export function Footer({ setShowModal }) {
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
 								<Link
 									href="https://ok.ru/profile/580408735701"
 									target="_blank">
-									<div>
+									<span>
 										<Image
 											loader={myLoader}
 											src="icons/odWhite.webp"
@@ -118,12 +128,12 @@ export function Footer({ setShowModal }) {
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
 								<Link href="https://t.me/+79537641000" target="_blank">
-									<div>
+									<span>
 										<Image
 											loader={myLoader}
 											src="icons/telega.webp"
@@ -134,12 +144,12 @@ export function Footer({ setShowModal }) {
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
 								<Link href="https://wa.me/79537641000" target="_blank">
-									<div>
+									<span>
 										<Image
 											loader={myLoader}
 											src="icons/waWhite.webp"
@@ -150,7 +160,7 @@ export function Footer({ setShowModal }) {
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
 										/>
-									</div>
+									</span>
 								</Link>
 							</div>
 						</div>
@@ -170,11 +180,21 @@ export function Footer({ setShowModal }) {
 							className={classes.fSection__inn_flex}
 							onClick={() => setShowModal()}
 						>
-							<div className={classes.fSection__inn_hide}>
-								ИП <p>Полякова В. В.</p>
+							<div>
+								<div className={classes.fSection__inn_hide}>
+									ИП <p>Полякова В. В.</p>
+								</div>
+								<div className={classes.fSection__inn_hide}>
+									ИНН: <p>543005844122</p>
+								</div>
 							</div>
-							<div className={classes.fSection__inn_hide}>
-								ИНН: <p>543005844122</p>
+							<div>
+								<div className={classes.fSection__inn_hide}>
+									ИП <p>Поляков Р. Г.</p>
+								</div>
+								<div className={classes.fSection__inn_hide}>
+									ИНН: <p>540363965241</p>
+								</div>
 							</div>
 						</div>
 					</div>

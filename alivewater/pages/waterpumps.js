@@ -152,7 +152,7 @@ export default function waterpumps() {
 									<Image
 										className={classes.waterpumps__pic__img2}
 										loader={myLoader}
-										src="staff/400.webp"
+										src="/staff/400.webp"
 										width={0}
 										height={0}
 										alt=""
@@ -191,7 +191,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/First.svg"
+										src="/staff/First.svg"
 										width={95}
 										height={88}
 										alt=""
@@ -202,7 +202,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Second.svg"
+										src="/staff/Second.svg"
 										width={84}
 										height={109}
 										alt=""
@@ -213,7 +213,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Third.svg"
+										src="/staff/Third.svg"
 										width={106}
 										height={109}
 										alt=""
@@ -224,7 +224,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Four.svg"
+										src="/staff/Four.svg"
 										width={84}
 										height={89}
 										alt=""
@@ -235,7 +235,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Five.svg"
+										src="/staff/Five.svg"
 										width={113}
 										height={91}
 										// alt="100vw"
@@ -247,7 +247,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Six.svg"
+										src="/staff/Six.svg"
 										width={85}
 										height={93}
 										alt=""
@@ -258,7 +258,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Seven.svg"
+										src="/staff/Seven.svg"
 										width={84}
 										height={91}
 										alt=""
@@ -269,7 +269,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Eight.svg"
+										src="/staff/Eight.svg"
 										width={100}
 										height={112}
 										alt=""
@@ -280,7 +280,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Nine.svg"
+										src="/staff/Nine.svg"
 										width={120}
 										height={103}
 										alt=""
@@ -291,7 +291,7 @@ export default function waterpumps() {
 								<div>
 									<Image
 										loader={myLoader}
-										src="staff/Ten.svg"
+										src="/staff/Ten.svg"
 										width={88}
 										height={98}
 										alt=""

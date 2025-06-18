@@ -17,7 +17,11 @@ export default function MyApp({ Component, pageProps, router }) {
 			<AnimatePresence
 				exitBeforeEnter
 				initial={false}
-				onExitComplete={() => window.scrollTo(0, 0)}
+				onExitComplete={() => {
+					if (typeof window !== "undefined") {
+						window.scrollTo(0, 0);
+					}
+				}}
 			>
 				<Component {...pageProps} canonical={url} key={url} />
 				<Analytics />
