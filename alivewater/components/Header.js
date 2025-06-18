@@ -5,7 +5,7 @@ import Image from "next/image";
 // import { useRouter } from "next/router";
 
 const myLoader = ({ src, width, quality }) => {
-	return `/images/${src}?w=${width}&q=${quality || 75}`;
+	return `images/${src}?w=${width}&q=${quality || 75}`;
 };
 
 export function Header() {
@@ -53,9 +53,8 @@ export function Header() {
 						<li>
 							<Link href="/">
 								<span
-									className={`${
-										router.pathname == "/" ? "active" : ""
-									} ${classes.menu__link}`}
+									className={`${router.pathname == "/" ? "active" : ""
+										} ${classes.menu__link}`}
 								>
 									Главная
 								</span>
@@ -64,9 +63,8 @@ export function Header() {
 						<li>
 							<Link href="/analyzes">
 								<span
-									className={`${
-										router.pathname == "/analyzes" ? "active" : ""
-									} ${classes.menu__link}`}
+									className={`${router.pathname == "/analyzes" ? "active" : ""
+										} ${classes.menu__link}`}
 								>
 									Анализы Воды
 								</span>
@@ -75,9 +73,8 @@ export function Header() {
 						<li>
 							<Link href="/waterpumps">
 								<span
-									className={`${
-										router.pathname == "/waterpumps" ? "active" : ""
-									} ${classes.menu__link}`}
+									className={`${router.pathname == "/waterpumps" ? "active" : ""
+										} ${classes.menu__link}`}
 								>
 									Водоматы
 								</span>
@@ -86,9 +83,8 @@ export function Header() {
 						<li>
 							<Link href="/contacts">
 								<span
-									className={`${
-										router.pathname == "/contacts" ? "active" : ""
-									} ${classes.menu__link}`}
+									className={`${router.pathname == "/contacts" ? "active" : ""
+										} ${classes.menu__link}`}
 								>
 									Контакты
 								</span>

@@ -102,7 +102,7 @@ export function Footer({ setShowModal }) {
 									<span>
 										<Image
 											loader={myLoader}
-											src="/icons/vkWhite.webp"
+											src="icons/vkWhite.webp"
 											width={0}
 											height={0}
 											alt="vk"

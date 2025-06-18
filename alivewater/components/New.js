@@ -2,7 +2,7 @@ import classes from "../styles/index.module.scss";
 import Image from "next/image";
 
 const myLoader = ({ src, width, quality }) => {
-	return `/images/${src}?w=${width}&q=${quality || 75}`;
+	return `images/${src}?w=${width}&q=${quality || 75}`;
 };
 
 export default function News() {
