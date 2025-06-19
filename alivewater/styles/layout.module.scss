@@ -2,9 +2,11 @@
 $blue: #263c5c;
 
 .header {
+	// padding: 10px;
 	&__menu {
 		max-width: 1180px;
 		margin: 4px auto 0;
+		padding: 0px 5px;
 		min-height: 52px;
 	}
 }
@@ -102,7 +104,7 @@ $blue: #263c5c;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		@media (max-width: 570px) {
+		@media (max-width: 590px) {
 			min-height: 110px;
 			display: flex;
 			flex-direction: column;
@@ -163,6 +165,7 @@ $blue: #263c5c;
 			margin: 0px 0px 0px 0px;
 		}
 	}
+	padding: 30px;
 }
 
 .footer {
