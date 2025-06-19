@@ -7,6 +7,7 @@ export default function Document() {
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+				<link rel="preconnect" href="https://maps.api.2gis.ru" />
 				<link rel="shortcut icon" href="images/mobile/favicon.ico" />
 				<link rel="shortcut icon" href="images/mobile/favicon.png" />
 				<link rel="apple-touch-icon" href="images/mobile/Apple-touch.png" />
