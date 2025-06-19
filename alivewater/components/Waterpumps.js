@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "../styles/index.module.scss";
@@ -8,6 +9,8 @@ const myLoader = ({ src, width, quality }) => {
 };
 
 export default function Map() {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<>
 			<section className={classes.map}>
@@ -30,10 +33,17 @@ export default function Map() {
 						</Link>
 					</div>
 					<div>
-						<div className={classes.title}>Адреса</div>
-						<div className={classes.map__flex}>
-							<Addresses />
+						<div className={classes.map__titleFlex}>
+							<div className={classes.title}>Адреса</div>
+							<button onClick={() => setIsOpen(!isOpen)} className={classes.map__button}>
+								{isOpen ? "Скрыть" : "Показать"}
+							</button>
 						</div>
+						{isOpen && (
+							<div className={classes.map__flex}>
+								<Addresses />
+							</div>
+						)}
 					</div>
 				</div>
 			</section>
