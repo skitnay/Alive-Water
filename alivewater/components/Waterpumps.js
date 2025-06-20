@@ -35,7 +35,9 @@ export default function Map() {
 							</a>
 						</Link>
 					</div> */}
-					<InteractiveMap />
+					<div className={classes.map__map}>
+						<InteractiveMap />
+					</div>
 					<div>
 						<div className={classes.map__titleFlex}>
 							<div className={classes.title}>Адреса</div>

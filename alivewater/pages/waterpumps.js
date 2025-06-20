@@ -307,7 +307,7 @@ export default function waterpumps() {
 							Обогащение минералами (Mg, Ca, K + Йод)
 						</div>
 					</section> */}
-					<Map />
+					{/* <Map /> */}
 				</motion.div>
 			</section>
 		</Layout>
