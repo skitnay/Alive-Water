@@ -25,9 +25,9 @@ const locations = [
 	{ coords: [54.36439, 81.896422], name: 'Проспект Революции, 45', description: 'рп. Ордынское, Ордынский район', schedule: '24/7', imageUrl: 'https://i6.photo.2gis.com/images/branch/0/30258560085664171_25ca.jpg', url: 'https://go.2gis.com/MgZYC' },
 	{ coords: [55.163112, 82.982874], name: '​Улица Солидарности, 15', description: 'Пашино м-н, Калининский район', schedule: '24/7', imageUrl: 'https://i8.photo.2gis.com/images/branch/0/30258560109245918_f92a.jpg', url: 'https://go.2gis.com/7iNns' },
 	{ coords: [55.189173, 83.141794], name: '​Локтинская улица, 14', description: 'пос. Октябрьский, Мошковский район', schedule: 'с 08:00 до 23:00', imageUrl: 'https://i9.photo.2gis.com/images/branch/0/30258560069991351_2d90.jpg', url: 'https://go.2gis.com/OFpHr' },
-	{ coords: [55.163112, 82.982874], name: '​Улица Согласия, 4', description: 'Светлый жилой комплекс, пос. Октябрьский, Мошковский район', schedule: 'с 08:00 до 23:00', imageUrl: 'https://i9.photo.2gis.com/images/branch/0/30258560065157009_87dd.jpg', url: 'https://go.2gis.com/HvLvt' },
+	{ coords: [55.191077, 83.14093], name: '​Улица Согласия, 4', description: 'Светлый жилой комплекс, пос. Октябрьский, Мошковский район', schedule: 'с 08:00 до 23:00', imageUrl: 'https://i9.photo.2gis.com/images/branch/0/30258560065157009_87dd.jpg', url: 'https://go.2gis.com/HvLvt' },
 	{ coords: [55.196241, 83.146154], name: '​Французский квартал, 29', description: 'Светлый жилой комплекс, пос. Октябрьский, Мошковский район', schedule: 'с 08:00 до 23:00', imageUrl: 'https://i0.photo.2gis.com/photo-gallery/41db0e9c-dc17-447e-8650-b9196d02a77a.jpg', url: 'https://go.2gis.com/y0UeO' },
-	{ coords: [55.199213, 83.142914], name: '​Лучезарная, 17', description: 'Светлый жилой комплекс, пос. Октябрьский, Мошковский район', schedule: 'с 09:00 до 21:00', imageUrl: 'https://i4.photo.2gis.com/images/branch/0/30258560103333181_b45e.jpg', url: 'https://go.2gis.com/BaBjH' },
+	{ coords: [55.199213, 83.142914], name: '​Лучезарная, 17', description: 'Светлый жилой комплекс, пос. Октябрьский, Мошковский район', schedule: 'с 09:00 до 21:00', imageUrl: 'https://i9.photo.2gis.com/photo-gallery/d56953af-2a45-4c2b-8ba2-72a65155197f.jpg', url: 'https://go.2gis.com/BaBjH' },
 	{ coords: [55.169385, 83.239387], name: '​Центральная, 21', description: 'пос. Барлакский, Мошковский район', schedule: '24/7', imageUrl: 'https://i8.photo.2gis.com/images/branch/0/30258560075963992_7491.jpg', url: 'https://go.2gis.com/FKFBy' },
 ];
 
@@ -40,7 +40,7 @@ export default function InteractiveMap() {
 				const map = window.DG.map(mapRef.current, {
 					center: [54.88, 83.0],
 					zoom: 8,
-					zoomControl: false,
+					zoomControl: true,
 					fullscreenControl: false,
 				});
 
