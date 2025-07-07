@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Script from 'next/script';
 
 const locations = [
@@ -58,6 +58,12 @@ export default function InteractiveMap() {
 			});
 		}
 	};
+
+	useEffect(() => {
+		if (typeof window !== 'undefined' && window.DG && typeof window.DG.then === 'function') {
+			handleLoad();
+		}
+	}, []);
 
 	return (
 		<>
