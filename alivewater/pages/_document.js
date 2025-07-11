@@ -17,7 +17,7 @@ export default function Document() {
 				<meta name="theme-color" content="#263c5c" />
 				<meta charSet="UTF-8" />
 				<meta name="format-detection" content="telephone=no" />
-				<meta name="google-site-verification" content="gMuzE89aJAghIlUGo0fbZ0PECVkSjj0FvKx3lDteqmM" />
+				<meta name="google-site-verification" content="1bG5J6h09kTshNHfwS4ru245e062oHvOW5NaNZW8gNk" />
 				<meta property="og:title" content="Живая Вода Новосибирск" />
 				<meta property="og:type" content="website" />
 				<meta property="og:description" content="Питьевая вода высокого качества в Новосибирске!" />
@@ -30,14 +30,14 @@ export default function Document() {
 			<body>
 				<Main />
 				<NextScript />
-				{/* <script
+				<script
 					dangerouslySetInnerHTML={{
 						__html: `
 					(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 					m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 					(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 		
-					ym(83357116, "init", {
+					ym(103294415, "init", {
 							clickmap:true,
 							trackLinks:true,
 							accurateTrackBounce:true,
@@ -45,10 +45,10 @@ export default function Document() {
 					});
 				`,
 					}}
-				/> */}
+				/>
 				<noscript>
 					<div>
-						{/* <img src="https://mc.yandex.ru/watch/83357116" style={{ position: 'absolute', left: '-9999px' }} alt="" /> */}
+						<img src="https://mc.yandex.ru/watch/103294415" style={{ position: 'absolute', left: '-9999px' }} alt="" />
 					</div>
 				</noscript>
 			</body>

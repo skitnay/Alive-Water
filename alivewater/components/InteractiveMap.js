@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import Script from 'next/script';
 
 const locations = [
-	{ coords: [54.8173, 82.850778], name: 'Ленина, 54', description: 'с. Ленинское,', schedule: '24/7', imageUrl: 'https://i0.photo.2gis.com/photo-gallery/d1bbbc7e-a16c-4f66-8830-7a4e0cc55266.jpg', url: 'https://go.2gis.com/lCd2k' },
+	{ coords: [54.8173, 82.850778], name: 'Ленина, 54', description: 'с. Ленинское,', schedule: '24/7', imageUrl: 'https://i0.photo.2gis.com/photo-gallery/d1bbbc7e-a16c-4f66-8830-7a4e0cc55266.jpg', url: 'https://go. 2gis.com/lCd2k' },
 	{ coords: [54.8536, 82.973971], name: 'Софийская улица, 1Б', description: 'ОбьГЭС м-н, Советский район', schedule: '24/7', imageUrl: 'https://i7.photo.2gis.com/images/branch/0/30258560148266727_f3ce.jpg', url: 'https://go.2gis.com/xscMl' },
 	{ coords: [55.0241, 82.814854], name: 'Большая, (582/2)', description: 'Ленинский район', schedule: '24/7', imageUrl: 'https://i1.photo.2gis.com/images/branch/0/30258560057914920_00fe.jpg', url: 'https://go.2gis.com/Gby51' },
 	{ coords: [55.0378, 82.964221], name: 'Федосеева, 8', description: 'Золотая Нива м-н, Октябрьский район', schedule: '24/7', imageUrl: 'https://i6.photo.2gis.com/photo-gallery/c328a7ef-44d7-4ed1-8323-d6e39b0b0860.jpg', url: 'https://go.2gis.com/dR9bG' },
