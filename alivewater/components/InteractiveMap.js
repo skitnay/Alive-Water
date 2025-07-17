@@ -11,8 +11,8 @@ const locations = [
 	{ coords: [54.9762, 83.111047], name: 'Улица Андреева, 88', description: 'с. Новолуговое', schedule: 'с 08:00 до 22:00', imageUrl: 'https://i8.photo.2gis.com/images/branch/0/30258560098005162_50dc.jpg', url: 'https://go.2gis.com/SLnsL' },
 	{ coords: [55.0486, 83.022286], name: 'Коминтерна, 78/1', description: 'Дзержинский район', schedule: '24/7', imageUrl: 'https://i1.photo.2gis.com/photo-gallery/20ba4c10-d078-405f-a192-8209065e0ddc.jpg', url: 'https://go.2gis.com/1vCMT' },
 	{ coords: [54.9679, 82.499531], name: 'Строительная, 6/1', description: 'с. Чистополье, Коченевский район', schedule: '24/7', imageUrl: 'https://i0.photo.2gis.com/photo-gallery/949d30f3-9053-41b7-96f8-89dbc7fbf85e.jpg', url: 'https://go.2gis.com/vCF0P' },
-	{ coords: [55.091632, 83.050038], name: 'Микрорайон Олимпийской Славы, 1', description: 'с. Каменка', schedule: 'с 08:00 до 23:00', imageUrl: 'https://i5.photo.2gis.com/images/branch/0/30258560105710477_cd0a.jpg', url: 'https://go.2gis.com/1iHle' },
-	{ coords: [55.091992, 83.051863], name: 'Микрорайон Олимпийской Славы, 2', description: 'с. Каменка', schedule: '', imageUrl: '', url: '' },
+	{ coords: [55.091632, 83.050038], name: 'Микрорайон Олимпийской Славы, 1', description: 'с. Каменка', schedule: '24/7', imageUrl: 'https://i7.photo.2gis.com/photo-gallery/4986939a-8961-442b-ac37-37909ff086a6.jpg', url: 'https://go.2gis.com/1iHle' },
+	{ coords: [55.091992, 83.051863], name: 'Микрорайон Олимпийской Славы, 2', description: 'с. Каменка', schedule: '24/7', imageUrl: 'https://i8.photo.2gis.com/photo-gallery/dc531e3f-edde-4899-92d5-fd51cc4d9121.jpg', url: 'https://go.2gis.com/RewsX' },
 	{ coords: [55.083726, 83.042237], name: 'Кирова, 37', description: 'пос. Восход', schedule: '24/7', imageUrl: 'https://i2.photo.2gis.com/images/branch/0/30258560099109344_9d74.jpg', url: 'https://go.2gis.com/q80Qx' },
 	{ coords: [55.083232, 82.645245], name: 'Микрорайон, 18', description: 'с. Криводановка', schedule: '24/7', imageUrl: 'https://i9.photo.2gis.com/images/branch/0/30258560106922624_36c8.jpg', url: 'https://go.2gis.com/rbSkI' },
 	{ coords: [55.083963, 82.647985], name: 'Микрорайон, 26', description: 'с. Криводановка', schedule: '24/7', imageUrl: 'https://i3.photo.2gis.com/images/branch/0/30258560106923658_400b.jpg', url: 'https://go.2gis.com/M3w5g' },
@@ -50,8 +50,8 @@ export default function InteractiveMap() {
 					  <strong>${loc.name}</strong><br/>
 					  ${loc.description ? `<small>${loc.description}</small><br/>` : ''}
 					  ${loc.schedule ? `<em>Время работы: ${loc.schedule}</em><br/>` : ''}
-					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" alt="${loc.name}" width="100" style="margin-top:4px"/><br/>` : ''}
 					  ${loc.url ? `<a href="${loc.url}" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>` : ''}
+					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" alt="${loc.name}" width="100" style="margin-top:4px"/><br/>` : ''}
 					`;
 					window.DG.marker(loc.coords).addTo(map).bindPopup(popupHtml);
 				});
