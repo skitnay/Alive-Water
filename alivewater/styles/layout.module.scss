@@ -124,7 +124,7 @@ $blue: #263c5c;
 		border-radius: 10px;
 		box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.25);
 		margin: 0;
-		overflow: hidden;
+		// overflow: visible;
 		@media (max-width: 560px) {
 			width: 100%;
 			max-width: none;
@@ -152,8 +152,20 @@ $blue: #263c5c;
 		}
 	}
 
+	&__item {
+		position: relative;
+		color: white;
+		text-decoration: none;
+		// overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	&__link {
 		display: inline-block;
+		position: relative;
+		z-index: 2;
 		font-size: 14px;
 		line-height: 20px;
 		color: #fff;
@@ -165,6 +177,25 @@ $blue: #263c5c;
 			margin: 0px 0px 0px 0px;
 		}
 	}
+
+	&__highlight {
+		position: absolute;
+		inset: 0;
+		// transform: scale(1.05);
+		padding: 2px;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(0.15px);
+		-webkit-backdrop-filter: blur(0.15px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+		// transform: scale(1.05);
+		// background: #616b7a;
+		z-index: 10;
+		// box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+		// transition: all 1s ease;
+	}
+
 	padding: 30px;
 }
 

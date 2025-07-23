@@ -117,7 +117,7 @@ export default function waterpumps() {
 										src="/staff/500.webp"
 										width="449"
 										height="370"
-										alt=""
+										alt="500"
 										sizes="100vw"
 										style={{ width: "100%", height: "auto" }}
 									/>
@@ -155,7 +155,7 @@ export default function waterpumps() {
 										src="/staff/400.webp"
 										width={0}
 										height={0}
-										alt=""
+										alt="400"
 										sizes="100vw"
 										style={{ width: "100%", height: "auto" }}
 									/>
@@ -194,9 +194,9 @@ export default function waterpumps() {
 										src="/staff/First.svg"
 										width={95}
 										height={88}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="First.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -205,9 +205,9 @@ export default function waterpumps() {
 										src="/staff/Second.svg"
 										width={84}
 										height={109}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Second.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -216,9 +216,9 @@ export default function waterpumps() {
 										src="/staff/Third.svg"
 										width={106}
 										height={109}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Third.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -227,9 +227,9 @@ export default function waterpumps() {
 										src="/staff/Four.svg"
 										width={84}
 										height={89}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Four.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -238,8 +238,8 @@ export default function waterpumps() {
 										src="/staff/Five.svg"
 										width={113}
 										height={91}
-										// alt="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Five.svg"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
@@ -250,9 +250,9 @@ export default function waterpumps() {
 										src="/staff/Six.svg"
 										width={85}
 										height={93}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Six.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -261,9 +261,9 @@ export default function waterpumps() {
 										src="/staff/Seven.svg"
 										width={84}
 										height={91}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Seven.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -272,9 +272,9 @@ export default function waterpumps() {
 										src="/staff/Eight.svg"
 										width={100}
 										height={112}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Eight.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -283,9 +283,9 @@ export default function waterpumps() {
 										src="/staff/Nine.svg"
 										width={120}
 										height={103}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Nine.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -294,9 +294,9 @@ export default function waterpumps() {
 										src="/staff/Ten.svg"
 										width={88}
 										height={98}
-										alt=""
-										// sizes="100vw"
-										// style={{ width: "100%", height: "auto" }}
+										alt="Ten.svg"
+									// sizes="100vw"
+									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>

@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../styles/index.module.scss";
+import { useEffect, useState } from "react";
 
 const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || "auto"}`;
@@ -60,7 +62,12 @@ const slides = [
 ];
 
 export default function Carusel() {
-	const randomSlides = [...slides].sort(() => Math.random() - 0.5);
+	const [shuffledSlides, setShuffledSlides] = useState(slides);
+
+	useEffect(() => {
+		const shuffled = [...slides].sort(() => Math.random() - 0.5);
+		setShuffledSlides(shuffled);
+	}, []);
 
 	const [ref] = useKeenSlider(
 		{
@@ -104,7 +111,7 @@ export default function Carusel() {
 
 	return (
 		<div ref={ref} className="keen-slider">
-			{randomSlides.map((slide) => (
+			{shuffledSlides.map((slide) => (
 				<div
 					key={slide.number}
 					className={`keen-slider__slide ${slide.number}`}

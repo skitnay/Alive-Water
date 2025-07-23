@@ -2,15 +2,15 @@
 import classes from "../styles/layout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-// import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const myLoader = ({ src, width, quality }) => {
 	return `images/${src}?w=${width}&q=${quality || 75}`;
 };
 
 export function Header() {
-	// const router = useRouter();
-	const router = 12;
+	const pathname = usePathname();
 	return (
 		<>
 			<header className={classes.header__menu}>
@@ -49,48 +49,25 @@ export function Header() {
 							</div>
 						</span>
 					</Link>
-					<ul className={classes.menu__list}>
-						<li>
-							<Link href="/">
-								<span
-									className={`${router.pathname == "/" ? "active" : ""
-										} ${classes.menu__link}`}
-								>
-									Главная
-								</span>
+					<div className={classes.menu__list}>
+						{[
+							{ href: "/", label: "Главная" },
+							{ href: "/analyzes", label: "Анализы Воды" },
+							{ href: "/waterpumps", label: "Водоматы" },
+							{ href: "/contacts", label: "Контакты" },
+						].map(({ href, label }) => (
+							<Link key={href} href={href} className={classes.menu__item}>
+								{pathname === href && (
+									<motion.div
+										layoutId="menuHighlight"
+										className={classes.menu__highlight}
+										transition={{ type: "spring", stiffness: 200, damping: 30 }}
+									/>
+								)}
+								<span className={classes.menu__link}>{label}</span>
 							</Link>
-						</li>
-						<li>
-							<Link href="/analyzes">
-								<span
-									className={`${router.pathname == "/analyzes" ? "active" : ""
-										} ${classes.menu__link}`}
-								>
-									Анализы Воды
-								</span>
-							</Link>
-						</li>
-						<li>
-							<Link href="/waterpumps">
-								<span
-									className={`${router.pathname == "/waterpumps" ? "active" : ""
-										} ${classes.menu__link}`}
-								>
-									Водоматы
-								</span>
-							</Link>
-						</li>
-						<li>
-							<Link href="/contacts">
-								<span
-									className={`${router.pathname == "/contacts" ? "active" : ""
-										} ${classes.menu__link}`}
-								>
-									Контакты
-								</span>
-							</Link>
-						</li>
-					</ul>
+						))}
+					</div>
 				</div>
 			</header>
 		</>
