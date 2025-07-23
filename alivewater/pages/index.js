@@ -5,7 +5,7 @@ import classes from "../styles/index.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import News from "../components/New";
+import News from "../components/LastNews";
 
 const myLoader = ({ src, width, quality }) => {
 	return `/images/${src}?w=${width}&q=${quality || 75}`;
@@ -202,7 +202,7 @@ export default function index() {
 								<Image
 									loader={myLoader}
 									src="/staff/badge.webp"
-									width={103}
+									width={100}
 									height={100}
 									alt="badge"
 									loading="lazy"

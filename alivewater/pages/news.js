@@ -3,104 +3,10 @@ import Head from "next/dist/shared/lib/head";
 import classes from "../styles/index.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const newsList = [
-	{
-		title: "Новый водомат в Ордынском районе!",
-		date: "05/07/2024",
-		text: [
-			"Мы поставили новый аппарат в селе Верх-Ирмень по адресу: ",
-			"<b> Кандикова, 20 </b>",
-			"Водомат работает <b>круглосуточно</b>"
-		],
-		image: "verh-yrmen.jpg"
-	},
-	{
-		title: "Внимание, жители Каменки!",
-		date: "14/06/2024",
-		text: [
-			"Мы установили новый водомат в Каменке по адресу: <b> Советская, 2а </b>",
-			"Аппарат работает <b>круглосуточно</b>"
-		],
-		image: "Sovetskaya2a.jpg"
-	},
-	{
-		title: "Отличная новость для жителей Октябрьского района!",
-		date: "01/05/2024",
-		text: [
-			"Мы установили новый водомат в Октябрьском районе по адресу: <b> ​Федосеева, 8 </b>",
-			"Аппарат работает <b>круглосуточно</b>"
-		],
-		image: "Fedoseeva01.jpg"
-	},
-	{
-		title: "Новый аппарат в Пашино!",
-		date: "08/09/2023",
-		text: [
-			"Доброго времени суток, друзья! Мы поставили новый водомат в Пашино по адресу: <b> Пашино м-н, Солидарности, 15</b>",
-			"Аппарат работает <b>круглосуточно</b>"
-		],
-		image: "Pashino.webp"
-	},
-	{
-		title: "Обогащение минералами!",
-		date: "07/09/2023",
-		text: [
-			"Теперь в нескольких наших аппаратах есть функция обогащения воды полезными минералами, такими как: <b>кальций</b>, <b>магний</b>, <b>калий</b> и <b>йод</b>.",
-			"Аппараты с такой функцией есть по адресам:",
-			"c. Криводановка, Микрорайон, 2",
-			"с. Каменка, мкр Олимпийской Славы, 1",
-			"Пашино, Солидарности, 15",
-			"с. Прокудское, ​Есенина, 1г"
-		],
-		image: "Ka2.webp"
-	},
-	{
-		title: "Мы теперь на ОБьГЭС!",
-		date: "16/10/2022",
-		text: [
-			"Новый аппарат по продаже чистой воды появился в микрорайоне ОбьГЭС по адресу <b>Гидромонтажная, 53</b>.",
-			"Обратите внимание, что водомат расположился внутри рынка на Гидромонтажке, поэтому работает не круглосуточно, а в режиме здания: с 9:00 до 20:00."
-		],
-		image: "og.webp"
-	},
-	{
-		title: "Нововведение - бесконтактная оплата по QR-коду!",
-		date: "06/06/2022",
-		text: [
-			"Теперь все наши автоматы Живой Воды могут принимать оплату по qr-коду. Вам не обязательно иметь с собой физическую карту или мучиться со сдачей-мелочью. А ещё, можно сразу указать всю сумму, на которую Вы планируете набрать воду! Подробнее о том, как платить по qr-коду можно посмотреть в разделе ",
-			'<a href="/waterpumps">«Водоматы»</a>.'
-		],
-		image: "qr-code.webp"
-	},
-	{
-		title: "Подорожание бутилированной воды в магазинах",
-		date: "20/03/2022",
-		text: [
-			"В магазинах на 7 марта 2022 года стоимость негазированной воды объемом 1,5 литра повысилась на 17 рублей. Кроме того, с декабря по март на 60 рублей подорожали бутыли объемом 18,9 л, которые обычно заказывают в офис. По словам руководителей предприятий, сама вода не подорожала, однако стоимость сырья – пластика, упаковки, крышек, полиэтилена – за месяц подскочила на 70%. Мы предлагаем не платить за упаковку - покупать только чистую воду, а не бутылки!"
-		],
-		image: "photo_2022-06-06_18-29-40.webp"
-	},
-	{
-		title: "Новый водомат в селе Прокудское.",
-		date: "18/02/2022",
-		text: [
-			"Недавно мы писали о проблеме с водой в селе Прокудском. Как только услышали, сразу оптимизировали свою работу и готовы делиться хорошей новостью! Теперь в Прокудском стоит наш аппарат по продаже чистой воды. Покупать воду из водомата выгоднее, удобнее и экологичнее, чем закупать бутилированную воду в магазине, а в таких условиях - это настоящее спасение. 💧 Аппарат находится по адресу: ул.Есенина,28"
-		],
-		image: "waterp.webp"
-	},
-	{
-		title: "Вода из под крана, которой даже руки не помыть!",
-		date: "25/01/2022",
-		text: [
-			"Сегодня в новостях мы увидели, что жители села Прокудское мучаются от отсутствия чистой воды в кранах. Вода бывает, но вот что поделать с ярко-голубой или оранжевой жидкостью сложно придумать. Чтобы приготовить пищу или постирать белье, большинство жителей едут за водой за несколько километров в соседний Чик! Такого нельзя допускать! Постараемся помочь жителям и установить в селе наш водомат, а если потребуется, то и несколько."
-		],
-		image: "e5541be6897f6aa20ec5420d93a7826b.webp"
-	}
-];
+import newsData from "../data/news.json";
 
 const myLoader = ({ src, width, quality }) => {
-	return `/images/${src}?w=${width}&q=${quality || 75}`;
+	return `/images/news/${src}?w=${width}&q=${quality || 75}`;
 };
 
 export default function About() {
@@ -133,37 +39,39 @@ export default function About() {
 						bounce: 0.5,
 					}}
 				>
-					{newsList.map((news, index) => (
-						<div key={index} className={classes.newsBlock__flex}>
-							<div className={classes.newsBlock__separator}></div>
-							<div className={classes.newsBlock}>
-								<div className={classes.newsBlock__row}>
-									<div className={classes.newsBlock__news}>
-										<div className={classes.newsBlock__title_block}>
-											<div className={classes.newsBlock__title}>{news.title}</div>
-											<div className={classes.newsBlock__date}>{news.date}</div>
+					{[...newsData]
+						.sort((a, b) => new Date(b.date) - new Date(a.date))
+						.map((item, index) => (
+							<div key={index} className={classes.newsBlock__flex}>
+								<div className={classes.newsBlock__separator}></div>
+								<div className={classes.newsBlock}>
+									<div className={classes.newsBlock__row}>
+										<div className={classes.newsBlock__news}>
+											<div className={classes.newsBlock__title_block}>
+												<div className={classes.newsBlock__title}>{item.title}</div>
+												<div className={classes.newsBlock__date}>{item.date}</div>
+											</div>
+											<h3 className={classes.newsBlock__text}>
+												{item.text.map((paragraph, i) => (
+													<p key={i} dangerouslySetInnerHTML={{ __html: paragraph }} />
+												))}
+											</h3>
 										</div>
-										<h3 className={classes.newsBlock__text}>
-											{news.text.map((paragraph, i) => (
-												<p key={i} dangerouslySetInnerHTML={{ __html: paragraph }} />
-											))}
-										</h3>
-									</div>
-									<div className={classes.newsBlock__pic}>
-										<Image
-											loader={myLoader}
-											src={`/news/${news.image}`}
-											alt=""
-											width={343}
-											height={190}
-											priority
-										/>
+										<div className={classes.newsBlock__pic}>
+											<Image
+												loader={myLoader}
+												src={item.image}
+												alt=""
+												width={343}
+												height={190}
+												priority
+											/>
+										</div>
 									</div>
 								</div>
+								<div className={classes.newsBlock__separator}></div>
 							</div>
-							<div className={classes.newsBlock__separator}></div>
-						</div>
-					))}
+						))}
 				</motion.div>
 			</section>
 		</Layout>
