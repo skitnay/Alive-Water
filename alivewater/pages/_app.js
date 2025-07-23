@@ -3,7 +3,7 @@ import "keen-slider/keen-slider.min.css";
 import { AnimatePresence } from "framer-motion";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 import Modal from "../components/Modal";
 import { useState } from "react";
 
@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps, router }) {
 				}}
 			>
 				<Component {...pageProps} canonical={url} key={url} />
-				<Analytics />
+				{/* <Analytics /> */}
 			</AnimatePresence>
 			<Modal isvisible={showModal} onClose={() => setShowModal(false)} />
 			<Footer setShowModal={() => setShowModal(true)} />
