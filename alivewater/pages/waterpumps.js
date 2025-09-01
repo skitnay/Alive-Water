@@ -114,7 +114,7 @@ export default function waterpumps() {
 									<Image
 										className={classes.waterpumps__pic__img1}
 										loader={myLoader}
-										src="/staff/500.webp"
+										src="/staff/400_1.webp"
 										width="449"
 										height="370"
 										alt="500"
@@ -152,7 +152,7 @@ export default function waterpumps() {
 									<Image
 										className={classes.waterpumps__pic__img2}
 										loader={myLoader}
-										src="/staff/400.webp"
+										src="/staff/500_1.webp"
 										width={0}
 										height={0}
 										alt="400"

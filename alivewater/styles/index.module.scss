@@ -983,7 +983,7 @@ $blue: #263c5c;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		@media (max-width: 560px) {
+		@media (max-width: 870px) {
 			flex-direction: column;
 			&:nth-child(2) {
 				flex-direction: column-reverse;
@@ -995,10 +995,13 @@ $blue: #263c5c;
 		&__img1 {
 			max-width: 449px;
 			max-height: 378px;
+			@media (max-width: 1100px) {
+				padding: 20px;
+			}
 		}
 		&__img2 {
-			max-width: 200px;
-			max-height: 350px;
+			// max-width: 200px;
+			// max-height: 350px;
 		}
 		img {
 			pointer-events: none;
