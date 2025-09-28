@@ -222,5 +222,13 @@
 		"schedule": "24/7",
 		"imageUrl": "https://i8.photo.2gis.com/images/branch/0/30258560075963992_7491.jpg",
 		"url": "https://go.2gis.com/FKFBy"
+	},
+	{
+		"coords": [55.038223, 82.755976],
+		"name": "Улица Горького, 15г ",
+		"subtitle": "​с. Марусино",
+		"schedule": "24/7",
+		"imageUrl": "images/waterpumps/Gorkogo.jpg",
+		"url": "https://go.2gis.com/VHwJ7"
 	}
 ]
