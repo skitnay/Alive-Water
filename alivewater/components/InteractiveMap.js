@@ -44,6 +44,7 @@ export default function InteractiveMap() {
 					zoom: 8,
 					zoomControl: true,
 					fullscreenControl: false,
+					key: "0addda38-8630-487b-9045-8a5cceeb3a29"
 				});
 
 				addresses.forEach(loc => {
@@ -69,7 +70,7 @@ export default function InteractiveMap() {
 	return (
 		<>
 			<Script
-				src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"
+				src='https://maps.api.2gis.ru/2.0/loader.js?pkg=full'
 				strategy="afterInteractive"
 				onLoad={handleLoad}
 			/>
