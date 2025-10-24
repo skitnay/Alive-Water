@@ -27,5 +27,5 @@ jobs:
               git pull origin master &&
               npm ci &&
               NODE_OPTIONS=--max_old_space_size=256 npm run build &&
-              pm2 start alivewater
+              pm2 start voda54
               "
