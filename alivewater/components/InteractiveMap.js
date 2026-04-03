@@ -64,7 +64,7 @@ export default function InteractiveMap() {
 					  ${loc.subtitle ? `<small>${loc.subtitle}</small><br/>` : ''}
 					  ${loc.schedule ? `<em>Время работы: ${loc.schedule}</em><br/>` : ''}
 					  ${loc.url ? `<a href="${loc.url}" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>` : ''}
-					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" priority alt="${loc.name}" width="100" style="margin-top:4px"/><br/>` : ''}
+					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" alt="${loc.name}" style="margin-top:4px; max-width:100%; height:auto; display:block; border-radius:4px;"/><br/>` : ''}
 					`;
 					window.DG.marker(loc.coords).addTo(map).bindPopup(popupHtml);
 				});
