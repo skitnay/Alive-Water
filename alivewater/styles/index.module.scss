@@ -454,7 +454,7 @@ $blue: #263c5c;
 	&__flex {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 1100px) {
+		@media (max-width: 1200px) {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
@@ -473,7 +473,7 @@ $blue: #263c5c;
 		&:nth-last-child(1) {
 			margin-bottom: 0px;
 		}
-		@media (max-width: 1100px) {
+		@media (max-width: 1200px) {
 			margin-bottom: 30px;
 			&:nth-last-child(1) {
 				margin-bottom: 30px;
