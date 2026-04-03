@@ -303,7 +303,7 @@ export default function index() {
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
-							1 ЛИТР - <p>5 РУБЛЕЙ</p>
+							1 ЛИТР - <p>ОТ 5 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							На тренировку или прогулку
@@ -321,7 +321,7 @@ export default function index() {
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
-							5 ЛИТРОВ - <p>25 РУБЛЕЙ</p>
+							5 ЛИТРОВ - <p>ОТ 25 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							В дорогу или на пикник
@@ -339,7 +339,7 @@ export default function index() {
 							/>
 						</div>
 						<div className={classes.price__flex_title}>
-							19 ЛИТРОВ - <p>95 РУБЛЕЙ</p>
+							19 ЛИТРОВ - <p>ОТ 95 РУБЛЕЙ</p>
 						</div>
 						<div className={classes.price__flex_subtitle}>
 							Домой или в офис
