@@ -36,6 +36,17 @@ import addresses from '../data/addresses.json';
 export default function InteractiveMap() {
 	const mapRef = useRef(null);
 
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			addresses.forEach(loc => {
+				if (loc.imageUrl) {
+					const img = new Image();
+					img.src = loc.imageUrl;
+				}
+			});
+		}
+	}, []);
+
 	const handleLoad = () => {
 		if (typeof window !== 'undefined' && window.DG && mapRef.current) {
 			window.DG.then(() => {
@@ -53,7 +64,7 @@ export default function InteractiveMap() {
 					  ${loc.subtitle ? `<small>${loc.subtitle}</small><br/>` : ''}
 					  ${loc.schedule ? `<em>Время работы: ${loc.schedule}</em><br/>` : ''}
 					  ${loc.url ? `<a href="${loc.url}" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>` : ''}
-					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" alt="${loc.name}" width="100" style="margin-top:4px"/><br/>` : ''}
+					  ${loc.imageUrl ? `<img src="${loc.imageUrl}" priority alt="${loc.name}" width="100" style="margin-top:4px"/><br/>` : ''}
 					`;
 					window.DG.marker(loc.coords).addTo(map).bindPopup(popupHtml);
 				});
