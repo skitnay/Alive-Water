@@ -24,7 +24,6 @@ export default function MyApp({ Component, pageProps, router }) {
 				}}
 			>
 				<Component {...pageProps} canonical={url} key={url} />
-				{/* <Analytics /> */}
 			</AnimatePresence>
 			<Modal isvisible={showModal} onClose={() => setShowModal(false)} />
 			<Footer setShowModal={() => setShowModal(true)} />

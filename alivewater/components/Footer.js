@@ -148,11 +148,11 @@ export function Footer({ setShowModal }) {
 								</Link>
 							</div>
 							<div className={classes.tSection__contact}>
-								<Link href="https://wa.me/79537641000" target="_blank">
+								<Link href="https://max.ru/u/f9LHodD0cOI3xzZJMmN0fRxOdmGf_wB9L_S3oXyug4CsV79cWlxEmKorEX8" target="_blank">
 									<span>
 										<Image
 											loader={myLoader}
-											src="icons/waWhite.webp"
+											src="icons/Max.svg"
 											width={0}
 											height={0}
 											alt="wa"

@@ -21,7 +21,6 @@ export function Layout({ children }) {
 					exit="exit"
 					variants={variants}
 					transition={{
-						// duration: 0.3,
 						type: "linear",
 					}}
 				>

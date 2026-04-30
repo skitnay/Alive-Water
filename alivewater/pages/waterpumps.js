@@ -195,8 +195,6 @@ export default function waterpumps() {
 										width={95}
 										height={88}
 										alt="First.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -206,8 +204,6 @@ export default function waterpumps() {
 										width={84}
 										height={109}
 										alt="Second.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -217,8 +213,6 @@ export default function waterpumps() {
 										width={106}
 										height={109}
 										alt="Third.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -228,8 +222,6 @@ export default function waterpumps() {
 										width={84}
 										height={89}
 										alt="Four.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -239,7 +231,6 @@ export default function waterpumps() {
 										width={113}
 										height={91}
 										alt="Five.svg"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
@@ -251,8 +242,6 @@ export default function waterpumps() {
 										width={85}
 										height={93}
 										alt="Six.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -262,8 +251,6 @@ export default function waterpumps() {
 										width={84}
 										height={91}
 										alt="Seven.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -273,8 +260,6 @@ export default function waterpumps() {
 										width={100}
 										height={112}
 										alt="Eight.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -284,8 +269,6 @@ export default function waterpumps() {
 										width={120}
 										height={103}
 										alt="Nine.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 								<div>
@@ -295,19 +278,11 @@ export default function waterpumps() {
 										width={88}
 										height={98}
 										alt="Ten.svg"
-									// sizes="100vw"
-									// style={{ width: "100%", height: "auto" }}
 									/>
 								</div>
 							</div>
 						</div>
 					</section>
-					{/* <section className={classes.cleaner}>
-						<div className={classes.title}>
-							Обогащение минералами (Mg, Ca, K + Йод)
-						</div>
-					</section> */}
-					{/* <Map /> */}
 				</motion.div>
 			</section>
 		</Layout>

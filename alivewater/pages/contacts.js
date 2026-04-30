@@ -42,7 +42,6 @@ export default function contacts() {
 					}}
 				>
 					<div className={classes.contacts__contact}>
-						{/* <div className={classes.contacts__title}>Мы в</div> */}
 						<div className={classes.contacts__social}>
 							<div className={classes.contacts__vk}>
 								<Link href="https://vk.com/alivewaternsk">
@@ -73,11 +72,11 @@ export default function contacts() {
 								</Link>
 							</div>
 							<div className={classes.contacts__wa}>
-								<Link href="https://wa.me/79134531010">
+								<Link href="https://max.ru/u/f9LHodD0cOI3xzZJMmN0fRxOdmGf_wB9L_S3oXyug4CsV79cWlxEmKorEX8">
 									<span target="_blank">
 										<Image
 											loader={myLoader}
-											src="/icons/wa.webp"
+											src="/icons/MAX.png"
 											width={45}
 											height={45}
 											alt="What's App icon"
@@ -117,26 +116,33 @@ export default function contacts() {
 						</div>
 					</div>
 					<div className={classes.contacts__contact}>
-						{/* <div className={classes.contacts__title}></div> */}
 						<p>
+							{/* <Image
+								loader={myLoader}
+								src=""
+								width={50}
+								height={50}
+								alt=""
+								priority
+							/> */}
 							<Link href="tel:+79537641000">
 								<span>+7 (953) 764-10-00</span>
 							</Link>
 						</p>
 						<p>
+							{/* <Image
+								loader={myLoader}
+								src=""
+								width={50}
+								height={50}
+								alt=""
+								priority
+							/> */}
 							<Link href="mailto:zhivaya@voda54.ru">
 								<span>zhivaya@voda54.ru</span>
 							</Link>
 						</p>
 					</div>
-					{/* <div className={classes.contacts__contact}>
-						<div className={classes.contacts__title}>Email </div>
-						<p>
-							<Link href="mailto:zhivaya@voda54.ru">
-								<div>zhivaya@voda54.ru</div>
-							</Link>
-						</p>
-					</div> */}
 					<Map />
 				</motion.div>
 			</section>
@@ -155,40 +161,3 @@ const variants2 = {
 	enter: { opacity: 1, x: 0, y: 0 },
 	exit: { opacity: 0, x: 100, y: 0 },
 };
-
-{
-	/* <motion.section className={classes.about}
-			initial="hidden"
-			animate="enter"
-			exit="exit"
-			variants={variants}
-			transition={{
-				duration: 0.8,
-				type: 'linear'
-			}}
-		>
-			<div className={classes.title}>
-				О нас
-			</div>
-			<div className={classes.about__content}>
-				<div className={classes.about__pic}>
-					<Image src="/recycle.webp" width={448} height={422} alt="" />
-				</div>
-				<div className={classes.about__text}>
-					<p>
-						Как известно, вода — источник всего живого.
-						А организм человека на 70% состоит из воды — она обязательное вещество для нас, ее недостаток
-						может привести к обезвоживанию и отекам.
-					</p>
-					<p>
-						Мы продаем чистую воду на розлив для того, чтобы сделать каждого более здоровым и бороться с
-						загрязнением пластиком
-						окружающей среды. Ведь каждую пластиковую бутылку можно наполнить водой множество раз.
-					</p>
-					<p>Так зачем снова и снова покупать пластик?</p>
-					<span>Покупай воду,
-						а не бутылки!</span>
-				</div>
-			</div>
-		</motion.section> */
-}

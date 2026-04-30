@@ -29,7 +29,6 @@ export default function Modal({ isvisible, onClose }) {
 							style={{ width: '100%', height: 'auto' }}
 						/>
 					</div>
-					{/* <button className={classes.modal__close} onClick={() => onClose()}>X</button> */}
 				</div>
 			</div>
 		</>
