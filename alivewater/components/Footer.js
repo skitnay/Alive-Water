@@ -139,7 +139,7 @@ export function Footer({ setShowModal }) {
 											src="icons/telega.webp"
 											width={0}
 											height={0}
-											alt="wa"
+											alt="tg"
 											priority
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
@@ -152,10 +152,10 @@ export function Footer({ setShowModal }) {
 									<span>
 										<Image
 											loader={myLoader}
-											src="icons/Max.svg"
+											src="icons/max.webp"
 											width={0}
 											height={0}
-											alt="wa"
+											alt="max"
 											priority
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
