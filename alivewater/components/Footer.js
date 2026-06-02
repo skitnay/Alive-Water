@@ -88,7 +88,14 @@ export function Footer({ setShowModal }) {
 										<span>Контакты</span>
 									</Link>
 								</div>
-								<div className={classes.sSection__link__hide}></div>
+								<div className={classes.sSection__link__m}>
+									<Link href="https://magnific.com" target="_blank">
+										<span >
+											magnific
+										</span>
+									</Link>
+								</div>
+								{/* <div className={classes.sSection__link__hide}></div> */}
 							</div>
 						</div>
 					</div>

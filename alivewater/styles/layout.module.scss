@@ -349,6 +349,11 @@ $blue: #263c5c;
 		min-height: 94px;
 	}
 	&__link {
+		&__m {
+			span {
+			color: #263c5c;
+			}
+		}
 		&__row {
 			display: flex;
 			flex-direction: column;

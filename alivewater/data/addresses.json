@@ -230,5 +230,13 @@
 		"schedule": "24/7",
 		"imageUrl": "images/waterpumps/Gorkogo.jpg",
 		"url": "https://go.2gis.com/8CHiC"
+	},
+	{
+		"coords": [54.98045, 82.63293],
+		"name": "​2-я улица, 1а ",
+		"subtitle": "Мечта (Толмачёвский с/с)",
+		"schedule": "24/7",
+		"imageUrl": "images/waterpumps/2ulitsa.jpg",
+		"url": "https://go.2gis.com/LrgYb"
 	}
 ]
