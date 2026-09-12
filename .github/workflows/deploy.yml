@@ -1,31 +1,33 @@
 name: Deploy Next.js to VPS
 
 on:
-   push:
-      branches:
-         - master # деплой по пушу в master
+  push:
+    branches:
+      - master
 
 jobs:
-   deploy:
-      runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-      steps:
-         - name: Checkout repository
-           uses: actions/checkout@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-         - name: Setup SSH access
-           run: |
-              mkdir -p ~/.ssh
-              echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
-              chmod 600 ~/.ssh/id_ed25519
-              ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+      - name: Setup SSH access
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-         - name: Deploy to VPS
-           run: |
-              ssh -T ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
-              cd /home/ubuntu/Alive-Water/alivewater &&
-              git pull origin master &&
-              npm ci &&
-              NODE_OPTIONS=--max_old_space_size=256 npm run build &&
-              pm2 start voda54
-              "
+      - name: Deploy to VPS
+        run: |
+          ssh -T ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
+            cd /root/apps/Alive-Water/alivewater &&
+            git fetch origin master &&
+            git reset --hard origin/master &&
+            npm ci &&
+            NODE_OPTIONS=--max-old-space-size=512 npm run build &&
+            pm2 restart alivewater &&
+            pm2 save
+          "
