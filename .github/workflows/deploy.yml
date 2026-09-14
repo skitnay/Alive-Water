@@ -1,31 +1,58 @@
 name: Deploy Next.js to VPS
 
 on:
-   push:
-      branches:
-         - master # деплой по пушу в master
+  push:
+    branches:
+      - master
 
 jobs:
-   deploy:
-      runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-      steps:
-         - name: Checkout repository
-           uses: actions/checkout@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-         - name: Setup SSH access
-           run: |
-              mkdir -p ~/.ssh
-              echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
-              chmod 600 ~/.ssh/id_ed25519
-              ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: alivewater/package-lock.json
 
-         - name: Deploy to VPS
-           run: |
-              ssh -T ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
-              cd /home/ubuntu/Alive-Water/alivewater &&
-              git pull origin master &&
-              npm ci &&
-              NODE_OPTIONS=--max_old_space_size=256 npm run build &&
-              pm2 start voda54
-              "
+      - name: Install dependencies
+        working-directory: alivewater
+        run: npm ci
+
+      - name: Build
+        working-directory: alivewater
+        run: npm run build
+
+      - name: Prepare standalone
+        working-directory: alivewater
+        run: |
+          cp -r public .next/standalone/
+          mkdir -p .next/standalone/.next
+          cp -r .next/static .next/standalone/.next/
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Upload build
+        run: |
+          rsync -az --delete \
+            alivewater/.next/standalone/ \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/root/apps/voda54/
+
+      - name: Restart app
+        run: |
+          ssh -T ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
+            cd /root/apps/voda54 &&
+            pm2 delete alivewater 2>/dev/null || true &&
+            PORT=3000 HOSTNAME=127.0.0.1 pm2 start server.js --name alivewater &&
+            pm2 save
+          "
